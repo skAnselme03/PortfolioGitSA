@@ -1,0 +1,7 @@
+@import "./elementsDeBase.css";
+@import "./entetPrincipale.css";
+@import "./acceuil.css";
+@import "./paletteDeCouleur.css";
+* {
+    outline: 1px dotted green;
+}

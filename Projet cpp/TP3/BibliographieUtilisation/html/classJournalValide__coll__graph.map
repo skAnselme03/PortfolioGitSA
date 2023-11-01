@@ -1,0 +1,6 @@
+<map id="JournalValide" name="JournalValide">
+<area shape="rect" id="node1" title="Fixture JournalValide, créer un objet Journal valide pour les tests." alt="" coords="75,171,182,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,153,108"/>
+<area shape="rect" id="node3" href="$classbiblio_1_1Journal.html" title="La classe permet de créer un journal." alt="" coords="177,81,288,108"/>
+<area shape="rect" id="node4" href="$classbiblio_1_1Reference.html" title="La classe Reference permet de modéliser les références bibliographiques." alt="" coords="167,5,299,32"/>
+</map>

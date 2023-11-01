@@ -1,0 +1,70 @@
+{% extends "index.html" %} {% block title %}Sign Up{% endblock %} {% block head %}
+    <link rel="stylesheet" href="../static/css/signup.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+{% endblock %} {% block navbar %}
+    <ul class="menu__list" id="navbar">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/login">Se connecter</a></li>
+        <li><a href="/signup">S'inscrire</a></li>
+    </ul>
+{% endblock %}
+{% block content %}
+<main>
+     {% with messages = get_flashed_messages() %} {% if messages %}
+        {% for message in messages %}
+            <span class="msgError">{{ message }}</span> {% endfor %} {% endif %} {% endwith %}
+        <h1>S'inscrire</h1>
+        <p><span><em>Pour avoir du contenu personnalisé, veuillez soumettre toutes les informations demandées ci-dessous.
+</em></span></p>
+
+        <form id="signup-form" action="{{ url_for('sign_up') }}" method="POST" onsubmit="inscription()">
+
+            <fieldset>
+                <label for="prenom"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="text" id="prenom" placeholder="Prénom" name="prenom" required="required">
+                <label for="nom"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="text" id="nom" placeholder="Nom" name="nom" required="required">
+                <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="text" id="username" placeholder="Username (Abcde123/Abcde_123)" name="username"
+                       required="required">
+                <label for="numeroCivique"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <input type="text" id="numeroCivique" placeholder="N° Civique (ex: 2256)" name="numeroCivique">
+                <label for="rue"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <input type="text" id="rue" placeholder="Rue (ex: Ma-Rue/MaRue/ Ma Rue)" name="rue">
+                <label for="ville"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <input type="text" id="ville" placeholder="Ville" name="ville" required="required">
+                <label for="codePostal"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <input type="text" id="codePostal" placeholder="Code postal (X0X 0X0)" name="codePostal"
+                       required="required">
+                <label class="province" for="province"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <select id="province" name="province" required="required">
+                    <option value="">--Province--</option>
+                    <option value="ON">ON</option>
+                    <option value="QC">QC</option>
+                </select>
+                <label class="pays" for="pays"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                <select id="pays" name="pays" required="required">
+                    <option value="">--Pays--</option>
+                    <option value="CAN">Canada</option>
+                </select>
+                <label for="numeroTelephone"><i class="fa fa-mobile" aria-hidden="true"></i></label>
+                <input type="text" id="numeroTelephone" placeholder="Téléphone : 555 555-5555" name="numeroTelephone"
+                       pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$">
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                <input type="text" id="email" placeholder="Courriel (mon@adresse.com)" name="email" required="required">
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input type="password" id="password" placeholder="Mot de passe" name="password" required="required">
+                <label for="confirmpassword"><i class="fas fa-lock"></i></label>
+                <input type="password" id="confirmpassword" placeholder="Confirmer le mot de passe"
+                       name="confirmpassword" required="required">
+            </fieldset>
+            <button type="submit" value="S'inscrire">S'inscrire</button>
+        </form>
+        </main>
+        <aside>
+            <p>Vous avez déjà un compte?</p>
+            <a href="/login">Se connecter</a>
+            <br>
+        </aside>
+    {% endblock %}

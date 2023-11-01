@@ -1,0 +1,4 @@
+<map id="biblio::Ouvrage" name="biblio::Ouvrage">
+<area shape="rect" id="node1" title="Classe Ouvrage représente les références de la catégorie Ouvrage." alt="" coords="11,80,132,107"/>
+<area shape="rect" id="node2" href="$classbiblio_1_1Reference.html" title="La classe Reference permet de modéliser les références bibliographiques." alt="" coords="5,5,137,32"/>
+</map>

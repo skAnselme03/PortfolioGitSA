@@ -1,0 +1,95 @@
+{% extends "index.html" %} {% block title %}Home{% endblock %} {% block head %}
+    <link rel="stylesheet" href="../static/css/home.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+{% endblock %}{% block navbar %}
+    <ul class="menu__list" id="navbar">
+        {% if session_ouverte %}
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/catalogue">Catalogue</a></li>
+            <li><a href="/ajouter">Ajout</a></li>
+            <li><a href="/profil">Profil</a></li>
+            <li>
+                <a href="/logout">
+                    <button class="btn--entete" onclick="{{ url_for('logout') }}">Quitter <i class="fa fa-sign-out"
+                                                                                             aria-hidden="true"></i>
+                    </button>
+                </a>
+            </li>
+
+        {% endif %} {% if not session_ouverte %}
+        <li><a href="/login">Se connecter</a></li>
+        <li><a href="/signup">S'inscrire</a></li>
+    {% endif %}
+    </ul>
+{% endblock %} {% block entete__hero %}
+    <section class="entete__hero main-image">
+        <div class="banniere__hero">
+            <div class="main-text">
+                <h1>Échangez pour de nouveaux jouets !</h1>
+                <div class="search-wrapper">
+                    <form class="recherche" method="POST" action="/recherche">
+                        <input type="text" placeholder="Rechercher un jouet..." name="query">
+                        <button type="submit"><img class="searchIcon" src="../static/img/recherche.png"
+                                                   alt="recherche_icon"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %} {% block content %}
+    <main>
+
+        <section class="bloc-accueil">
+
+            <h2>Votre enfant de 2 ans a besoin de nouveaux jouets ?</h2>
+            <p style="text-align: center;">Échangez ses anciens jeux de bébé contre de nouveaux plus adaptés à son âge !
+            </p>
+        </section>
+        <section class="nouveautes">
+            <div class="titre">
+                <h3>Découvrez les derniers jouets ajoutés</h3>
+            </div>
+            <div class="containers">
+                {% for jouet in jouets %}
+
+                    <div class="item item-1">
+                        <img class="img_jouet"
+                             src={{ url_for( 'static', filename='storage/img_jouet/' + jouet[4]) }} alt="photoJouet"
+                             height="80%">
+                        <div class="item-body">
+                            <a href="{{ url_for('jouet_individuel', id=jouet[0]) }}">{{ jouet[1] }}</a>
+                            <p style="text-align: center;margin:3%;">{{ jouet[9] }} points</p>
+                            {% if session_ouverte %}
+                                <div class="boutonWishlist">
+                                    <form class="btn-wishlist" method="POST"
+                                          action="{{ url_for('ajout_wishlist', idJouet=jouet[0]) }}">
+                                        <button type="submit" name="ajoutWishlist">Ajouter à ma wishlist</button>
+                                    </form>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            </div>
+        </section>
+        <section class="infos1">
+            <h4>Notre mission</h4>
+            <p>Avec Petit Kangourou, on offre un service d’échange de jouets entre les familles, via une plateforme
+                Web.</p>
+            <p>Servez-vous des jouets que vous avez déjà pour vous en procurer d’autres, plutôt que d’en acheter.</p>
+        </section>
+        <section class="infos2">
+            <h4>Ça s’adresse à qui ?</h4>
+            <p>Avec cette communauté virtuelle, nous aidons les mamans ayant au moins un enfant de 0 à 12 ans, à :</p>
+            <p>1) éliminer les jouets devenus encombrants pour faire de la place au fur et à mesure que l’enfant
+                grandit;</p>
+            <p>2) à les remplacer par de nouveaux jouets en fonction de ses intérêts.
+            </p>
+        </section>
+        <section class="infos3">
+            <img src="../static/img/Systeme.png" alt="Système de points" style="width:60%;">
+        </section>
+    </main>
+{% endblock %}

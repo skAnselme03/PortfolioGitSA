@@ -1,0 +1,10 @@
+input,
+select {
+    border: none;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}

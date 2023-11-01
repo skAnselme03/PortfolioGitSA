@@ -1,0 +1,21 @@
+/*------------- PALETTE DE COULEURS -------------*/
+
+.contenu_principal-teams figure {
+    border: rgb(73, 12, 114) thin solid;
+}
+
+.contenu_principal-teams figure>img {
+    border-radius: 1em;
+}
+
+.contenu_principal-teams h2 {
+    color: rgb(77, 77, 77);
+}
+
+.contenu_principal-teams aside {
+    background-color: rgb(199, 199, 202);
+}
+
+.contenu_principal-teams aside p {
+    color: #4a4499;
+}

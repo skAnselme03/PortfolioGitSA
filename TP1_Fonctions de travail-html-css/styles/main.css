@@ -1,0 +1,128 @@
+@import "./styleGeneriqueDeBase.css";
+@import"./enteteNavigation.css";
+@import "./couleur.css";
+@import "./footer.css";
+@import "./formulaire.css";
+@import "./questionnaire.css";
+@import "./teams_echelleRythmique.css";
+@import "./teams_PalettesDeCouleur.css";
+@import "./teams_PoliceDeCaracteres.css";
+
+/* @import "./teams_echelleDesDimensions.css"; */
+
+
+/* Importation des styles ci-dessous */
+
+
+/*
+Inspiration: http://youknowwho.com/
+        Couleur: 
+            #333 
+            #fdf0f0 (arrière-plan body)
+             #2d2d2d; (arrière-plan, navigation/pied de page)
+            #ffbcbc (texte (hoover): navigation)
+            #FFFFFF (texte: entête, pied de page)
+            #dddddd : navigation text
+Dimensions:
+        141px (img)
+        28px (ul/li/a)
+        50px (min-height)
+        1200px
+        24px (gouttière)
+        221px (hauteur de text
+    
+Typographie:
+    "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, Times New Roman, serif !important;
+    "leitura-news-1", "leitura-news-2", Georgia, Times New Roman, serif !important;
+    graisse: 400
+    1px (espace de texte navigation)
+    18px--> fontsize
+    32px --> lineheight
+    400 --> (graisse) font-weight
+    900 --> (graisse) font-weight
+    padding
+    (navigation----
+        0px
+        25px 
+*/
+
+
+/*---------------------------------------------*/
+
+
+/*Structures-----------------------------------*/
+
+html,
+body,
+section,
+p,
+h1,
+footer,
+img,
+h2,
+h3,
+h4 ol,
+li {
+    display: block;
+}
+
+body>* {
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+body>div {
+    flex-basis: 100%;
+}
+
+body>div {
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+}
+
+
+/* Partage du main et de l'aside au millieu */
+
+.contenu-principal {
+    flex-basis: 420px;
+    flex-grow: 1;
+    max-width: 1200px;
+    shape-outside: inset(10px 10px 10px 10px);
+}
+
+body>aside {
+    flex-basis: 140px;
+    max-width: max-content;
+    flex-grow: 1;
+    max-width: 1000px;
+}
+
+
+/**/
+
+aside img {
+    width: 100%;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 3%;
+}
+
+
+/*---------------------------------------------*/
+
+
+/*Typography------------------*/
+
+body {
+    font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, Times New Roman, serif !important;
+}

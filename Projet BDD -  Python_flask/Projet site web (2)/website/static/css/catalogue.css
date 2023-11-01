@@ -1,0 +1,167 @@
+img{
+    max-width: 100%;
+}
+/*https://www.w3schools.in/html/blink-tag*/
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+/*Rythme entre l'entête et le main*/
+header+main{
+    margin-top: 10vw;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recherche {
+    float: left;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    border: solid #dcf2e2;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    margin-top: 1%;
+}
+
+.recherche input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.recherche button[type="submit"] {
+    background: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filtres select {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.filtres button[type="submit"] {
+    background-color: #dcf2e2;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 0 -10px;
+}
+
+.item {
+    width: 15%;
+    margin: 0 2% 3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2de77;
+}
+
+.img_jouet {
+    border-radius: 5px;
+    margin-bottom: 1%;
+    max-width: 100%;
+}
+.item .img_jouet{
+
+    object-fit: cover;
+    width: 15em;
+    height: 100%;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.item-body {
+    flex: 1;
+}
+
+
+.btn-wishlist button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align-items: center;
+}
+item img{
+    object-fit: cover;
+    width: 1em;
+    height: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,39 @@
+/*------------- ECHELLE DES DIMENSIONS -------------*/
+
+
+/*Tous les images occupe tout l'espace disponible sans dépasser.*/
+
+
+/* img {
+    width: 100%;
+} */
+
+
+/*Espacement vertical accrue de la balise figure*/
+
+.contenu_principal-teams figure {
+    width: 25%;
+}
+
+.contenu_principal-teams>section ul,
+ol,
+p,
+aside {
+    width: 40em;
+}
+
+.contenu_principal-teams aside {
+    width: 70%;
+}
+
+.contenu_principal-teams aside>p {
+    width: 25em;
+}
+
+[id="formation"] aside {
+    width: 35%;
+}
+
+ol.ligne-du-temps>li>.date {
+    max-width: 10rem;
+}

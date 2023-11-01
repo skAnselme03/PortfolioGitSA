@@ -1,0 +1,36 @@
+﻿
+﻿// Instanciation du conteneur d'objets Pays
+var tabPays = new List<Pays>();
+
+// Lecture du fichier et itération sur les lignes lues
+// File.ReadAllLines crée un tableau de string
+// représentant chaque ligne
+foreach (var line in File.ReadAllLines("pays.txt"))
+{   
+    // Certaines lignes sont vides
+    // et doivent être filtrées
+    if (string.IsNullOrEmpty(line))
+        continue;
+
+    // split construit un tableau de string à partir
+    // d'une ligne découpée suivant les tabulations
+    var entries = line.Split('\t');
+
+    // Les espaces dans les superficies sont filtrés
+    string tmp = null;
+    foreach (var c in entries[2])
+    {
+        if (c == ' ') continue;
+        tmp += c;
+    }
+    int.TryParse(tmp, out int superficie);
+
+    // Ajout de l'instance dans le conteneur
+    tabPays.Add(new Pays
+                    {Nom = entries[0],
+                    Continent = entries[1],
+                    Superficie = superficie});
+}
+// La liste d'objets est lue, on peut commencer à jouer
+code.txt
+Affichage de code.txt

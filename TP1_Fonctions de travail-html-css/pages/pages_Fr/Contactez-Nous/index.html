@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="S. Anselme">
+    <meta name="Description" content="TP #1 - Développer le site web de Katchasa">
+    <!-- Fichier de style pour la page principale -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/acceuil.css">
+    <!-- Style de caractères-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+
+    <link href="//db.onlinewebfonts.com/c/f6b2dec03f7e464e83bdde8368e1ee0b?family=Leitura+News" rel="stylesheet" type="text/css" />
+    <title>Katchasa.ca/Contactez-Nous</title>
+</head>
+
+<body>
+    <div class="entete-principal">
+        <!--Entête-->
+        <header>
+            <img class="photoPerso" src="../../../assets/img/PierreEmpilé.jpeg" alt="Photo prise en 2020 par Skatcha.ca">
+            <h1>Katchasa.ca</h1>
+            <h2>Développement web indépendant</h2>
+
+        </header>
+        <!--Navigation principale-->
+        <nav class="navigation-principale">
+            <!--<input type="checkbox" aria-label="chekbox">-->
+            <div>
+                <a href="../../../index.html">Acceuil</a>
+                <a href="../Projets/index.html">Projet</a>
+                <a href="../Equipes/index.html">Notre Équipe</a>
+                <a href="./index.html">Contactez-nous</a>
+                <a href="../Questionnaire/index.html">Questionnaire</a>
+                <a href="../../pages_Ang/Contact-Us/index.html" class="pageAnglais">English</a>
+            </div>
+        </nav>
+    </div>
+
+    <!--Contenue principale-->
+    <main class="contenu-principal_form">
+        <h2>Contactez-nous</h2>
+        <p>Écrivez-nous pour tout questions et commentaires. Nous sommes à l’écoute de vos impressions.</p>
+
+        <form method="post" action="mailto:ska.anss.01@gmail.com" class="container_form">
+            <fieldset>
+                <label for="nom">Votre nom</label> <input aria-label="nom" type="text" name="nom" id="nom" placeholder="Votre Nom au complet">
+                <label for="courriel">Courriel</label> <input type="text" name="courriel" id="courriel" placeholder="Votre courriel">
+                <label for="objetCouriel">Objet</label> <input aria-label="objetCouriel" type="text" name="objetCouriel" id="objetCouriel" placeholder="Objet">
+                <label for="messageEnv">Message</label>
+                <textarea name="messageEnv" id="messageEnv" cols="10" rows="20" placeholder="Votre message" aria-label="messageEnv"></textarea>
+
+                <input type="checkbox" name="abonnement" id="abonnement">
+                <label for="abonnement">Abonnez-moi à l'infolettre.</label>
+            </fieldset>
+            <br>
+            <!--Non breaking space &nbsp;-->
+            <button type="submit">Soumettre</button>&nbsp;
+            <button type="reset">Réinitialiser</button>
+        </form>
+
+    </main>
+    <!--Pied de page-->
+    <footer class="pied-de-page">
+        <p><em>&copy; 2022 - Skatcha.ca - Tous droits réservés.</em></p>
+        <p>Référence disponible sur demande</p>
+    </footer>
+</body>
+
+</html>

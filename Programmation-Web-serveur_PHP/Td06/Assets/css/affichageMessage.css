@@ -1,0 +1,11 @@
+.estErreur {
+    color: red;
+}
+
+.estOk {
+    color: green;
+}
+
+.estAvertissement {
+    color: orange;
+}

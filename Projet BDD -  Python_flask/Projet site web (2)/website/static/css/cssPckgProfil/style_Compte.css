@@ -1,0 +1,279 @@
+/*ajouter un rythme entre l'êtete et le main*/
+header+main{
+    margin-top: 10vw;
+}
+section {
+    display: block;
+}
+
+.section-masque {
+    display: none;
+}
+
+.section-affiche {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+h2{
+    margin: 0;
+    padding-bottom: 0.25rem;
+}
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+main>*,
+.masquer-profil,
+.masquer-profil button {
+    border-radius: 5px;
+}
+
+
+/*Donner un rythme à tous les enfants du compte sauf le premier*/
+
+.compte>*+* {
+    padding: 0.5rem;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.compte>section:nth-child(1) {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.masquer-profil button {
+    right: 0%;
+    position: absolute;
+    top: 0%;
+    height: 75%;
+    border: none;
+}
+
+
+/*
+*   3ème et 4ème élement de la grille compte: Détail du compte *
+*/
+
+
+/*prendre une ligne complete*/
+
+.ligne-complete {
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.compte>section:nth-child(2),
+.compte>section:nth-child(3),
+.compte>section:nth-child(4) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compte>section:nth-child(2)>*,
+.compte>section:nth-child(3)>*,
+.compte>section:nth-child(4)>* {
+    flex-shrink: 0;
+    /*width: 100%;*/
+    max-width: 100%;
+    padding: 0.25em;
+}
+
+@media (min-width: 768px) {
+    .compte>section:nth-child(3) section,
+    .compte>section:nth-child(4) section {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.compte>section:nth-child(3) section>label,
+.compte>section:nth-child(4) section>label {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.compte>section:nth-child(3) section>input,
+.compte>section:nth-child(4) section>input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 200;
+    line-height: 1;
+    color: #29292e;
+    background-color: #f3f6f3;
+    background-clip: padding-box;
+    border-bottom: 2px solid #9e9e9e;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #9e9e9e;
+    appearance: none;
+    border-radius: 5px;
+}
+
+.compte>section:nth-child(4) section>select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 200;
+    line-height: 1;
+    color: #29292e;
+    background-color: #f3f6f3;
+    background-clip: padding-box;
+    border-bottom: 2px solid #9e9e9e;
+    appearance: none;
+    border-radius: 5px;
+}
+
+
+/*
+*   5ème élement de la grille compte: adresse *
+*/
+
+.compte>section:nth-child(5) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compte>section:nth-child(5)>* {
+    max-width: 100%;
+    padding: 0.55em;
+}
+
+.compte>section:nth-child(5) section>label {
+    margin-bottom: 0.5rem;
+}
+
+.compte>section:nth-child(5) section>input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 200;
+    line-height: 1;
+    color: #29292e;
+    background-color: #f3f6f3;
+    background-clip: padding-box;
+    border-bottom: 2px solid #9e9e9e;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #9e9e9e;
+    appearance: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .compte>section:nth-child(5) section {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .compte>section:nth-child(5) section:last-child {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+
+/*
+* Dernier élement de la grille compte: boutton de mise à jour *
+*/
+
+@media (min-width: 768px) {
+    .compte>section:last-child {
+        display: flex;
+        text-align: center;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+}
+
+.compte>section:last-child {
+    padding: 0.5rem;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.compte>section:last-child button {
+    padding: 0.25rem 1rem;
+    /*font-weight: bold;*/
+    font-size: 1.25rem;
+    border-radius: 15px;
+    /*0.5rem;*/
+    color: #3d3c3c;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+/*Photos de profil*/
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+}
+.photo img{
+    object-fit: cover;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo img{
+    border: 1px solid var(--neutral);
+    /*padding: 0.25vw;*/
+    color: var(--grise);
+    background-color: var(--neutral);
+}
+
+#addPhoto{
+    background-color: var(--neutral);
+    color: var(--grise);
+    margin-top: 2vw;
+    /*transform: translate(0, 38px);*/
+    padding: 1vw;
+    width: 100%;
+    height: 4vw;
+    border: none;
+    transition: background-color 0.2s;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.compte>section:nth-child(2)>*{
+    margin-top: 1vw;
+}
+#photoProfil{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 200;
+    line-height: 1;
+    color: #29292e;
+}
+
+.delete-compte, .modifier_profil, .modif_enregistrer{
+    visibility:hidden;
+}

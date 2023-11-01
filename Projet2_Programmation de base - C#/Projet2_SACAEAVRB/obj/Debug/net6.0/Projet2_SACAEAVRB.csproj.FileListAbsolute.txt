@@ -1,0 +1,15 @@
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.csproj.AssemblyReference.cache
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.AssemblyInfoInputs.cache
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.AssemblyInfo.cs
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.csproj.CoreCompileInputs.cache
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\bin\Debug\net6.0\Projet2_SACAEAVRB.exe
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\bin\Debug\net6.0\Projet2_SACAEAVRB.deps.json
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\bin\Debug\net6.0\Projet2_SACAEAVRB.runtimeconfig.json
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\bin\Debug\net6.0\Projet2_SACAEAVRB.dll
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\bin\Debug\net6.0\Projet2_SACAEAVRB.pdb
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.dll
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\refint\Projet2_SACAEAVRB.dll
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.pdb
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\Projet2_SACAEAVRB.genruntimeconfig.cache
+\\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\1.A2022\1.Session-1\2.Programmation-de-base\2. Projets\Projet 2\Projet2_SACAEAVRB\Projet2_SACAEAVRB\obj\Debug\net6.0\ref\Projet2_SACAEAVRB.dll

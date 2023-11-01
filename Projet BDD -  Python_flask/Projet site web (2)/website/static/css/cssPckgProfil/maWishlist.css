@@ -1,0 +1,177 @@
+img {
+    max-width: 100%;
+}
+
+.ma-wishlist {
+    margin: 0;
+    padding: 5vw;
+}
+
+.ma-wishlist section {
+    margin-top: 2.5vw;
+}
+
+
+/* Scroling card ref: https://codepen.io/tutsplus/pen/MWVgQNO*/
+
+@media (min-width: 700px) {
+    .cards {
+        grid-auto-columns: calc(calc(100% / 3) - 20px);
+        grid-column-gap: 30px;
+    }
+}
+
+@media (min-width: 500px) {
+    .cards {
+        grid-auto-columns: calc(50% - 10px);
+        grid-column-gap: 20px;
+    }
+}
+
+.cards{
+    border-radius: 15px;
+}
+.cards {
+    display: grid;
+    /*grid-auto-columns: 100%;
+    grid-column-gap: 10px;*/
+    grid-column-gap: 2vw;
+    grid-auto-flow: column;
+    /*padding: 25px 0px;*/
+    padding: 15px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--grise);
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--secondaire);
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /*padding: 20px;
+    padding: 0.25vw;*/
+    background: var(--primaire);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+
+/*Mise en forme des article*/
+
+.ma-wishlist>section>div article,
+.annonces-reservees>section>section>div article{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*Titre de l'annonce*/
+
+.ma-wishlist>section>div article>a,
+.annonces-reservees>section>section>div article>a {
+    text-decoration: none;
+}
+
+.ma-wishlist>section>div>article>a picture,
+.annonces-reservees>section>section>div>article>a picture{
+    display: flex;
+    height: 30vh;
+    min-height: 250px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ma-wishlist article>a>picture>img,
+.annonces-reservees>section article>a>picture>img{
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.type-points {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.type-points h3,
+.type-points p {
+    flex: 0 0 auto;
+    font-size: 1em;
+    letter-spacing: .03em;
+}
+
+.type-points h3,
+.type-points h4  {
+    width: calc(100% - 2/3);
+}
+
+.type-points p {
+    width: calc(100% - 1/3);
+}
+
+.type-points>* {
+    max-width: 100%;
+}
+
+.tuile form:last-child button{
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* Autres */
+
+.ma-wishlist *,.annonces-achats>section * {
+    /*background-color: rgba(0, 80, 20, .04);
+    outline: 1px dashed seagreen;*/
+    box-sizing: border-box;
+}
+
+
+/*Enlever les puces de la liste*/
+
+.ma-wishlist li, annonces-achats>section li {
+    list-style-type: none;
+}
+
+.ma-wishlist .tuile>form>button{
+        background-color: var(--secondaire);
+        color: var(--grise);
+}

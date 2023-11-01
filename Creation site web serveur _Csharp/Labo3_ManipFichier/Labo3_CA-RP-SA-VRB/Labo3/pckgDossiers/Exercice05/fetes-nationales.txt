@@ -1,0 +1,5 @@
+﻿Canada;1867/07/01     Confédération
+U.S.A.;1776/07/04     Independance day
+France;1789/07/14     Prise de la Bastille
+Cuba;1959/01/01     Prise du pouvoir par Fidel Castro
+Mexique;1810/08/16     Grito de Dolores

@@ -1,0 +1,6 @@
+﻿Albert    87
+Beatrice  95
+Cléo      65
+Alber     87
+Beatrice  95
+Cloo      65

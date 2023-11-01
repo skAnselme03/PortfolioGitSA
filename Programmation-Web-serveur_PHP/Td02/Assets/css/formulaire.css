@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>*+* {
+    margin-top: 2vw;
+}
+
+textarea {
+    padding: 4vw;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(246, 245, 241);
+}
+
+.wrap_phrase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap_phrase>*+* {
+    margin-top: 1.5vw;
+}
+
+.wrap_phrase>* {
+    flex-basis: 100%;
+}
+
+.wrap_phrase label {
+    text-align: left;
+}

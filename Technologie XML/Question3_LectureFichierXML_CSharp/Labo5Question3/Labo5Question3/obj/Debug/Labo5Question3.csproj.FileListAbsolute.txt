@@ -1,0 +1,7 @@
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\obj\Debug\Labo5Question3.csproj.AssemblyReference.cache
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\obj\Debug\Labo5Question3.csproj.CoreCompileInputs.cache
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\bin\Debug\Labo5Question3.exe.config
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\bin\Debug\Labo5Question3.exe
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\bin\Debug\Labo5Question3.pdb
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\obj\Debug\Labo5Question3.exe
+C:\Users\stephaniejob\Documents\2.TechXML\ExamFinal\Labo5Question3\Labo5Question3\obj\Debug\Labo5Question3.pdb

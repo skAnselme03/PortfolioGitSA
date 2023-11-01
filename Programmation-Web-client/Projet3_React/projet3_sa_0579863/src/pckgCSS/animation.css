@@ -1,0 +1,28 @@
+/*Animation navigation*/
+.entete .link {
+
+	color: var(--floral-white);
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+.entete .link + .link {
+    margin-left: 25px;
+}
+.entete .link--underline {
+    transition: color .3s ease;
+}
+.entete .link--underline--right::after {
+    right: 0;
+    transition: width .3s ease;
+    width: 0;
+}
+
+.entete .link--underline::after {
+    content: "";
+    background-color: var(--flame);
+    bottom: -4px;
+    height: 6px;
+    position: absolute;
+    z-index: -1;
+}

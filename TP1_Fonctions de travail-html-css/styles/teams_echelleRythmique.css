@@ -1,0 +1,93 @@
+/*------------- ECHELLE RYTHMIQUE -------------*/
+
+.contenu_principal-teams * {
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+
+/*Application de rythme plus lache à tous les premier éléments enfants directs de toute balise "section"*/
+
+.contenu_principal-teams section>:first-child {
+    margin-top: 2em;
+    margin-bottom: 24px;
+}
+
+
+/* Appliquer d'un rythme vertical à tous les éléments ayant un voisin précédent et qui sont descendants de la classe contenu_principal-teams. */
+
+.contenu_principal-teams *+* {
+    margin-top: 24px;
+}
+
+
+/*Espacement vertical accrue de la balise figure*/
+
+.contenu_principal-teams figure {
+    border-style: thin solid;
+    border-radius: 1.5em;
+    float: right;
+    margin: 0;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    width: 25%;
+}
+
+
+/* Appliquer un rythme vertical plus « lâche » à 
+   tous les éléments et qui sont enfants directs de la classe « .contenu_principal-teams »  */
+
+.contenu_principal-teams>* {
+    margin-top: 2.5em;
+}
+
+
+/* Appliquer un espace de sécurité spécifique 
+   à toutes les listes étant descendantes de la classe "contenu_principal-teams" */
+
+.contenu_principal-teams ul,
+.contenu_principal-teams ol {
+    padding-left: 1.5em;
+}
+
+.contenu_principal-teams aside {
+    float: right;
+    width: 60%;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: -30rem;
+    margin-top: -15em;
+}
+
+.contenu_principal-teams aside p {
+    padding-left: 0rem;
+    padding-bottom: 0.3125em;
+    margin-top: 1rem;
+    margin-left: 0.3125em;
+}
+
+[id="formation"] aside {
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-right: -5rem;
+    margin-top: -5em;
+}
+
+[id="formation"] aside p {
+    padding-left: 0rem;
+    padding-bottom: 0.1em;
+    margin-top: 0.01rem;
+    margin-left: 0.1em;
+}
+
+[id="formation"] aside {
+    width: 35%;
+}
+
+.contenu_principal-teams {
+    float: right;
+}
+
+.contenu_principal-teams ol.ligne-du-temps>li>.date {
+    margin-left: .1em;
+    padding-bottom: 1em;
+}

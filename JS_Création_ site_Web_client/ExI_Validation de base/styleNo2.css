@@ -1,0 +1,120 @@
+﻿body {
+    font-family: verdana;
+    font-size: 13pt;
+    color: Black;
+}
+
+.sTexteCentre {
+    text-align: center;
+}
+
+.sLargeurDiv {
+    width: 420px;
+    padding-left: 10px;
+}
+
+.sEntete {
+    background-color: #DDDDDD;
+    margin-bottom: 5px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.sCorps {
+    padding-left: 70px;
+}
+
+.sPiedDePage {
+    clear: both;
+    background-color: #DDDDDD;
+    font-size: 90%;
+    margin-top: 5px;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+.sTitreApp {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.sTitreSection {
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sAuteurApp {
+    font-size: 110%;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sPetitsCaracteres {
+    font-size: 60%;
+}
+
+.sCouleurFondZoneDeTexteNormal {
+    background-color: #DDDDDD;
+}
+
+.sComparaison {
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    text-align: right;
+    font-weight: bold;
+    font-size: 70%;
+    width: 90%;
+}
+
+input[type="button"] {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 70%;
+}
+
+input[type="text"]:focus {
+    border-style: outset;
+}
+
+td {
+    width: 75px;
+}
+
+a:link {
+    color: Black;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+a:visited {
+    color: Red;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+a:hover {
+    color: Green;
+    text-decoration: underline;
+    font-size: 70%;
+}
+
+a:link img,
+a:visited img {
+    border: none;
+}
+
+a:hover img {
+    border-style: double;
+    border-width: 2px;
+    border-color: Green;
+}
+
+.sNonverdict {
+    color: red;
+}

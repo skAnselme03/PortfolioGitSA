@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Labo5
+build_property.ProjectDir = \\Mac\Bureau\Perso\ETS\0.3.FORMATION\AEC\TI\CGodin\2.H2023\1.Session-1\2.Créa-SW-Server\5,6.Git_Lab & Projets\420-107-GG_Git_Labs-Projets\5. Labo\SA\Labo5_LINQ\Labo5\Labo5\

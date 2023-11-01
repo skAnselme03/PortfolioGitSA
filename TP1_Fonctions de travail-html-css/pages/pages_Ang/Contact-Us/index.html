@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="S. Anselme">
+    <meta name="Description" content="TP #1 - Develop the Katchasa website">
+    <!-- Fichier de style pour la page principale -->
+    <link rel="stylesheet" href="/TP1/styles/main.css">
+    <link rel="stylesheet" href="/TP1/styles/acceuil.css">
+    <!-- Style de caractères-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+
+    <link href="//db.onlinewebfonts.com/c/f6b2dec03f7e464e83bdde8368e1ee0b?family=Leitura+News" rel="stylesheet" type="text/css" />
+    <title>Katchasa.ca/Contact-Us</title>
+</head>
+
+<body>
+    <!--Entête principale-->
+    <div class="entete-principal">
+        <!--Entête-->
+        <header>
+            <img class="photoPerso" src="/TP1/assets/img/PierreEmpilé.jpeg" alt="Photo taken in 2020 by Skatcha.ca">
+            <h1>Katchasa.ca</h1>
+            <h2>Freelance web development</h2>
+
+        </header>
+        <!--Navigation principale-->
+        <nav class="navigation-principale">
+            <!--<input type="checkbox" aria-label="chekbox">-->
+            <div>
+                <a href="../index.html">Home</a>
+                <a href="../Projects/index.html">Project</a>
+                <a href="../Teams/index.html">Our Teams</a>
+                <a href="./index.html">Contact us</a>
+                <a href="../Survey/index.html">Survey</a>
+                <a href="/TP1/pages/pages_Fr/Contactez-Nous/index.html" class="pageAnglais">French</a>
+            </div>
+        </nav>
+    </div>
+    <!--Contenue principale-->
+    <main class="contenu-principal_form">
+        <h2>Contact Us</h2>
+        <p>Please write to us with any questions or comments. We look forward to hearing from you.</p>
+
+        <form method="POST" action="mailto:info@katchasa.ca" class="container_form">
+            <fieldset>
+                <label for="nom">Name</label> <input aria-label="nom" type="text" name="nom" id="nom" placeholder="Your full name">
+                <label for="courriel">Email</label> <input type="text" name="courriel" id="courriel" placeholder="Email">
+                <label for="objetCouriel">Object</label> <input aria-label="objetCouriel" type="text" name="objetCouriel" id="objetCouriel" placeholder="Object">
+                <label for="messageEnv">Message</label>
+                <textarea name="messageEnv" id="messageEnv" cols="10" rows="20" placeholder="Message here" aria-label="messageEnv"></textarea>
+
+                <input type="checkbox" name="abonnement" id="abonnement">
+                <label for="abonnement">Subscribe to our newsletter.</label>
+            </fieldset>
+            <br>
+            <!--Non breaking space &nbsp;-->
+            <button type="submit" class="boutton" id="boutton">Submit</button>&nbsp;
+            <button type="reset">Reset</button>
+        </form>
+
+    </main>
+    <!--Pied de page-->
+    <footer class="pied-de-page">
+        <p><em>&copy; 2022 - Skatcha.ca - All rights reserved.</em></p>
+        <p>Reference available on demand</p>
+    </footer>
+</body>
+
+</html>

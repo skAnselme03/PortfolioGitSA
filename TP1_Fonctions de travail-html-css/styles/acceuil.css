@@ -1,0 +1,66 @@
+.contenu-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.contenu-principal>p {
+    padding: 12px;
+}
+
+.contenu-principal>ul {
+    list-style: square;
+    /*Décoller la liste des bordures de son conteneur*/
+    padding: 1rem;
+}
+
+.contenu-principal>ul>li {
+    margin-left: 24px;
+}
+
+.contenu-principal>div {
+    gap: 24px;
+    flex-grow: 1;
+    flex-basis: calc(72px / 3 * 2);
+}
+
+.contenu-principal>div>p {
+    padding: 12px;
+}
+
+
+/*Typographie*/
+
+.contenu-principal {
+    font-weight: 400;
+}
+
+.contenu-principal>p>span,
+aside>p {
+    font-family: "leitura-news-1", "leitura-news-2", Georgia, Times New Roman, serif;
+}
+
+aside>p {
+    font-size: 1em;
+}
+
+.contenu-principal>p>span {
+    font-size: 72px;
+}
+
+.contenu-principal>div:first-child {
+    font-size: 72px;
+}
+
+main>h2 {
+    font-size: 2.5em;
+    font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, Times New Roman, serif;
+}
+
+
+/*--- Paramètre de couleur ---*/
+
+main>h2 {
+    color: rgb(77, 77, 77);
+}

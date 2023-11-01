@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="S. Anselme">
+    <meta name="Description" content="TP #1 - Develop the Katchasa website">
+    <!-- Fichier de style pour la page principale -->
+    <link rel="stylesheet" href="/TP1/styles/main.css">
+    <link rel="stylesheet" href="/TP1/styles/acceuil.css">
+    <!-- Style de caractères-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+
+    <link href="//db.onlinewebfonts.com/c/f6b2dec03f7e464e83bdde8368e1ee0b?family=Leitura+News" rel="stylesheet" type="text/css" />
+    <title>Katchasa.ca/Survey</title>
+</head>
+
+<body>
+    <div class="entete-principal">
+        <!--Entête-->
+        <header>
+            <img class="photoPerso" src="/TP1/assets/img/PierreEmpilé.jpeg" alt="Photo taken in 2020 by Skatcha.ca">
+            <h1>Katchasa.ca</h1>
+            <h2>Freelance web development</h2>
+
+        </header>
+        <!--Navigation principale-->
+        <nav class="navigation-principale">
+            <!--<input type="checkbox" aria-label="chekbox">-->
+            <div>
+                <a href="../index.html">Home</a>
+                <a href="../Projects/index.html">Project</a>
+                <a href="../Teams/index.html">Our Teams</a>
+                <a href="../Contact-Us/index.html">Contact us</a>
+                <a href="./index.html">Survey</a>
+                <a href="/TP1/pages/pages_Fr/Questionnaire/index.html" class="pageAnglais">French</a>
+            </div>
+        </nav>
+    </div>
+    <!--Contenue principale-->
+    <main class="contenu-principal_survey">
+        <h2>Survey</h2>
+        <br>
+        <form method="post" action="mailto:ska.anss.01@gmail.com" class="container_form">
+            <fieldset>
+                <table class="table_questionnaire">
+                    <tr>
+                        <th class="table_questionnaire-entete" colspan="2">Customer Informations</th>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="nom">Last name : </label>&nbsp;
+                            <input aria-label="nom" type="text" name="nom" id="nom">
+                        </td>
+                        <td class="table_questionnaire-champ">
+                            <input type="radio" id="monsieur" name="monsieur">
+                            <label aria-label="monsieur" for="monsieur">Mr.</label>&nbsp;
+
+                            <input type="radio" id="madame" name="madame">
+                            <label aria-label="madame" for="madame">Ms.</label>&nbsp;
+
+                            <input type="radio" id="docteur" name="docteur">
+                            <label aria-label="docteur" for="docteur">Dr.</label>&nbsp;
+
+                            <input type="radio" id="autres" name="autres">&nbsp;
+                            <label for="autres">Others</label>&nbsp;
+                            <input aria-label="autres" type="text" id="autres" name="autres">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="prenom">First name : </label>&nbsp;
+                            <input aria-label="prenom" type="text" name="prenom" id="prenom">
+                        </td>
+                        <td>
+                            <label for="date_naissance">Birth date (MM/JJ/AAAA) : </label>&nbsp;
+                            <input aria-label="date_naissance" type="text" name="date_naissance" id="date_naissance">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="secPrenom">Middle name : </label>&nbsp;
+                            <input aria-label="secPrenom" type="text" name="secPrenom" id="secPrenom">
+                        </td>
+                        <td class="table_questionnaire-champ">
+                            <label aria-label="sexe" for="sexe">Gender : </label>&nbsp;
+
+                            <input type="radio" id="homme" name="homme">
+                            <label aria-label="homme" for="homme">Man</label>&nbsp;
+
+                            <input type="radio" id="madame" name="madame">
+                            <label aria-label="madame" for="madame">Women</label>&nbsp;
+
+                            <input type="radio" id="nonidentifie" name="nonidentifie">
+                            <label aria-label="nonidentifie" for="nonidentifie">Unidentified</label>&nbsp;
+                        </td>
+                    </tr>
+                    <!-- Statut relationnel -->
+                    <tr>
+                        <td class="table_questionnaire-champ" colspan="2">
+                            <label aria-label="statutRelationnel" for="statutRelationnel">Relationship status : </label>&nbsp;
+
+                            <input type="radio" id="celibataire" name="celibataire">
+                            <label aria-label="celibataire" for="celibataire">Single</label>&nbsp;
+
+                            <input type="radio" id="enCoupple" name="enCoupple">
+                            <label aria-label="enCoupple" for="enCoupple">In couple</label>&nbsp;
+
+                            <input type="radio" id="marie" name="marie">
+                            <label aria-label="marie" for="marie">Married</label>&nbsp;
+
+                            <input type="radio" id="separeDivorce" name="separeDivorce">
+                            <label aria-label="separeDivorce" for="separeDivorce">Separated or divorced</label>&nbsp;
+
+                            <input type="radio" id="veuf" name="veuf">
+                            <label aria-label="veuf" for="veuf">Widower</label>&nbsp;
+                        </td>
+                    </tr>
+                    <!-- Addresse -->
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="adresse">Address : </label>&nbsp;
+                            <input aria-label="adresse" type="text" name="adresse" id="adresse">
+                        </td>
+                        <td class="table_questionnaire-champ">
+                            <label for="courriel">Email : </label>&nbsp;
+                            <input aria-label="courriel" type="text" name="courriel" id="courriel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="ville">City : </label>&nbsp;
+                            <input aria-label="ville" type="text" name="ville" id="ville">
+                        </td>
+                        <!-- &#xBA; -> Encodage Ascii de: ° -->
+                        <td class="table_questionnaire-champ">
+                            <label for="telMaison">Home N&#xBA; : </label>&nbsp;
+                            <input aria-label="telMaison" type="text" name="telMaison" id="telMaison">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="Province">State : </label>&nbsp;
+                            <input aria-label="Province" type="text" name="Province" id="Province">
+                        </td>
+                        <!-- &#xBA; -> Encodage Ascii de: ° -->
+                        <td class="table_questionnaire-champ">
+                            <label for="cellulaire">Cell N&#xBA; : </label>&nbsp;
+                            <input aria-label="cellulaire" type="text" name="cellulaire" id="cellulaire">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <label for="codePostal">Zip code : </label>&nbsp;
+                            <input aria-label="codePostal" type="text" name="codePostal" id="codePostal">
+                        </td>
+                        <!-- &#xBA; -> Encodage Ascii de: ° -->
+                        <td class="table_questionnaire-champ">
+                            <label for="telTravail">Work N&#xBA; : </label>&nbsp;
+                            <input aria-label="telTravail" type="text" name="telTravail" id="telTravail">
+                        </td>
+                    </tr>
+                    <!-- Autres infos -->
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <legend>The above address means : </legend>
+                            <br>
+                            <input type="radio" id="maison" name="maison">
+                            <label aria-label="maison" for="maison">Home</label>&nbsp;
+                            <input type="radio" id="hopital" name="hopital">
+                            <!-- &ocirc; -> Encodage ascii « ô »  -->
+                            <label aria-label="hopital" for="hopital">Hospital</label>&nbsp;
+                            <input type="radio" id="soinsLongDuree" name="soinsLongDuree">
+                            <label aria-label="soinsLongDuree" for="soinsLongDuree">Long-term care</label>&nbsp;
+                            <input type="radio" id="autreAddDes" name="autreAddDes">
+                            <label aria-label="autreAddDes" for="autreAddDes">Other</label>&nbsp;
+                        </td>
+                        <!-- &#xBA; -> Encodage Ascii de: ° -->
+                        <td class="table_questionnaire-champ">
+                            <legend>Do you live alone?</legend>
+                            <br>
+                            <input type="radio" id="oui" name="oui">
+                            <label aria-label="oui" for="oui">Yes</label>&nbsp;
+                            <input type="radio" id="non" name="non">
+                            <label aria-label="non" for="non">No</label>&nbsp;
+                        </td>
+                    </tr>
+
+                    <!-- Préférence langues et mode de communication -->
+
+                    <tr>
+                        <td class="table_questionnaire-champ">
+                            <legend>Preferred Language : </legend>
+                            <br>
+                            <input type="radio" id="langAnglais" name="langAnglais">
+                            <label aria-label="langAnglais" for="langAnglais">English</label>&nbsp;
+                            <input type="radio" id="langFrancais" name="langFrancais">
+                            <label aria-label="langFrancais" for="langFrancais">French</label>&nbsp;
+                            <input type="radio" id="langAutr" name="langAutr">
+                            <label aria-label="langAutr" for="langAutr">Other : </label>&nbsp;
+                            <input aria-label="langAutr" type="text" id="langAutre">
+                        </td>
+                        <!-- &#xBA; -> Encodage Ascii de: ° -->
+                        <td class="table_questionnaire-champ">
+                            <legend>Preferred communication mode : </legend>
+                            <br>
+                            <input type="radio" id="oui" name="oui">
+                            <label aria-label="oui" for="oui">Yes</label>&nbsp;
+                            <input type="radio" id="non" name="non">
+                            <label aria-label="non" for="non">No</label>&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <!--Non breaking space &nbsp;-->
+            <input type="checkbox" name="abonnement" id="abonnement">
+            <label for="abonnement">Subscribe to our newsletter.</label>
+
+
+            <!--Non breaking space &nbsp;-->
+            <button type="submit" class="boutton" id="boutton" value="">Submit</button>&nbsp;
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    <!--Pied de page-->
+    <footer class="pied-de-page">
+        <p><em>&copy; 2022 - Skatcha.ca - All rights reserved.</em></p>
+        <p>Reference available on demand</p>
+    </footer>
+</body>
+
+</html>

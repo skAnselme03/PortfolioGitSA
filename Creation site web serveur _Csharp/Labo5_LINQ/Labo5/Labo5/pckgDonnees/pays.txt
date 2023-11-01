@@ -1,0 +1,197 @@
+﻿Russie	Europe	17 098 200
+Canada	Amérique	9 984 670
+Chine	Asie	9 598 000
+Etats-Unis	Amérique	9 371 180
+Brésil	Amérique	8 514 880
+Australie	Océanie	7 692 060
+Inde	Asie	3 287 260
+Argentine	Amérique	2 780 400
+Kazakhstan	Asie	2 724 910
+Algérie	Afrique	2 381 740
+République Démocratique du Congo	Afrique	2 344 860
+Danemark	Europe	2 210 570
+Arabie Saoudite	Asie	2 149 680
+Mexique	Amérique	1 964 380
+Indonésie	Asie	1 910 930
+Soudan	Afrique	1 861 480
+Libye	Afrique	1 759 540
+Iran	Asie	1 648 200		
+Mongolie	Asie	1 564 100
+Pérou	Amérique	1 285 220
+Tchad	Afrique	1 284 000
+Niger	Afrique	1 267 000
+Angola	Afrique	1 246 700
+Mali	Afrique	1 241 240
+Afrique du Sud	Afrique	1 221 040
+Colombie	Amérique	1 141 750
+Ethiopie	Afrique	1 104 300
+Bolivie	Amérique	1 098 580
+Mauritanie	Afrique	1 025 520
+Egypte	Afrique	1 002 450
+Tanzanie	Afrique	945 087
+Nigeria	Afrique	923 768
+Venezuela	Amérique	912 050
+Namibie	Afrique	824 268
+Mozambique	Afrique	801 590
+Pakistan	Asie	796 095
+Turquie	Asie	783 562
+Chili	Amérique	756 102
+Zambie	Afrique	752 612
+Birmanie	Asie	676 578
+Afghanistan	Asie	652 090
+France	Europe	640 597
+Somalie	Afrique	637 657
+République Centrafricaine	Afrique	622 984
+Soudan du Sud	Afrique	619 745
+Ukraine	Europe	603 500
+Madagascar	Afrique	587 041
+Botswana	Afrique	582 000
+Kenya	Afrique	580 367
+Yémen	Asie	527 968		
+Thaïlande	Asie	513 120
+Espagne	Europe	505 992
+Turkménistan	Asie	488 100
+Cameroun	Afrique	475 442
+Papouasie-Nouvelle-Guinée	Océanie	462 840
+Suède	Europe	450 295
+Ouzbékistan	Asie	447 400
+Maroc	Afrique	446 550
+Irak	Asie	435 244
+Paraguay	Amérique	406 752
+Zimbabwe	Afrique	390 757
+Japon	Asie	377 930
+Allemagne	Europe	357 021
+Congo	Afrique	342 000
+Finlande	Europe	338 424
+Viêt Nam	Asie	331 212
+Malaisie	Asie	330 803
+Norvège	Europe	323 782
+Côte d'Ivoire	Afrique	322 463
+Pologne	Europe	312 685
+Oman	Asie	309 500
+Italie	Europe	301 336
+Philippines	Asie	300 000
+Burkina Faso	Afrique	272 967
+Nouvelle-Zélande	Océanie	270 469
+Gabon	Afrique	267 668
+Equateur	Amérique	256 369
+Guinée	Afrique	245 857
+Royaume-Uni	Europe	242 900
+Ouganda	Afrique	241 550
+Ghana	Afrique	238 533
+Roumanie	Europe	238 391
+Laos	Asie	236 800
+Guyana	Amérique	214 969
+Biélorussie	Europe	207 600
+Kirghizistan	Asie	199 951
+Sénégal	Afrique	196 722
+Syrie	Asie	185 180
+Cambodge	Asie	181 035
+Uruguay	Amérique	176 215
+Suriname	Amérique	163 820
+Tunisie	Afrique	163 610
+Népal	Asie	147 181
+Bangladesh	Asie	143 998
+Tadjikistan	Asie	143 100
+Grèce	Europe	131 957
+Nicaragua	Amérique	130 373
+Corée du Nord	Asie	120 538
+Malawi	Afrique	118 484
+Erythrée	Afrique	117 600		
+Bénin	Afrique	114 763
+Honduras	Amérique	112 492
+Liberia	Afrique	111 369
+Bulgarie	Europe	110 879
+Cuba	Amérique	109 886
+Guatemala	Amérique	108 889
+Islande	Europe	103 000
+Corée du Sud	Asie	99 828
+Hongrie	Europe	93 028
+Portugal	Europe	92 090
+Jordanie	Asie	89 342
+Serbie	Europe	88 361
+Azerbaïdjan	Asie	86 600
+Autriche	Europe	83 871
+Emirats Arabes Unis	Asie	83 600
+République Tchèque	Europe	78 865
+Panama	Amérique	75 417
+Sierra Leone	Afrique	71 740
+Irlande	Europe	70 273
+Géorgie	Asie	69 700
+Sri Lanka	Asie	65 610
+Lituanie	Europe	65 300
+Lettonie	Europe	64 559
+Togo	Afrique	56 785
+Croatie	Europe	56 594
+Bosnie-Herzégovine	Europe	51 197
+Costa Rica	Amérique	51 100
+Slovaquie	Europe	49 037
+République Dominicaine	Amérique	48 671
+Estonie	Europe	45 227
+Pays-Bas	Europe	41 540
+Suisse	Europe	41 277
+Bhoutan	Asie	38 394
+Taïwan	Asie	36 191
+Guinée-Bissau	Afrique	36 125
+Moldavie	Europe	33 846
+Belgique	Europe	30 528
+Lesotho	Afrique	30 355
+Arménie	Asie	29 743
+Salomon	Océanie	28 896
+Albanie	Europe	28 748
+Guinée équatoriale	Afrique	28 051
+Burundi	Afrique	27 834
+Haïti	Amérique	27 750
+Rwanda	Afrique	26 338
+Macédoine	Europe	25 713
+Djibouti	Afrique	23 200
+Belize	Amérique	22 966
+Israël	Asie	22 072
+Salvador	Amérique	21 041	
+Slovénie	Europe	20 273
+Fidji	Océanie	18 272
+Koweït	Asie	17 818
+Swaziland	Afrique	17 364
+Timor-Oriental	Océanie	14 874
+Bahamas	Amérique	13 943
+Monténégro	Europe	13 812
+Vanuatu	Océanie	12 189
+Qatar	Asie	11 586
+Gambie	Afrique	11 295
+Jamaïque	Amérique	10 991
+Kosovo	Europe	10 887
+Liban	Asie	10 452
+Chypre	Europe	9 251
+Palestine	Asie	6 520
+Brunei	Asie	5 765
+Trinité-et-Tobago	Amérique	5 130
+Cap-Vert	Afrique	4 033
+Samoa	Océanie	2 842
+Luxembourg	Europe	2 586
+Comores	Afrique	2 170
+Île Maurice	Afrique	2 040
+São Tomé et Príncipe	Afrique	964
+Bahreïn	Asie	758
+Dominique	Amérique	751
+Tonga	Océanie	747
+Kiribati	Océanie	726
+Singapour	Asie	710
+Micronésie	Océanie	702
+Sainte-Lucie	Amérique	539
+Andorre	Europe	468
+Palaos	Océanie	459
+Seychelles	Afrique	452
+Antigua-et-Barbuda	Amérique	442
+Barbade	Amérique	430
+Saint-Vincent-et-les-Grenadines	Amérique	389
+Grenade	Amérique	344
+Malte	Europe	316
+Maldives	Asie	300
+Saint-Kitts-et-Nevis	Amérique	261
+Marshall	Océanie	181
+Liechtenstein	Europe	160
+Saint-Marin	Europe	61
+Tuvalu	Océanie	26
+Nauru	Océanie	21
+Monaco	Europe	2
+Vatican	Europe	1

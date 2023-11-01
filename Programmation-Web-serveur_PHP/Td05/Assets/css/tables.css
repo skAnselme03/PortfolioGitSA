@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2vw;
+}
+
+table th,
+table td {
+    border: 1px solid rgb(249, 189, 77);
+    padding: 2vw;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(241, 238, 235);
+}
+
+table tr:hover {
+    background-color: rgb(245, 209, 144);
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: orange;
+    text-transform: uppercase;
+}
+
+table .lien {
+    /* Réactive la décoration en soulignant le texte */
+    text-decoration: underline;
+}
+
+table .lien_voir {
+    padding: 0;
+    background-color: transparent;
+}
+
+
+/* table>tbody>tr>td {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+table>tbody>tr>td section>form {
+    width: 50%;
+} */
+
+table .method-postOrGet {
+    display: flex;
+}

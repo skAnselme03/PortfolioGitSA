@@ -1,0 +1,10 @@
+.section_acceuil {
+    margin-top: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5vw;
+}
+
+.section_acceuil p {
+    font-size: 6vw;
+}

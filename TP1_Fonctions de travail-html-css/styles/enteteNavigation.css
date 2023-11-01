@@ -1,0 +1,164 @@
+/*Typography------------------*/
+
+.entete-principal h1,
+h2 {
+    font-family: 'Caveat', cursive;
+}
+
+
+/*Entête principale---------------*/
+
+
+/* Alignement du header en haut completement, et du footer en bas completement */
+
+.entete-principal {
+    align-self: flex-start;
+}
+
+.entete-principal {
+    background-color: #2d2d2d;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.entete-principal img {
+    display: block;
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.entete-principal h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+}
+
+.entete-principal h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 6px;
+}
+
+.entete-principal h1,
+h2 {
+    text-align: center;
+    font-weight: 400;
+    color: #dddddd;
+    max-width: max-content;
+}
+
+
+/*Navigation Principal--------*/
+
+.navigation-principale {
+    margin-top: 24px;
+    font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, Times New Roman, serif;
+    font-style: normal;
+    font-weight: 400;
+    flex-basis: 800px;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.navigation-principale a {
+    font-size: 28px;
+    line-height: 221px;
+    letter-spacing: 1px;
+    padding: 0px 25px;
+    color: #dddddd;
+    margin-left: 48px;
+    vertical-align: baseline;
+}
+
+.navigation-principale a:link {
+    color: #dddddd;
+}
+
+.navigation-principale a:active,
+a:focus,
+a:hover {
+    color: #ffbcbc;
+}
+
+
+/*Média (menu hamburger)-----------------*/
+
+@media(max-width: 420px) {
+    .entete-principal>header {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .entete-principal h1,
+    h2 {
+        text-align: center;
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigation-principale {
+        position: absolute;
+        top: 0;
+        right: 0%;
+    }
+    /*menu déroulant*/
+    .navigation-principale>div {
+        position: fixed;
+        padding: 24px;
+        gap: 24px;
+        background-color: #2d2d2d;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 200ms ease-in-out;
+        transition-property: opacity, transform;
+    }
+    .navigation-principale a {
+        display: block;
+    }
+    .navigation-principale>input[type="checkbox"] {
+        display: inline-block;
+        background-color: #dddddd;
+        margin-bottom: 24px;
+        appearance: none;
+        position: relative;
+        z-index: 1;
+    }
+    .navigation-principale>input[type="checkbox"]:before {
+        content: "Fermer le menu";
+        padding: 12px;
+    }
+    .navigation-principale>input[type="checkbox"]:not(:checked):before {
+        content: "Ouvrir le menu";
+    }
+    .navigation-principale>input[type="checkbox"]:not(:checked)+div {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.5) translate(-100%, -100%);
+    }
+}
+
+@media(min-width: 420px) {
+    .navigation-principale>input {
+        display: none;
+    }
+    .navigation-principale {
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    .navigation-principale a {
+        margin-left: 24px;
+    }
+}

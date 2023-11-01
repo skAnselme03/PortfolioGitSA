@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A" />
+    <title>Petite facture par Stéphanie Anselme</title>
+    <link rel="stylesheet" type="text/css" href="petite-facture.css" />
+    <script type="text/javascript" src="libAjax.js"></script>
+    <script type="text/javascript" src="libUtilitaires.js"></script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Variable globale
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+        var strNomApplication = 'http://424w.cgodin.qc.ca/rjean-julien/Examen3/interroge-bd-examen3.php';
+    </script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Fonction pour enregistrer les commandes dans des cookies (les items commandés et les quantités)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+        function enregistreCommandes() {
+
+            // récupérer les commandes des items
+            for (let i = 1; i <= 10; i++) {
+                // récupérer les commandes des quantité
+                enregistreCookie('ddlNoItem' + i, b('ddlNoItem' + i), 365);
+                //Enregistrer le numéro des items
+                enregistreCookie('ddlQte' + i, b('ddlQte' + i), 365);
+
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Fonction pour récupérer les commandes qui ont été enregistrées dans des cookies
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+        function recupereCommandes() {
+            for (let i = 1; i <= 10; i++) {
+                // récupérer les commandes des items
+                b('ddlNoItem' + i, parseInt(recupereCookie('ddlNoItem' + i)));
+                // récupérer les commandes des quantité
+                b('ddlQte' + i, parseFloat(recupereCookie('ddlQte' + i)));
+                AJAX_recupereDescriptionEtPrixEtAjusteTotaux(i);
+            }
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Module AJAX_recupereDescriptionEtPrixEtAjusteTotaux(ntNoCommande)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+        function AJAX_recupereDescriptionEtPrixEtAjusteTotaux(intNoCommande) {
+            /*
+            |*********************************************************************************************|
+            | Fonction locale  miseAJourFacture(strReponseServeur)
+            |*********************************************************************************************|
+            */
+            function miseAJourFacture(strReponseServeur) {
+                let tabReponseServeur = strReponseServeur.split(';');
+                if (tabReponseServeur[0] == 'ERREUR') {
+                    alert('Erreur dans la transmission des données!');
+                } else {
+                    if (tabReponseServeur[0] != 'No') {
+                        b('lblDescription' + intNoCommande, tabReponseServeur[0]);
+                        b('lblPrix' + intNoCommande, tabReponseServeur[1]);
+                        ajusteSousTotalEtGrandTotal(intNoCommande);
+                    } else {
+                        b('lblDescription' + intNoCommande, 'N/A');
+                        b('lblPrix' + intNoCommande, 'N/A');
+                    }
+                }
+            }
+
+            let strDoneeTransmises;
+            strDoneeTransmises = 'Action=Prix&No=' + b('ddlNoItem' + intNoCommande);
+            requeteServeur(strNomApplication, strDoneeTransmises, miseAJourFacture, true);
+        }
+    </script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | function ajusteSousTotalEtGrandTotal(intNoCommande)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            */
+        function ajusteSousTotalEtGrandTotal(intNoCommande) {
+            let dblsousTotal;
+            let dblTotal;
+            if (b('lblPrix' + intNoCommande) != 'N/A') {
+                dblsousTotal = (b('lblPrix' + intNoCommande) * b('ddlQte' + intNoCommande));
+                b('lblSousTotal' + intNoCommande, dblsousTotal.toFixed(2));
+
+                // Affichage du total
+                if (b('lblTotal') != 'N/A') {
+                    dblTotal = parseFloat(b('lblTotal')) + parseFloat(b('lblSousTotal' + intNoCommande));
+                    b('lblTotal', dblTotal.toFixed(2));
+                } else {
+                    dblTotal = parseFloat(b('lblSousTotal' + intNoCommande));
+                    b('lblTotal', dblTotal.toFixed(2));
+
+                }
+            }
+
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Module AJAX_construitTableauCommandes()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |    En utilisant AJAX, construit, puis affiche le tableau des commandes potentielles.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |*********************************************************************************************|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+        function AJAX_construitTableauCommandes() {
+            /*
+            |------------------------------------------------------------------------------------------|
+            | function construitTableauEnTantQueTel(strFluxListe)
+            |    Contruit en tant que tel, le tableau des commandes.
+            |------------------------------------------------------------------------------------------|
+            */
+            function construitTableauEnTantQueTel(strFluxListe) {
+                var strFlux;
+                strFlux = '<table>';
+                strFlux += '   <tr>';
+                strFlux += '      <th class="sNo">No</th>';
+                strFlux += '      <th class="sNoItem">Item</th>';
+                strFlux += '      <th class="sDescription">Description</th>';
+                strFlux += '      <th class="sPrix">Prix</th>';
+                strFlux += '      <th class="sQte">Quantité</th>';
+                strFlux += '      <th class="sMontantTotal">Sous-total</th>';
+                strFlux += '   </tr>';
+                for (i = 1; i <= 10; i++) {
+                    strFlux += '<tr>';
+                    strFlux += '<td class="sNo">' + i + '</td>';
+                    strFlux += '<td class="sNoItem">';
+                    strFlux += '   <select id="ddlNoItem' + i + '" name="ddlNoItem' + i +
+                        '" onchange="AJAX_recupereDescriptionEtPrixEtAjusteTotaux(' + i + ')">';
+                    strFlux += strFluxListe;
+                    strFlux += '   </select>';
+                    strFlux += '</td>';
+                    strFlux += '<td class="sDescription">';
+                    strFlux += '   <span id="lblDescription' + i + '">N/A</span>';
+                    strFlux += '</td>';
+                    strFlux += '<td class="sPrix">';
+                    strFlux += '   <span id="lblPrix' + i + '">N/A</span>';
+                    strFlux += '</td>';
+                    strFlux += '<td class="sQte">';
+                    strFlux += '   <select id="ddlQte' + i + '" name="ddlQte' + i +
+                        '" onchange="ajusteSousTotalEtGrandTotal(' + i + ')">';
+                    for (j = 0; j <= 10; j++) {
+                        strFlux += '   <option value="' + j + '">' + j + '</option>';
+                    }
+                    strFlux += '   </select>';
+                    strFlux += '</td>';
+                    strFlux += '<td class="sMontantTotal">';
+                    strFlux += '   <span id="lblSousTotal' + i + '">N/A</span>';
+                    strFlux += '</td>';
+                    strFlux += '</tr>';
+                }
+                strFlux += '<tr><td colspan="6" class="sAucuneBordure">&nbsp;</td></tr>';
+                strFlux += '<tr>';
+                strFlux += '   <td colspan="5" class="sAucuneBordure sDroite">Total :</td>';
+                strFlux += '   <td class="sMontantTotal">';
+                strFlux += '      <span id="lblTotal">N/A</span>';
+                strFlux += '   </td>';
+                strFlux += '</tr>';
+                strFlux += '</table>';
+                b('lblTableauCommandes', strFlux);
+            }
+
+            /*
+            |------------------------------------------------------------------------------------------|
+            | function construitListeDeroulante(strReponseServeur)
+            |    Exécute la fonction locale 'construitTableauEnTantQueTel' après avoir récupéré la liste
+            |    des produits.
+            |------------------------------------------------------------------------------------------|
+            */
+            function construitListeDeroulante(strReponseServeur) {
+                var strFlux = '<option value="">No</option>';
+                var tabItems = strReponseServeur.split(';');
+                for (var i = 0; i < tabItems.length - 1; i++) {
+                    strFlux += '<option value="' + tabItems[i] + '">' + tabItems[i] + '</option>';
+                }
+                construitTableauEnTantQueTel(strFlux);
+            }
+
+            /*
+            |------------------------------------------------------------------------------------------|
+            | Module directeur de 'AJAX_construitTableauCommandes' exécutée immédiatement
+            | après le chargement de la page Web.
+            |------------------------------------------------------------------------------------------|
+            */
+            var strDonneesTransmises = 'Action=Liste';
+            requeteServeur(strNomApplication, strDonneesTransmises, construitListeDeroulante, true);
+        }
+    </script>
+</head>
+
+<body onload="AJAX_construitTableauCommandes();">
+    <div id="divEntete" class="sTexteCentre sLargeurDiv sEntete">
+        <p>
+            <span class="sTitreApp">
+                Petite facture<br />
+            </span> par
+            <span class="sAuteurApp">
+                Stéphanie Anselme
+            </span>
+        </p>
+    </div>
+
+    <div id="divCorps" class="sLargeurDiv sCorps">
+        <input type="button" value="Actualiser" onclick="location.reload()" />
+        <input type="button" value="Enregistrer les commandes" onclick="enregistreCommandes()" />
+        <input type="button" value="Récupérer les commandes" onclick="recupereCommandes()" />
+        <p id="lblTableauCommandes"></p>
+    </div>
+
+    <div id="divPiedDePage" class="sLargeurDiv sPiedDePage">
+        <p>
+            <a href="http://www.cgodin.qc.ca">
+                <img src="logoCGG.jpg" alt="logoCGG" />
+            </a>
+            <a href="http://www.cgodin.qc.ca/programme/techniques-informatique/">
+	           Département d'informatique du Cégep Gérald-Godin
+	        </a>
+            <br /> &copy; 2021
+        </p>
+    </div>
+</body>
+
+</html>

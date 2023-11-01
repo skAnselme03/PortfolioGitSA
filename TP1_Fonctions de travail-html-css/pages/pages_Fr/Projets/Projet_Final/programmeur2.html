@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP3 - Camille Andriamamonjy & Stéphanie Anselme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+        
+        .indent {
+            text-indent: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-padding-large w3-white">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projets</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 1</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-padding-large">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-padding-large">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Projets</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+        <h1 class="w3-margin w3-jumbo">Deuxième programmeur rencontré</h1>
+        <p class="w3-xlarge">Nyota Ky</p>
+        <p class="w3-large">Développeuse logiciel senior pour une entreprise</p>
+    </header>
+
+    <!-- Premier bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Présentation générale</h1>
+            <h5>Nyota Ky est développeuse logiciel senior travaillant pour l’entreprise <a href="https://www.imaginary-spaces.com/">Imaginary Spaces</a> depuis 18 mois. Elle a cumulé plus de dix ans d’expérience dans le développement de logiciels pour des
+                équipements en imagerie médicale avec les compagnies Dental Wings et Zimmer Biomet. Elle a principalement développé des logiciels pour des scanneurs dentaires 3D ou des logiciels pour des robots d’assistance chirurgique.</h5>
+        </div>
+    </div>
+
+    <!-- Deuxième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Mandat</h1>
+            <h5>Les principaux mandats qu’a eu Nyota sont les suivants :</h5>
+            <ul class="w3-text-dark-grey indent">
+                <li>Créations de plugins pour aider les artistes de studios d’animation, de cinéma ou de jeux vidéo à être plus rapides et plus efficaces dans la production de leur projet;</li>
+                <li>Développement de logiciels pour aider la production de studio créatif;</li>
+                <li>Développement d’une application <i>« Home design d’intérieur »</i>, comme le jeu des <i>« Sims »</i>, pour outiller les designers d’intérieur.</li>
+            </ul>
+            <p class="w3-text-grey indent">Elle a aussi travaillé par le passé dans le département recherches et développement de Dental wings pour:</p>
+            <ul class="w3-text-grey indent">
+                <li>La création de logiciels pour des équipements en imagerie médicale;</li>
+                <li>L’acquisition des données d’empreintes dentaires 2D pour transformation en images 3D;</li>
+                <li>Travailler sur des logiciels de robots d’assistance chirurgique d’implantation d’implants de genoux.</li>
+            </ul>
+            <p class="w3-text-dark-grey indent">Pour être embauché chez Imaginary spaces, elle a dû avoir fait une formation en ligne de Unity 3D dans son CV et une expérience de dix ans en tant que développeur web.</p>
+            <p class="w3-text-dark-grey indent">Le contexte pandémique avec son manque de main d’œuvre expérimenté en engine Unity a favorisé son recrutement malgré son peu d’expérience professionnel avec Unity.</p>
+        </div>
+    </div>
+
+    <!-- Troisième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Journée-type</h1>
+            <h5>L’organisation de son temps de travail se fait en fonction des <i>« to do »</i> et des priorités.</h5>
+            <p class="w3-text-grey indent">C’est-à-dire, prioriser les tâches qui sont des bloquants pour d’autres membres de l’équipe.</p>
+            <p class="w3-text-grey indent">Elle utilise la méthode agile pour organiser son temps :</p>
+            <ul class="w3-text-grey indent">
+                <li>Avancements des tâches par sprint.</li>
+                <li>Savoir à l’avance le travail à faire selon temps requis et selon s’il est bloquant ou non pour d’autres.</li>
+            </ul>
+            <p class="w3-text-dark-grey indent">Les principaux outils qu’elle utilise sont :</p>
+            <ul class="w3-text-dark-grey indent">
+                <li>Utilisation de l’engin de jeu Unity pour créer les logiciels demandés par les producteurs de studio créatif;</li>
+                <li>Microsoft Visual Studio;</li>
+                <li>Github, pour la revue de code et le versionnage;</li>
+                <li>Unreal Engine.</li>
+            </ul>
+            <p class="w3-text-grey indent">Elle n’a pas trop d’interactions avec les autres collègues de travail à cause du télétravail maintenant en permanence.</p>
+            <p class="w3-text-grey indent">Cependant, ils font des activités sociales, style 5/7, via Zoom.</p>
+            <p class="w3-text-grey indent">Avant la pandémie l’esprit de camaraderie était plus présent et elle avait une meilleure interaction avec les autres membres de l’équipe, particulièrement à son ancien travail Dental Wings. Maintenant dans une nouvelle équipe depuis la pandémie,
+                il est plus difficile de tisser des liens avec ses collègues.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">En ce moment, ses principaux clients sont dans le multimédia.</p>
+            <p class="w3-text-dark-grey indent">Dans son ancien emploi, ses principaux clients étaient les dentistes et les prothésistes dentaires ou des chirurgicaux.</p>
+        </div>
+    </div>
+
+    <!-- Quatrième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Défis</h1>
+            <h5>Le plus grand défi rencontré par Nyota est le saut dans le développement basé sur Unity 3D et Unreal Engine.</h5>
+            <p class="w3-text-dark-grey indent">Donc, la courbe d’apprentissage est un peu plus longue. Particulièrement pour Unreal Engine, elle doit utiliser ce moteur de jeux qu’elle ne connait pas pour effectuer certaines tâches. Elle doit réaliser les tâches en question et se former
+                en même temps sur l’<i>« Engine »</i> tout respectant les dates limites pour remettre son travail.</p>
+            <br>
+            <p class="w3-text-grey indent">La majorité des membres de son équipe de travail sont unilingues anglophones. De ce fait, elle a du mal a créé des liens autres que professionnels avec eux. Sa langue première est le français, de ce fait cela crée une certaine distance entre
+                elle et ses collègues, rendant difficile toute discussion autre que le travail.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Les principaux défis rencontrés sont principalement dus à une mauvaise communication.</p>
+            <p class="w3-text-dark-grey indent">Lorsqu’ils sortent une version du logiciel, le client revient souvent avec des feedbacks négatives, particulièrement pour des <i>« features »</i> qui ont été difficiles et longs à implémenter. Ceci est du principalement au fait que le client
+                à souvent du mal a bien communiquer ses besoins.</p>
+        </div>
+    </div>
+
+    <!-- Cinquième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Avantages</h1>
+            <h5>Dans son expérience passée, l’avantage principal est d’avoir pu toucher à autre chose que du <i>« coding »</i>.</h5>
+            <p class="w3-text-grey indent">Elle s’est familiarisée avec l’aspect matériel, par exemple comment monter un ordinateur. Elle a pu manipuler des caméras et travailler avec des nouveaux outils de travail. Bref, elle a pu toucher à de la mécanique, de l’électronique et a
+                ainsi pu trouver une satisfaction à faire autre chose que de la programmation.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Les principaux avantages offerts par les entreprises où elle a travaillé sont principalement :</p>
+            <ul class="w3-text-dark-grey indent">
+                <li>Bonne couverture d’assurances, particulièrement une bonne assurance dentaire;</li>
+                <li>La moitié des frais de transport en commun sont couvert par l’entreprise (évidemment avant la pandémie de COVID – le télétravail ne nécessite plus de déplacement, donc les frais de transport en commun ne sont plus couverts);</li>
+                <li>1h de diner payé par l’entreprise;</li>
+                <li>Beaucoup d’activités sociales offertes par l’entreprise, tel que le yoga, la pratique de sport et autres;</li>
+                <li>Bonus de fin d’année remis aux employés, dépendamment du rendement de fin d’année de l’entreprise;</li>
+                <li>Négociation salariale, particulièrement en cette période de pénurie de main d’œuvre.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sixième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Désavantages</h1>
+            <h5>Les principaux désavantages rencontrés par Nyota dans son parcours professionnel sont :</h5>
+            <ul class="w3-text-dark-grey indent">
+                <li>Le manque d’esprit de camaraderie dû au télétravail;</li>
+                <li>Salaire stagnant après un certain nombre d’années d’expérience;</li>
+                <li>Difficulté d’obtenir le salaire moyen malgré ses années d’expérience, notamment en raison du fait d’être une femme et de faire partie d’une minorité visible.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Septième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Cheminement</h1>
+            <h5>Nyota a fait un baccalauréat à l’université de Sherbrooke en Sciences de l’image et des médias numériques.</h5>
+            <p class="w3-text-grey indent">C'est une formation faisant partie du département informatique de l’université avec une spécialisation en vision par ordinateur.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Cette formation consiste à acquérir les bases d’un bac en informatique et des bases en mathématiques et imagerie.</p>
+            <p class="w3-text-dark-grey indent">De plus, c’est un programme assez difficile car il faut jongler avec les notions en informatique, mathématiques et imagerie en même temps.</p>
+            <br>
+            <p class="w3-text-grey indent">Pour avoir son poste actuel chez Imaginary Spaces, elle a simplement envoyé son CV par LinkedIn lorsqu’une offre de travail intéressante s’est présentée.</p>
+        </div>
+    </div>
+
+    <!-- Huitième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Objectifs de carrière</h1>
+            <h5>L’objectif à court terme qu’elle veut atteindre est de rentrer dans l’industrie de développement de jeux vidéo aussi tôt que possible.</h5>
+            <p class="w3-text-dark-grey indent">Ensuite, plus tard elle pourra choisir un des deux objectifs de carrière suivants :</p>
+            <ul class="w3-text-dark-grey indent">
+                <li>Lead technique en jeux vidéo;</li>
+                <li>Gestionnaire de projets en jeux vidéo.</li>
+            </ul>
+            <p class="w3-text-dark-grey indent">Pour atteindre cet objectif, elle suit présentement des formations pour améliorer ses connaissances en Unity 3D et Unreal Engine.</p>
+        </div>
+    </div>
+
+    <!-- Neuvième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Conseils et recommandations</h1>
+            <h5>Les conseils et recommandations suivants nous ont été partagés par Nyota :</h5>
+            <ul class="w3-text-grey indent">
+                <li>Trouver une place où l’on peut continuer d’apprendre de nouvelles technologies;</li>
+                <li>Ne pas rester plus de 5 ans au même endroit en début de carrière dans le domaine du développement car cela mène à un risque de stagnation au niveau professionnel et des apprentissages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-opacity">
+        <p>Template provenant de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

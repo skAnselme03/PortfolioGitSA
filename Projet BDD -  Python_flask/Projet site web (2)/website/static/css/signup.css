@@ -1,0 +1,190 @@
+* {
+    /* Dimensionnés de cette façon plus intuitive*/
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*              Application du rythme                 *
+*    ---------------------------------------------   *
+*/
+
+body {
+    margin: 0;
+}
+body>main{
+    margin-top: 10vw;
+}
+main {
+    width: 400px;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #dcf2e2;
+}
+
+
+/* Créer une composition plus équilibrée et améliorer la lisibilité */
+
+form>fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0.5px solid transparent;
+    padding-top: 20px;
+}
+
+
+/*Forcer les champs à prendre tout l'espace nécessaire */
+
+main>form input,
+select {
+    border: 1px solid transparent;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50px;
+    width: 310px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+
+/*select {
+    width: 60%;
+    padding: 16px 20px;
+    border-radius: 4px;
+}*/
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+fieldset label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+form>label {
+    padding: 0 10px;
+}
+
+.msgError {
+    padding: 1em;
+}
+
+aside a {
+    padding-bottom: 1em;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*           Application de la typographie            *
+*    ---------------------------------------------   *
+*/
+
+body {
+    text-align: center;
+    font-family: Helvetica, 'Helvetica', sans-serif;
+}
+
+button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+a {
+    font-weight: bold;
+}
+
+label>i {
+    text-align: center;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*        Application de la palette de couleurs       *
+*    ---------------------------------------------   *
+*/
+
+main {
+    background-color: #F2BE5C;
+}
+
+a {
+    color: #F2BE5C;
+}
+
+button {
+    background-color: #dcf2e2;
+}
+
+h1,
+button,
+p,
+form>label,
+select {
+    color: #3d3c3c;
+}
+
+main>form input {
+    background-color: #f3f6f3;
+}
+
+select {
+    border: 2px gray;
+    background-color: #f1f1f1;
+}
+
+fieldset label {
+    background-color: #dcf2e2;
+    color: #3d3c3c;
+}
+
+
+/*
+*    --------------   *
+*        AUTRES       *
+*    --------------   *
+*/
+
+button {
+    transition: background-color 0.2s;
+}
+
+button:link {
+    color: #dddddd;
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #d3d92b;
+}
+
+.msgError {
+    color: #05aa28;
+}

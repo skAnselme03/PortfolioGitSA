@@ -1,0 +1,31 @@
+﻿body { font-family:Verdana; font-size:12pt; color:Blue; }
+.sTexteCentre { text-align:center; }
+.sLargeurDiv { width:600px; padding-left:10px; }
+.sEntete {background-color: #D0D0D0; margin-bottom:5px;  border-bottom-width:2px;  border-bottom-style:solid; }
+.sCorps {background-color:White;}
+.sPiedDePage {background-color:#D0D0D0;  margin-top:5px;  border-top-width:2px;  border-top-style:solid; }
+.sTitreApp { font-size:150%; font-weight:bold; text-decoration:underline; } 
+.sAuteurApp { font-variant:small-caps; font-style:italic; font-weight:bold;}    
+.sGras { font-weight:bold; }
+.sNonGras { font-weight:normal; }
+ 
+table { border-collapse:collapse; }
+th { font-size:75%; background-color: #D0D0D0; border:solid 1px black; padding:5px; text-align:right;}
+td { font-size:100%; border:solid 1px black; padding:5px; text-align:right; color:Black; }
+      .sAucuneBordure { border:none; }
+      .sNo { width:30px; }
+      .sNoItem { width:50px; text-align:center; }
+      .sDescription { width:200px; text-align:left; }
+      .sPrix, .sQte { width:100px; }
+      .sMontantTotal { width:100px;  font-weight:bold;}
+      .sDroite { text-align:right; }
+input,select,option {font-size:100%; background-color:#D0D0D0; color:Black; }
+input[type="text"]:focus {border-style:outset;}
+input[type="button"] {font-size:110%; font-variant:small-caps; }
+		
+a:link { color:Black; text-decoration:none;}
+a:visited { color:Red; text-decoration:none;} 
+a:hover { color:Green; text-decoration:underline; }
+		
+a:link img, a:visited img { border:none; }
+a:hover img { border-style:double; border-width:2px; border-color:Green;}

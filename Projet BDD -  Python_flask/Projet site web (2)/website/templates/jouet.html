@@ -1,0 +1,89 @@
+{% extends "index.html" %} {% block title %}Jouet{% endblock %} {% block head %}
+    <link rel="stylesheet" href="../static/css/jouet.css"/>{% endblock %} {% block navbar %}
+    <ul class="menu__list" id="navbar">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/profil">Mon profil</a></li>
+        <li><a href="/catalogue">Notre catalogue</a></li>
+        <li><a href="/ajouter">Ajouter un jouet</a></li>
+    </ul>{% endblock %} {% block content %}
+<main>
+    <section class="mon-jouet">
+
+       {% with messages = get_flashed_messages() %} {% if messages %}
+            {% for msg in messages %}
+                <p class="blink">{{ msg }}</p>
+            {% endfor %} {% endif %} {% endwith %}
+
+            <div class="wrapper">
+                <article class="image-description">
+                    <picture>
+                        {#Image#}
+                        <img class=img_jouet src="{{ source_image }}" alt="photoJouet"> {#Boutons#}
+                    </picture>
+                    <section class="description">
+                        <article class="description-entete">
+                            <h1>{{ jouet[1] }} : </h1>
+                            <h2>{{ jouet[9] }} points</h2>
+                        </article>
+                        <article class="description-descr">
+                            <p>{{ jouet[2] }}</p>
+                        </article>
+                    </section>
+                </article>
+                <article class="infos-jouet-complet">
+                    <div class="wrapper-info">
+                        <section class="entete-infos-jouet">
+                            {#Titre#}
+                            <h1>{{ jouet[1] }}</h1>
+                            <h2>{{ jouet[9] }} points</h2>
+                        </section>
+                        <section class="btn-group">
+                            {% if statut_jouet == 'disponible' %} {#Contacter le vendeur#}
+                                <form method="POST" action="{{ url_for('reserver_jouet', idJouet=id_jouet) }}">
+                                    <button type="submit" name="reserverJouet">Réserver</button>
+                                </form>
+                            {% endif %} {% if statut_jouet != 'disponible' %}
+                            <p>Ce jouet est déjà réservé par un autre utilisateur.</p>
+                        {% endif %} {#Ajouter à une wishlist#}
+                            <form method="POST" action="{{ url_for('ajout_wishlist', idJouet=id_jouet) }}">
+                                <button type="submit" name=ajoutWishlist>Ajouter à ma wishlist</button>
+                            </form>
+                        </section>
+                        {#Infos#}
+                        <section class="caracteristiques ">
+                            <article class="categorie ">
+                                <h4>Catégorie : </h4>
+                                <p>{{ jouet[6] }}</p>
+                            </article>
+                            <article class="categorie-age ">
+                                <h4>Catégorie d'âge :</h4>
+                                <p>{{ jouet[7] }}</p>
+                            </article>
+                            <article class="etat ">
+                                <h4>État :</h4>
+                                <p>{{ jouet[3] }}</p>
+                            </article>
+                        </section>
+                        <section class="infos-description ">
+                            {#Description#}
+                            <h3>Description</h3>
+                            <p>{{ jouet[2] }}</p>
+                        </section>
+                        <section class="infos-vendeur ">
+                            <article class="vendeur ">
+                                {#Vendeur#}
+                                <h3>Vendeur</h3>
+                                <p>{{ vendeur }}</p>
+                            </article>
+                            <article class="note-vendeur ">
+                                <h3>Note vendeur</h3>
+                                <p>{{ note }}</p>
+                            </article>
+                        </section>
+                    </div>
+                </article>
+            </div>
+            </section>
+            </main>
+
+        {% endblock %}

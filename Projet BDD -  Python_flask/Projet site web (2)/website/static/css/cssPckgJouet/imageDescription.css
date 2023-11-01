@@ -1,0 +1,72 @@
+.infos-jouet-complet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral);
+}
+
+.infos-jouet-complet>div>*{
+    width: 100%;
+}
+.infos-jouet-complet>div>section:nth-child(1){
+    border-bottom: 2px solid var(--grise);
+}
+.infos-jouet-complet>div>section:nth-child(1) h1{
+    font-family: var(--font-primary);
+    font-size: 3vw;
+    letter-spacing: var(--letter-spacing-large);
+    margin: 0;
+    padding: 0;
+}
+
+.infos-jouet-complet>div>section:nth-child(1) h2{
+    font-family: var(--font-primary);
+    font-size: 2vw;
+    letter-spacing: var(--letter-spacing-large);
+}
+.infos-jouet-complet>div>section+section{
+    padding-top: 1vw;
+}
+
+.infos-jouet-complet>div>section:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px 10px;
+}
+.infos-jouet-complet>div>section:nth-child(2) button{
+    padding: 0.25rem 1rem;
+    /* font-weight: bold; */
+    font-size: 1.25rem;
+    border-radius: 5px;
+    color: var(--grise);
+}
+
+.infos-jouet-complet>div>section:nth-child(2) form>button:nth-child(1){
+    background-color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+    transition: background-color 0.2s;
+}
+
+.wrapper-info{
+    padding: 1vw 6vw;
+}
+/*caractéristique*/
+.infos-jouet-complet>div>.caracteristiques{
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.infos-jouet-complet>div>.caracteristiques>article:nth-child(1),
+.infos-jouet-complet>div>.caracteristiques>article:nth-child(2),
+.infos-jouet-complet>div>.caracteristiques>article:nth-child(3){
+    flex: 1vw 5vw;
+    width: calc(100% - 1/3);
+}
+
+.infos-jouet-complet>div>.caracteristiques>article{
+    display: flex;
+    gap: 10px;
+}

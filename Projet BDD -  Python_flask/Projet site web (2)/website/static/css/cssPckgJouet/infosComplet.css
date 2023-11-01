@@ -1,0 +1,114 @@
+/*-------------------------------------------------------------------*\
+  SETTINGS - Variables globales comme les polices et les couleurs
+\*-------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------*\
+  TOOLS - Mixins et fonctions par défaut
+\*-------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------*\
+  GENERIC - Styles de base (réinitialisation, box-sizing, etc.)
+\*-------------------------------------------------------------------*/
+body{
+    padding: 0;
+}
+
+
+
+/*-------------------------------------------------------------------*\
+  ELEMENTS - Éléments HTML
+\*-------------------------------------------------------------------*/
+main>section>div article:nth-child(1)>section *{
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+/*donner un rythme entre les deux article*/
+main>section>div article:nth-child(1)>section>article+article{
+    margin-top: 2vw;
+}
+.description-entete,
+.description-descr{
+    max-width: 100%;
+}
+
+main>section>div article:nth-child(1)>section>article h1,
+main>section>div article:nth-child(1)>section>article h2{
+    /*font-size: 2.5vw;*/
+    font-size: 2vw;
+    letter-spacing:0.03em;
+}
+/*Rythme des enfants direct du wrapper*/
+main>section>div>article:nth-child(1)+article:nth-child(2){
+    margin-top: 6vw;
+}
+
+
+/*-------------------------------------------------------------------*\
+  OBJECTS - Classes non décorées
+\*-------------------------------------------------------------------*/
+.wrapper{
+    padding: 0 8vw;
+}
+
+
+
+/*-------------------------------------------------------------------*\
+  COMPONENTS
+\*-------------------------------------------------------------------*/
+/*MEDIA*/
+@media only screen and (min-width: 768px){
+    .mon-jouet{
+        padding: 6vw 0;
+    }
+    main>section>div article:nth-child(odd){
+        flex-direction: row;
+    }
+    /*wrapper de l'image et du texte*/
+    main>section>div article:nth-child(1)>picture,
+    main>section>div article:nth-child(1)>section{
+        width: 50%;
+    }
+    /*main>section>div article:nth-child(1):nth-child(odd),*/
+    main>section>div article:nth-child(1)>section{
+        transform: translateX(-6%);
+    }
+
+
+}
+.mon-jouet{
+    padding: 12vw 0;
+}
+
+main>section>div>article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+main>section>div article:nth-child(1)>picture{
+    display: flex;
+    justify-content: center;
+}
+
+main>section>div article:nth-child(1)>section{
+    background-color: var(--ternaire);
+    height: fit-content;
+    padding: 2vw;
+}
+.description-entete{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*-------------------------------------------------------------------*\
+  UTILITIES - Utilitaires et !important (peu)
+\*-------------------------------------------------------------------*/

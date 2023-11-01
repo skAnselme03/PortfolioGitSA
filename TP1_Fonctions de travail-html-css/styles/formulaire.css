@@ -1,0 +1,128 @@
+.contenu-principal_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+/* Créer une composition plus équilibrée et améliorer la lisibilité */
+
+.contenu-principal_form form {
+    max-width: 50em;
+    /* Limiter la largeur du corps de la page */
+    margin: auto;
+    /* Centrer le contenu */
+}
+
+.contenu-principal_form form>fieldset {
+    padding: 10px;
+    /* border-color: transparent; */
+    border: 0.5px solid;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+
+/* Appliquer un rythme verticale dans le formulaire*/
+
+
+/*parent*/
+
+.contenu-principal_form form>fieldset>*+* {
+    margin-top: 25px;
+}
+
+
+/*enfants de fieldset*/
+
+.contenu-principal_form *+label {
+    margin-top: 10px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#nom {
+    margin-top: 10px;
+}
+
+
+/*Forcer les champs à prendre tout l'espace nécessaire sauf le checkbox*/
+
+.contenu-principal_form>form input:not([type=checkbox]):not([type=radio]),
+textarea {
+    width: 100%;
+    margin-top: 0;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contenu-principal_form form>fieldset>textarea {
+    columns: 500px;
+}
+
+button {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+button[type="submit"] {
+    margin-left: 15px;
+}
+
+.contenu-principal_form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/*--- Typographie ---*/
+
+
+/*--- Paramètre de couleur ---*/
+
+.contenu-principal_form form>fieldset {
+    border-color: rgb(238, 238, 238);
+    background-color: rgb(225, 225, 225);
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+    border-color: #ccc;
+    background-color: rgb(246, 242, 242);
+}
+
+button {
+    background-color: #cbcbcb;
+    color: rgb(85, 82, 82);
+}
+
+button:link {
+    color: #dddddd;
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #ffbcbc;
+}
+
+
+/* MEDIA */
+
+
+/* lorsque l'écran a une largeur inférieure à 600px, les deux colonnes s'empilent l'une sur l'autre au lieu de se côtoyer. Référemce:*/
+
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%;
+        margin-top: 0;
+    }
+}

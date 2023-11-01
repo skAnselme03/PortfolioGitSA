@@ -1,0 +1,140 @@
+@import url("./css/root.css");
+@import url("./css/cssPckgEntete/headerStyle.css");
+
+
+*{
+    color: var(--grise);
+}
+body {
+    margin: 0;
+}
+
+/* Ajouter du rythme à tous les enfants direct du body sauf l'entête*/
+
+body>*+*{
+    margin-top: 1.5vw;
+}
+
+/* Ajouter du rythme à tous les enfants direct de l'entête sauf la navigation*/
+header>*+*{
+    margin-top: 6.5vw;
+}
+
+/*Fixer le menu en haut au défilement*/
+.entete__top{
+    left: 0;
+    position: fixed;
+    /*padding: 20px 0;*/
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: var(--secondaire);
+}
+
+.entete-principale{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banniere__hero{
+    height: 37vh;
+    min-height: 460px;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font-size: 3.5vw;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--transparent);
+    z-index: 1;
+    max-width: 100%;
+}
+.wrapper{
+    /*wrapper*/
+    padding: 0 6vw;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*              Application du rythme                 *
+*    ---------------------------------------------   *
+*/
+/*entête menu*/
+.entete-principale>div>section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 0;
+}
+/*menu principal*/
+.entete__menu>nav{
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+/*menu logo*/
+.entete__menu>nav>section:nth-child(1){
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+.menu__logo>a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+.menu__logo>a>img{
+    width: 2vw;
+}
+
+.footer1 {
+    /*margin-top: 1em;*/
+    margin-bottom: -1.5vw;
+    /*padding: 25px;*/
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.footer2 {
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+}
+
+/*
+*    ---------------------------------------------   *
+*        Application de la palette de couleurs       *
+*    ---------------------------------------------   *
+*/
+
+.footer1 {
+    background: #dcf2e2;
+}
+
+.footer2 {
+    background: #d3d92b;
+
+}
+
+
+/*
+*    ---------------------------------------------   *
+*           Application de la typographie            *
+*    ---------------------------------------------   *
+*/
+
+header a {
+    /* Remove underline*/
+    text-decoration: none;
+}
+
+.footer1,
+.footer2 {
+    text-align: center;
+}
+a{font-weight: bold}

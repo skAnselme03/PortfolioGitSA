@@ -1,0 +1,92 @@
+img {
+    max-width: 100%;
+}
+.annonces-achats{
+    margin: 0;
+    padding: 5vw;
+}
+
+.annonces-achats>*+*{
+    margin-top: 8vw;
+}
+
+.annonces-reservees,
+.annonces-vendues,
+.achats{
+    padding: 0;
+}
+
+.annonces-reservees>header,
+.annonces-vendues>header,
+.achats{
+    margin-top: 5vw;
+}
+
+/* MEF sous-entête*/
+.annonces header, .achats header{
+        border-bottom: 5px solid var(--primaire);
+}
+/*Card*/
+.card {
+    background: var(--neutral);
+}
+.annonces-achats .tuile form>button{
+    background-color: var(--primaire);
+    color:var(--grise);
+}
+/*Scrollbar */
+.annonces-achats .cards::-webkit-scrollbar-thumb {
+    background: var(--grise);
+}
+.annonces-achats .cards::-webkit-scrollbar-track {
+    background: var(--primaire);
+}
+/******************************/
+/*          Achats            */
+/******************************/
+.avis-send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.avis-send>h5{
+    margin: 0;
+    padding: 0;
+}
+.avis-send>*+*{
+    margin-top: 1vw;
+}
+
+.avis-send form>*+*{
+    margin-top: 1vw;
+}
+.avis-send form>*{
+    border: none;
+    border-radius: 5px;
+}
+.avis-send form>button{
+    margin-top: 1.5vw;
+    padding: 1vw;
+}
+.avis-send form>textarea{
+    height: 5vw;
+}
+.avis-send form>textarea, select{
+    background-color: var(--input);
+}
+.avis-send form>*{
+    width: 100%;
+}
+
+@media (min-width: 700px){
+    .avis-send{
+        flex-direction: column;
+    }
+}
+@media (min-width: 500px){
+    .avis-send{
+        flex-direction: column;
+
+    }
+}

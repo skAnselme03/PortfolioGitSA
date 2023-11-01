@@ -1,0 +1,25 @@
+body>section {
+    text-align: center;
+}
+
+body>section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body>section .note_etudiant {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note_etudiant p {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+body>section>section>* {
+    margin-top: 2vw;
+}

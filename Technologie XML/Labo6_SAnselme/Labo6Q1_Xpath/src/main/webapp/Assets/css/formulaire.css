@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form>*+* {
+    margin-top: 2vw;
+}
+
+form>fieldset>*+* {
+    margin-top: 2vw;
+}
+
+form>fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: start;
+    padding: 2vw;
+}
+
+form>fieldset>* {
+    flex-basis: 100%;
+}

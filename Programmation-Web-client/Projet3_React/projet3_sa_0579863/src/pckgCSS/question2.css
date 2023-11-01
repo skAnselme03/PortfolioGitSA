@@ -1,0 +1,116 @@
+/*REF:https://codepen.io/huange/pen/bGqMqM */
+/*Resize the wrap to see the search bar change!*/
+  /*.wrap{
+  width: 30%;
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;*/
+  /*transform: translate(-50%, -50%);
+}*/
+
+.wrap{
+    width: 30%;
+}
+/*Affichage du hero*/
+.affiche-hero-filtre{
+    list-style: none;
+    padding-top: 2vw;
+    background-color: var(--flame);
+    color: var(--floral-white);
+    border-top-right-radius: 5px ;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+.affiche-hero-filtre>li{
+    width: 100%;
+}
+.affiche-hero-filtre>*{
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+.affiche-hero-filtre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.affiche-hero-filtre>li{
+    flex-basis: 100%;
+    padding: 1rem;
+}
+.affiche-hero-filtre>li:nth-child(even){
+    background-color: var(--timberwolf);
+    color: var(--eerie-black);
+}
+/*barre de recherche*/
+.recherche{
+    /*display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.05vw;*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.recherche>*{
+    padding: 25px;
+}*/
+
+.recherche label{
+    background-color: var(--flame);
+    /*border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;*/
+    border-radius: 5px 0 0 5px;
+    font-weight: bold;
+    /*height: 36px;*/
+    width: 40px;
+
+
+}
+.alias-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.recherche input{
+    background-color: var(--floral-white);
+    color: var(--black-olive);
+    border: none;
+    /*border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    flex-basis: calc(100% - 5/6);*/
+    width: 100%;
+    padding: 5px;
+    /*height: 36px;*/
+    border-radius: 0 5px 5px 0;
+
+}
+
+label>svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+.recherche label, .recherche input{
+    height: 40px;
+}
+/*
+ *  Scrollbar   *
+ *  Ref: https://developer.mozilla.org/fr/docs/Web/CSS/::-webkit-scrollbar*
+ */
+.visible-scrollbar::-webkit-scrollbar{
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 25%;
+  background-color: var(--black-olive);
+}

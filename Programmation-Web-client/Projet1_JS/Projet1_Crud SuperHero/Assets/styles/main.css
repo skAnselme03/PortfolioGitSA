@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    /*background-color: rgba(0,80,20,.04)
+    background-color: transparent;
+    outline: 1px dashed seagreen;;*/
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*              Application du rythme                 *
+*    ---------------------------------------------   *
+*/
+
+
+/* Créer une composition plus équilibrée et améliorer la lisibilité */
+
+body>* {
+    /*Limiter la largeur du corps de la page 
+    max-width: 50em;*/
+    /* Centrer le contenu */
+    margin-top: auto;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 1.5em;*/
+    gap: 10px;
+}
+
+
+/* Appliquer un rythme vertical */
+
+
+/* sur les parents */
+
+form>*+* {
+    margin-top: 15px;
+}
+
+
+/*enfants de fieldset*/
+
+fieldset {
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+main *+label {
+    margin-top: 5px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+p {
+    padding: 1em;
+}
+
+form>fieldset {
+    /*padding: 10px;*/
+    border: 0.5px solid transparent;
+    border-radius: 4%;
+}
+
+main>form input,
+main>div>form input {
+    margin-top: 0;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
+    resize: vertical;
+    width: fit-content;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+main>table {
+    border-collapse: collapse;
+    cursor: pointer;
+    /*    margin: 100px auto;*/
+    margin-top: 0.5em;
+}
+
+table>tbody button {
+    padding: 5px 10px;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*              Application des dimension             *
+*    ---------------------------------------------   *
+*/
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Forcer les champs (mais non les cases) à prendre tout l'espace nécessaire */
+
+fieldset {
+    max-width: 45em;
+}
+
+
+/*ref: https://www.youtube.com/watch?v=xGBX0ReBx2Q*/
+
+main>table {
+    min-width: 400px;
+    width: auto;
+}
+
+th,
+td {
+    padding: 15px 20px;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*           Application de la typographie            *
+*    ---------------------------------------------   *
+*/
+
+p,
+button {
+    font-weight: bold;
+}
+
+fieldset>button {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main h1 {
+    text-transform: uppercase;
+}
+
+thead tr {
+    text-align: left;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*        Application de la palette de couleurs       *
+*    ---------------------------------------------   *
+*/
+
+h1,
+button,
+p,
+th,
+td {
+    color: #3d3c3c;
+}
+
+input {
+    background-color: #cbcbcb;
+}
+
+button,
+thead tr {
+    background-color: #F2BE5C;
+}
+
+button:link {
+    color: #dddddd;
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #ffbcbc;
+}
+
+main>table {
+    box-shadow: 0 5px, 25px rgba(147, 85, 9, 0.15);
+    border: 1px solid #ddd;
+}
+
+tbody tr,
+td,
+th {
+    border: 1px solid #dbd0c0;
+}
+
+
+/*couleur de fond des lignes pair: tableau zébré*/
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #F2BE5C;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*                  Application autre                 *
+*    ---------------------------------------------   *
+*/
+
+#spoiler {
+    display: none;
+}

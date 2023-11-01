@@ -1,0 +1,114 @@
+\hypertarget{classbiblio_1_1Bibliographie}{}\doxysection{biblio\+::Bibliographie Class Reference}
+\label{classbiblio_1_1Bibliographie}\index{biblio::Bibliographie@{biblio::Bibliographie}}
+
+
+Elle permet de faire une bibliographie.  
+
+
+
+
+{\ttfamily \#include $<$Bibliographie.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_aef6d31b7193adf6ccf787e4c9c645db0}\label{classbiblio_1_1Bibliographie_aef6d31b7193adf6ccf787e4c9c645db0}} 
+{\bfseries Bibliographie} (const std\+::string \&p\+\_\+nom\+Bibliographie)
+\item 
+\mbox{\hyperlink{classbiblio_1_1Bibliographie_ac37b6b7c6a1c298d430e9fadde4dc39f}{Bibliographie}} (const \mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}} \&p\+\_\+bibliographie)
+\begin{DoxyCompactList}\small\item\em Constructeur qui permet de créer une copie pour la classe \mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_ae0acddff6ac6811fd3d0c22efc9115c1}\label{classbiblio_1_1Bibliographie_ae0acddff6ac6811fd3d0c22efc9115c1}} 
+\mbox{\hyperlink{classbiblio_1_1Bibliographie_ae0acddff6ac6811fd3d0c22efc9115c1}{$\sim$\+Bibliographie}} ()
+\begin{DoxyCompactList}\small\item\em Le destructeur, désallouer toutes les références d\textquotesingle{}une bibliographie dans le vecteur. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classbiblio_1_1Bibliographie_a836016fd576f021c7e6e04ce75c03836}{req\+Nom\+Bibliographie}} () const
+\begin{DoxyCompactList}\small\item\em l\`{}accesseur pour le nom de de la bilbiographie \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classbiblio_1_1Bibliographie_a6a7ae1bccc4886a95c1b5ddca5b842d4}{req\+Bibliographie\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Construit un format contenant les informations des références de la bibliographie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbiblio_1_1Bibliographie_a2fbded8e9921373d1416c30a8d54ee2b}{ajouter\+Reference}} (const \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} \&p\+\_\+nouvelle\+Reference)
+\begin{DoxyCompactList}\small\item\em Ajoute une référence au vecteur de référence lorsqu{\ttfamily elle n}est pas déjà présente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_a11794bbe057b0ed42d3315a910e0aaeb}\label{classbiblio_1_1Bibliographie_a11794bbe057b0ed42d3315a910e0aaeb}} 
+\mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}} \& {\bfseries operator=} (const \mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}} \&p\+\_\+bibliographie)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Elle permet de faire une bibliographie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_ac37b6b7c6a1c298d430e9fadde4dc39f}\label{classbiblio_1_1Bibliographie_ac37b6b7c6a1c298d430e9fadde4dc39f}} 
+\index{biblio::Bibliographie@{biblio::Bibliographie}!Bibliographie@{Bibliographie}}
+\index{Bibliographie@{Bibliographie}!biblio::Bibliographie@{biblio::Bibliographie}}
+\doxysubsubsection{\texorpdfstring{Bibliographie()}{Bibliographie()}}
+{\footnotesize\ttfamily Bibliographie\+::\+Bibliographie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}} \&}]{p\+\_\+bilbiographie }\end{DoxyParamCaption})}
+
+
+
+Constructeur qui permet de créer une copie pour la classe \mbox{\hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}}. 
+
+Test du constructeur copie Constructeur\+Valide\+Copie\+: la copie du constructeur est valide.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+bibliographie} & c{\ttfamily est l}objet de la bibliographie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+nom\+Bibliographie qui prend la valeur de p\+\_\+nom\+Bibliographie 
+
+m\+\_\+v\+Reference qui est un vecteur vide 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_a2fbded8e9921373d1416c30a8d54ee2b}\label{classbiblio_1_1Bibliographie_a2fbded8e9921373d1416c30a8d54ee2b}} 
+\index{biblio::Bibliographie@{biblio::Bibliographie}!ajouterReference@{ajouterReference}}
+\index{ajouterReference@{ajouterReference}!biblio::Bibliographie@{biblio::Bibliographie}}
+\doxysubsubsection{\texorpdfstring{ajouterReference()}{ajouterReference()}}
+{\footnotesize\ttfamily void Bibliographie\+::ajouter\+Reference (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} \&}]{p\+\_\+nouvelle\+Reference }\end{DoxyParamCaption})}
+
+
+
+Ajoute une référence au vecteur de référence lorsqu{\ttfamily elle n}est pas déjà présente. 
+
+vérifie que ça ajoute une référence lorsqu{\ttfamily elle n}est pas déjà présente
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nouvelle\+Reference} & Une référence constante à cloner et ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_a6a7ae1bccc4886a95c1b5ddca5b842d4}\label{classbiblio_1_1Bibliographie_a6a7ae1bccc4886a95c1b5ddca5b842d4}} 
+\index{biblio::Bibliographie@{biblio::Bibliographie}!reqBibliographieFormate@{reqBibliographieFormate}}
+\index{reqBibliographieFormate@{reqBibliographieFormate}!biblio::Bibliographie@{biblio::Bibliographie}}
+\doxysubsubsection{\texorpdfstring{reqBibliographieFormate()}{reqBibliographieFormate()}}
+{\footnotesize\ttfamily Bibliographie\+::req\+Bibliographie\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Construit un format contenant les informations des références de la bibliographie. 
+
+vérifie que retourne les informations formatées de toutes les références de la bibliographie sous forme de chaine de caractère
+
+\begin{DoxyReturn}{Returns}
+Retourne les informations formatées de toutes les références de la bibliographie sous forme de chaine de caractère 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Bibliographie_a836016fd576f021c7e6e04ce75c03836}\label{classbiblio_1_1Bibliographie_a836016fd576f021c7e6e04ce75c03836}} 
+\index{biblio::Bibliographie@{biblio::Bibliographie}!reqNomBibliographie@{reqNomBibliographie}}
+\index{reqNomBibliographie@{reqNomBibliographie}!biblio::Bibliographie@{biblio::Bibliographie}}
+\doxysubsubsection{\texorpdfstring{reqNomBibliographie()}{reqNomBibliographie()}}
+{\footnotesize\ttfamily const string Bibliographie\+::req\+Nom\+Bibliographie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l\`{}accesseur pour le nom de de la bilbiographie 
+
+\begin{DoxyReturn}{Returns}
+le nom de la bibliographie 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/\mbox{\hyperlink{Bibliographie_8h}{Bibliographie.\+h}}\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/Bibliographie.\+cpp\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/tests/Bibliographie\+Testeur.\+cpp\end{DoxyCompactItemize}

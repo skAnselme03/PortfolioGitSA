@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>4</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Solutions_Labo1">
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/SupprimerUneReference.h</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/SupprimerUneReference.cpp</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/OuvrageInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/BibliographieInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/BibliographieInterface.h</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/JournalInterface.h</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/OuvrageInterface.h</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/JournalInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/Tp3/Tp3GUI/main.cpp</file>
+        </group>
+        <group name="Labo1Solutions">
+            <file>file:/home/etudiant/Bureau/537025715_tp3skaamrflad/Tp3/Tp3GUI/main.cpp</file>
+            <file>file:/home/etudiant/Bureau/537025715_tp3skaamrflad/Tp3/Tp3GUI/SupprimerUneReference.cpp</file>
+            <file>file:/home/etudiant/Bureau/537025715_tp3skaamrflad/Tp3/Tp3GUI/BibliographieInterface.cpp</file>
+        </group>
+        <group name="TP3">
+            <file>file:/home/etudiant/537025715_tp3skaamrflad/Tp3/Tp3GUI/SupprimerUneReference.cpp</file>
+            <file>file:/home/etudiant/537025715_tp3skaamrflad/Tp3/Tp3GUI/BibliographieInterface.cpp</file>
+        </group>
+    </open-files>
+</project-private>

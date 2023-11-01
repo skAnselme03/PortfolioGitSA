@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererEntier">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="max" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererEntierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenererEntierResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererDouble">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererDoubleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenererDoubleResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererChaine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="longueur" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererChaineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenererChaineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenererEntierSoapIn">
+    <wsdl:part name="parameters" element="tns:GenererEntier" />
+  </wsdl:message>
+  <wsdl:message name="GenererEntierSoapOut">
+    <wsdl:part name="parameters" element="tns:GenererEntierResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenererDoubleSoapIn">
+    <wsdl:part name="parameters" element="tns:GenererDouble" />
+  </wsdl:message>
+  <wsdl:message name="GenererDoubleSoapOut">
+    <wsdl:part name="parameters" element="tns:GenererDoubleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenererChaineSoapIn">
+    <wsdl:part name="parameters" element="tns:GenererChaine" />
+  </wsdl:message>
+  <wsdl:message name="GenererChaineSoapOut">
+    <wsdl:part name="parameters" element="tns:GenererChaineResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GenererNombreEtChaineSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenererEntier">
+      <wsdl:input message="tns:GenererEntierSoapIn" />
+      <wsdl:output message="tns:GenererEntierSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenererDouble">
+      <wsdl:input message="tns:GenererDoubleSoapIn" />
+      <wsdl:output message="tns:GenererDoubleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenererChaine">
+      <wsdl:input message="tns:GenererChaineSoapIn" />
+      <wsdl:output message="tns:GenererChaineSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GenererNombreEtChaineSoap" type="tns:GenererNombreEtChaineSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererEntier">
+      <soap:operation soapAction="http://tempuri.org/GenererEntier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererDouble">
+      <soap:operation soapAction="http://tempuri.org/GenererDouble" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererChaine">
+      <soap:operation soapAction="http://tempuri.org/GenererChaine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenererNombreEtChaineSoap12" type="tns:GenererNombreEtChaineSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererEntier">
+      <soap12:operation soapAction="http://tempuri.org/GenererEntier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererDouble">
+      <soap12:operation soapAction="http://tempuri.org/GenererDouble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererChaine">
+      <soap12:operation soapAction="http://tempuri.org/GenererChaine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GenererNombreEtChaine">
+    <wsdl:port name="GenererNombreEtChaineSoap" binding="tns:GenererNombreEtChaineSoap">
+      <soap:address location="http://localhost:62913/GenererNombreEtChaine.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GenererNombreEtChaineSoap12" binding="tns:GenererNombreEtChaineSoap12">
+      <soap12:address location="http://localhost:62913/GenererNombreEtChaine.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

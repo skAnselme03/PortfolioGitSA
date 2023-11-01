@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BibliographieInterface</class>
+ <widget class="QMainWindow" name="BibliographieInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>697</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BibliographieInterface</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="affichageBiblio">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>651</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>697</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOperations">
+    <property name="title">
+     <string>Operations</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_une_reference">
+     <property name="title">
+      <string>Ajouter une reference</string>
+     </property>
+     <addaction name="actionOuvrage"/>
+     <addaction name="actionJournal"/>
+    </widget>
+    <addaction name="menuAjouter_une_reference"/>
+    <addaction name="actionSupprimer_une_reference"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuOperations"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSupprimer_une_reference">
+   <property name="text">
+    <string>Supprimer une reference</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionOuvrage">
+   <property name="text">
+    <string>Ouvrage</string>
+   </property>
+  </action>
+  <action name="actionJournal">
+   <property name="text">
+    <string>Journal</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOuvrage</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogOuvrage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionJournal</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogJournal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSupprimer_une_reference</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogSupprimer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogOuvrage()</slot>
+  <slot>dialogJournal()</slot>
+  <slot>dialogSupprimer()</slot>
+ </slots>
+</ui>

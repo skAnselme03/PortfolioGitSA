@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petit Kangourou - plateforme Web d'échanges de jouets</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header class="entete-principale">
+        <section class="entete__top">
+            <div class="wrapper">
+                <section class="entete__menu">
+                    <nav class="menu--principal navbar">
+                        <section class="menu__logo">
+                            <a href="/" id="brand-logo">
+                                <img src="../static/img/favicon.ico" alt="Petit Kangourou">
+                                <h1>Petit Kangourou</h1>
+                            </a>
+                        </section>
+                        {% block navbar %}{% endblock %}
+                    </nav>
+                </section>
+            </div>
+        </section>
+        {% block entete__hero %}{% endblock %}
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer1">
+
+        <p><strong>Des questions ?</strong></p>
+        <p>info@petitkangourou.ca</p>
+
+        <img src="../static/img/Instagram.png" alt="Instagram" style="width:3%; margin-right: 15px; margin-top: 20px;">
+        <img src="../static/img/Facebook.png" alt="Facebook" style="width:3%; margin-right: 15px;">
+        <img src="../static/img/Youtube.png" alt="YouTube" style="width:3%; margin-right: 15px;">
+        <img src="../static/img/Pinterest.png" alt="Pinterest" style="width:3%; margin-right: 15px;">
+
+    </footer>
+
+    <footer class="footer2">
+        <p>Copyright © 2023 | Petit Kangourou | Tous droits réservés. | Politique de confidentialité | Conditions d'utilisation</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+{% extends "index.html" %} {% block title %}Ajouter un jouet{% endblock %} {% block head %}
+<link rel="stylesheet" href="../static/css/ajouter.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/ajouter.js') }}" type="module"></script>
+
+
+{% endblock %} {% block navbar %}
+<ul class="menu__list" id="navbar">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/catalogue">Catalogue</a></li>
+    <li><a href="/ajouter">Ajout</a></li>
+    <li><a href="/profil">Profil</a></li>
+    <li>
+        <a href="/logout">
+            <button class="btn--entete" onclick="{{ url_for('logout') }}">Quitter <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+        </a>
+    </li>
+</ul>
+{% endblock %} {% block content %}
+<main>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in messages %}
+    <p class="blink">{{ msg }}</p>
+    {% endfor %} {% endif %} {% endwith %}
+    <h1>Ajouter un jouet</h1>
+    <form method="POST" action="/ajouter" enctype="multipart/form-data">
+        <fieldset>
+            <label for="photoJouet">Photo du jouet</label>
+            <input type="file" id="photoJouet" name="photoJouet" required>
+            <label for="titre">Nom</label>
+            <input type="text" id="titre" placeholder="Titre" name="titre" required>
+            <label for="prix">Prix payé</label>
+            <input type="text" id="prix" placeholder="Prix payé" name="prix" required>
+            <label for="categorie">Catégorie</label>
+            <select id="categorie" name="categorie" required>
+                    <option value="">Catégorie</option>
+                    <option value="Jouets en bois">Jouets en bois</option>
+                    <option value="Livres">Livres</option>
+                    <option value="Poupees et figurines">Poupées et figurines</option>
+                    <option value="Voitures, trains et avions">Voitures, trains et avions</option>
+                    <option value="Personnages de film et emission">Personnages de film et d'émission</option>
+                    <option value="Jeux educatifs">Jeux éducatifs</option>
+                    <option value="Jouets pour touts petits">Jouets pour tout-petits</option>
+                    <option value="Jeux de societe">Jeux de société</option>
+                    <option value="Jeux exterieur">Jeux d'extérieur</option>
+                    <option value="Instruments de musique">Instruments de musique</option>
+                    <option value="Jeu imitation">Jeux d'imitation</option>
+                </select>
+            <label for="categorieAge">Catégorie d'âge</label>
+            <select id="categorieAge" name="categorieAge" required>
+                    <option value="">Âge</option>
+                    <option value="0-6 mois">0-6 mois</option>
+                    <option value="6-12 mois">6-12 mois</option>
+                    <option value="12-24 mois">12-24 mois</option>
+                    <option value="2-5 ans">2-5 ans</option>
+                </select>
+            <label for="etat">État</label>
+            <select id="etat" name="etat" required>
+                    <option value="">État</option>
+                    <option value="Neuf">Neuf</option>
+                    <option value="Comme neuf">Comme neuf</option>
+                    <option value="Bon etat">Bon état</option>
+                    <option value="Assez bon etat">Assez bon état</option>
+                </select>
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Description" name="description" required></textarea>
+        </fieldset>
+        <button type="submit" value="Envoyer">Envoyer</button>
+    </form>
+</main>
+{% endblock %}

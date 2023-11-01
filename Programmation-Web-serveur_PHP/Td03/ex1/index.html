@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+</head>
+<body>
+    
+    <form action="script.php" method="post">
+        <h1>Questionnaire Client</h1>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom"> <br> <br>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom"> <br><br>
+        <label for="ville">Ville</label>
+        <input type="text" name="ville"> <br><br>
+        <label for="sports">Sports (choix optionnel)</label>
+        <select name="sports[]" id="" multiple>
+            <option value="Tennis">Tennis</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Football">Football</option>
+        </select> 
+        <br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

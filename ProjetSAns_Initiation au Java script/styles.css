@@ -1,0 +1,156 @@
+/* Inspiration source:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 20px;
+}
+
+body {
+    margin: auto;
+    max-width: 50em;
+    max-height: fit-content;
+}
+
+
+/* Appliquer un rythme vertical */
+
+
+/* Sur les parents du tableau */
+
+.table_questionnaire>*+* {
+    margin-top: 10px;
+}
+
+.table_questionnaire-entete {
+    background-color: #cbcbcb;
+    color: rgb(85, 82, 82);
+}
+
+.table_questionnaire {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_questionnaire td,
+.table_questionnaire th {
+    padding: 8px;
+}
+
+.table_questionnaire input {
+    border: none;
+    border-radius: 4%;
+    padding: 10px;
+    border: none;
+}
+
+.table_questionnaire #autres,
+#langAutre {
+    border-bottom: 1px solid rgb(132, 130, 130);
+}
+
+
+/*----*/
+
+.table_questionnaire-entete {
+    text-transform: uppercase;
+}
+
+span {
+    margin-top: 0.5em;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+button[type="submit"] {
+    margin-left: 15px;
+}
+
+.message-selection {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.contenu-principal_form>form input:not([type=checkbox]):not([type=radio]),
+textarea {
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 15px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contenu-principal_form form>fieldset>textarea {
+    columns: 500px;
+}
+
+.contenu-principal_form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Arrow custom ref : https://codepen.io/raubaca/pen/VejpQP*/
+
+
+/*--- Paramètre de couleur ---*/
+
+.contenu-principal_form form>fieldset {
+    background-color: rgb(225, 225, 225);
+}
+
+.message-selection {
+    background-color: rgb(246, 242, 242);
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+    background-color: rgb(246, 242, 242);
+}
+
+button {
+    background-color: #cbcbcb;
+    color: rgb(85, 82, 82);
+}
+
+button:link {
+    color: #dddddd;
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #9d5c5c;
+    color: beige;
+}
+
+
+/* MEDIA */
+
+
+/* lorsque l'écran a une largeur inférieure à 600px, les deux colonnes s'empilent l'une sur l'autre au lieu de se côtoyer. Référemce:*/
+
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%;
+        margin-top: 0;
+    }
+}

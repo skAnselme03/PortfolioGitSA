@@ -1,0 +1,24 @@
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 1.5vw;
+    text-transform: capitalize;
+    font-size: larger;
+    background-color: rgb(244, 218, 169);
+    padding: 10px 20px;
+}
+
+button {
+    text-align: center;
+    /* Alignement horizontal au centre */
+    display: flex;
+    justify-content: center;
+    /* Alignement horizontal au centre pour les versions flexbox */
+    align-items: center;
+    /* Align
+}
+button:hover {
+    /* background-color: rgb(244, 205, 133); */
+    background-color: rgb(128, 114, 89);
+    color: rgb(248, 229, 206);
+}

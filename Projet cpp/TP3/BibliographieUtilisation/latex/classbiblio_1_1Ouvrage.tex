@@ -1,0 +1,127 @@
+\hypertarget{classbiblio_1_1Ouvrage}{}\doxysection{biblio\+::Ouvrage Class Reference}
+\label{classbiblio_1_1Ouvrage}\index{biblio::Ouvrage@{biblio::Ouvrage}}
+
+
+Classe \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}} représente les références de la catégorie \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}}.  
+
+
+
+
+{\ttfamily \#include $<$Ouvrage.\+h$>$}
+
+
+
+Inheritance diagram for biblio\+::Ouvrage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classbiblio_1_1Ouvrage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for biblio\+::Ouvrage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classbiblio_1_1Ouvrage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbiblio_1_1Ouvrage_abca7d418e3482783bfb1d350a327aa5d}{Ouvrage}} (const std\+::string \&p\+\_\+auteurs, const std\+::string \&p\+\_\+titre, const unsigned int \&p\+\_\+annee, const std\+::string \&p\+\_\+identifiant, const std\+::string \&p\+\_\+editeur, const std\+::string \&p\+\_\+ville)
+\begin{DoxyCompactList}\small\item\em Le constructeur, permet de construire un objet \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}} valide avec les paramètres obtenus \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+editeur un nom d\`{}éditeur. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classbiblio_1_1Ouvrage_a834929913839c5050f62a5dd571a82ea}{req\+Editeur}} () const
+\begin{DoxyCompactList}\small\item\em l{\ttfamily accesseur pour le nom de l}éditeur de l{\ttfamily ouvrage \textbackslash{}return le nom de l}éditeur de l\`{}ouvrage \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classbiblio_1_1Ouvrage_a4d5e5f46b77da6df42f8a1c728a8d852}{req\+Ville}} () const
+\begin{DoxyCompactList}\small\item\em l{\ttfamily accesseur pour le nom de la ville d}édition \end{DoxyCompactList}\item 
+virtual const std\+::string \mbox{\hyperlink{classbiblio_1_1Ouvrage_a6084b9422dfe494f6f71cdea3e607b90}{req\+Reference\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Construit un format pour une référence, ce qui permet d\`{}augmenter la méthode de la classe de base \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbiblio_1_1Ouvrage_aa3f2ba49d6a7959b0b7b679f2320765d}\label{classbiblio_1_1Ouvrage_aa3f2ba49d6a7959b0b7b679f2320765d}} 
+virtual \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} $\ast$ \mbox{\hyperlink{classbiblio_1_1Ouvrage_aa3f2ba49d6a7959b0b7b679f2320765d}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Permet de faire une copie allouée sur le monceau de l{\ttfamily objet courant \textbackslash{}return L}adresse du clone de l\`{}objet courant dans un pointeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}} représente les références de la catégorie \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Ouvrage_abca7d418e3482783bfb1d350a327aa5d}\label{classbiblio_1_1Ouvrage_abca7d418e3482783bfb1d350a327aa5d}} 
+\index{biblio::Ouvrage@{biblio::Ouvrage}!Ouvrage@{Ouvrage}}
+\index{Ouvrage@{Ouvrage}!biblio::Ouvrage@{biblio::Ouvrage}}
+\doxysubsubsection{\texorpdfstring{Ouvrage()}{Ouvrage()}}
+{\footnotesize\ttfamily Ouvrage\+::\+Ouvrage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+auteurs,  }\item[{const std\+::string \&}]{p\+\_\+titre,  }\item[{const unsigned int \&}]{p\+\_\+annee,  }\item[{const std\+::string \&}]{p\+\_\+identifiant,  }\item[{const std\+::string \&}]{p\+\_\+editeur,  }\item[{const std\+::string \&}]{p\+\_\+ville }\end{DoxyParamCaption})}
+
+
+
+Le constructeur, permet de construire un objet \mbox{\hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}} valide avec les paramètres obtenus \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+editeur un nom d\`{}éditeur. 
+
+\begin{DoxyPrecond}{Precondition}
+valide selon \mbox{\hyperlink{namespaceutil_a83617f17d29901d98855a40fc36b396d}{util\+::valider\+Format\+Nom}} \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+ville 
+
+valider selon \mbox{\hyperlink{namespaceutil_a83617f17d29901d98855a40fc36b396d}{util\+::valider\+Format\+Nom}} 
+
+valider selon util\+:\+: valider\+Code\+Isbn
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+editeur prend la valeur de p\+\_\+editeur 
+
+m\+\_\+ville prend la valeur de p\+\_\+ville 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Ouvrage_a834929913839c5050f62a5dd571a82ea}\label{classbiblio_1_1Ouvrage_a834929913839c5050f62a5dd571a82ea}} 
+\index{biblio::Ouvrage@{biblio::Ouvrage}!reqEditeur@{reqEditeur}}
+\index{reqEditeur@{reqEditeur}!biblio::Ouvrage@{biblio::Ouvrage}}
+\doxysubsubsection{\texorpdfstring{reqEditeur()}{reqEditeur()}}
+{\footnotesize\ttfamily string Ouvrage\+::req\+Editeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l{\ttfamily accesseur pour le nom de l}éditeur de l{\ttfamily ouvrage \textbackslash{}return le nom de l}éditeur de l\`{}ouvrage 
+
+test l{\ttfamily accesseur pour le nom de l}éditeur de l{\ttfamily ouvrage req\+Editeur\+: vérifie le retour du format de l}éditeur cas invalide\+: s{\ttfamily il n}y a pas d\`{}éditeur \mbox{\Hypertarget{classbiblio_1_1Ouvrage_a6084b9422dfe494f6f71cdea3e607b90}\label{classbiblio_1_1Ouvrage_a6084b9422dfe494f6f71cdea3e607b90}} 
+\index{biblio::Ouvrage@{biblio::Ouvrage}!reqReferenceFormate@{reqReferenceFormate}}
+\index{reqReferenceFormate@{reqReferenceFormate}!biblio::Ouvrage@{biblio::Ouvrage}}
+\doxysubsubsection{\texorpdfstring{reqReferenceFormate()}{reqReferenceFormate()}}
+{\footnotesize\ttfamily string Ouvrage\+::req\+Reference\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Construit un format pour une référence, ce qui permet d\`{}augmenter la méthode de la classe de base \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}}. 
+
+Tester le retour du format de la référence.
+
+\begin{DoxyReturn}{Returns}
+Le format de la référence en chaine de caractère 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbiblio_1_1Reference_a4fbf37871826470e732d4fd42558eff1}{biblio\+::\+Reference}}.
+
+\mbox{\Hypertarget{classbiblio_1_1Ouvrage_a4d5e5f46b77da6df42f8a1c728a8d852}\label{classbiblio_1_1Ouvrage_a4d5e5f46b77da6df42f8a1c728a8d852}} 
+\index{biblio::Ouvrage@{biblio::Ouvrage}!reqVille@{reqVille}}
+\index{reqVille@{reqVille}!biblio::Ouvrage@{biblio::Ouvrage}}
+\doxysubsubsection{\texorpdfstring{reqVille()}{reqVille()}}
+{\footnotesize\ttfamily string Ouvrage\+::req\+Ville (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l{\ttfamily accesseur pour le nom de la ville d}édition 
+
+test l{\ttfamily accesseur pour le nom de la ville d}édition req\+Ville\+: vérifie le retour du format de la ville cas invalide\+: s{\ttfamily il n}y a pas de nom de ville
+
+\begin{DoxyReturn}{Returns}
+le nom de la ville d{\ttfamily édition de l}ouvrage 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/\mbox{\hyperlink{Ouvrage_8h}{Ouvrage.\+h}}\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/Ouvrage.\+cpp\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/tests/Ouvrage\+Testeur.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\bin\Debug\Labo03.exe.config
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\bin\Debug\Labo03.exe
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\bin\Debug\Labo03.pdb
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\obj\Debug\Labo03.csproj.AssemblyReference.cache
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\obj\Debug\Labo03.csproj.CoreCompileInputs.cache
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\obj\Debug\Labo03.exe
+C:\Users\stephaniejob\Documents\3. Prog SW\LABO\Labo03\Labo03\obj\Debug\Labo03.pdb

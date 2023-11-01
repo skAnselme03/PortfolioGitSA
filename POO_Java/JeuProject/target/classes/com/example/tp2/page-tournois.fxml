@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="CENTER" prefHeight="609.0" prefWidth="408.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp2.PageTournoisController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label contentDisplay="TOP" text="Sélectionner les équipes" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.011363607464414656">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.5684210658073425" green="0.03999999910593033" blue="0.03999999910593033" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="0.5166666507720947" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <ListView fx:id="listEquipe1" prefHeight="51.0" prefWidth="368.0" />
+   <ListView fx:id="listEquipe2" prefHeight="51.0" prefWidth="368.0" />
+   <Separator prefWidth="200.0" />
+   <Label contentDisplay="TOP" text="TOURNOI" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.011363607464414656">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.5684210658073425" green="0.03999999910593033" blue="0.03999999910593033" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="0.5166666507720947" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <TextFlow fx:id="resultatTournoi" lineSpacing="1.0" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+      <padding>
+         <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      </padding></TextFlow>
+   <Button fx:id="btnLancerTournoi" alignment="CENTER" contentDisplay="CENTER" onAction="#lancerTournoi" prefHeight="40.0" prefWidth="292.0" style="-fx-background-color: #910a0a;" text="Démarrer le tournoi" textAlignment="CENTER" textFill="#fffabe">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Separator prefWidth="200.0" />
+   <GridPane prefHeight="66.0" prefWidth="367.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="67.19998779296876" minHeight="10.0" prefHeight="49.60002059936524" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <Button fx:id="btnPageJoueurs" alignment="CENTER" contentDisplay="CENTER" onAction="#goPageJoueurs" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #666666;" text="Gérer joueurs" textAlignment="CENTER" textFill="#fafafa" wrapText="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="btnPageEquipes" alignment="CENTER" contentDisplay="CENTER" onAction="#goPageEquipes" prefHeight="48.0" prefWidth="166.0" style="-fx-background-color: #666666;" text="Gérer équipes" textAlignment="CENTER" textFill="#fafafa" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </GridPane>
+   <Button fx:id="btnPagePrincipale" alignment="CENTER" contentDisplay="CENTER" onAction="#switchPagePrincipale" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #666666;" text="Menu principal" textAlignment="CENTER" textFill="#fafafa" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+</VBox>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="S. Anselme">
+    <!-- Fichier de style pour la page principale -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./projet.js"></script>
+    <!-- Style de caractères-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mmq0gke.css">
+
+    <link href="//db.onlinewebfonts.com/c/f6b2dec03f7e464e83bdde8368e1ee0b?family=Leitura+News" rel="stylesheet" type="text/css" />
+    <title>Projet finale</title>
+</head>
+
+<body>
+    <!--Contenue principale-->
+    <main class="contenu-principal_form">
+        <form name="projetF" onsubmit="return validation_form()">
+            <!-- </form>method="post" class="container_form"> -->
+            <fieldset>
+                <table class="table_questionnaire">
+                    <tr>
+                        <td>
+                            <label for="nom">Nom</label>&nbsp;
+                            <input aria-label="nom" type="text" name="nom" id="nom" placeholder="Votre Nom (au complet [facultatif])" onchange="valider_nom()">
+                            <!-- onchange="validerNom()"> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="courriel">Courriel</label>&nbsp;
+                            <input type="text" name="courriel" id="courriel" placeholder="Votre courriel" onchange="valider_adresse_mail()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telephone">Téléphone</label>&nbsp;
+                            <input aria-label="telephone" type="text" name="telephone" id="telephone" placeholder="Votre numéro de téléphone" onchange="valider_telephone()"><span>(facultatif)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="message">Titre du message</label>&nbsp;
+                            <select name="message" id="message" class="message-selection" required onchange="choisir_titre_msg()">
+                                <option value="label">Choisissez un titre</option>
+                                <option value="infoProd">Information sur un produit</option>
+                                <option value="infoCmd">Information sur une commande</option>
+                                <option value="getDevis">Demande de devis</option>
+                                <option value="sigBugs">Signaler un bug</option>
+                                <option value="autre">Autre</option>
+                            </select>&nbsp;
+                            <input name="afficheMsg" type="text" disabled value="" aria-label="afficheMsg" id="afficheMsg">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txtArea">
+                            <label for="messageEnv">Message : </label>
+                            <textarea name="messageEnv" id="messageEnv" cols="10" rows="20" placeholder="Vos commentaires" aria-label="messageEnv" onchange="valider_messages()"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label aria-label="site" for="noteSite">Note sur le site</label>
+                            <input type="radio" name="noteSite" aria-label="null">Nul
+                            <input type="radio" name="noteSite" aria-label="insuffisant">Insuffisant
+                            <input type="radio" name="noteSite" aria-label="moyen">Moyen
+                            <input type="radio" name="noteSite" aria-label="bon">Bon
+                            <input type="radio" name="noteSite" aria-label="tresBon">Très bon
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="abonnement" id="abonnement">&nbsp;
+                            <label for="abonnement">Recevoir la newsletter</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button name="soumettre" type="submit">Envoyer</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <!--Non breaking space &nbsp;-->
+        </form>
+    </main>
+</body>
+
+</html>

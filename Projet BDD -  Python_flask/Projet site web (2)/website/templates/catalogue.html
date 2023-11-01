@@ -1,0 +1,90 @@
+{% extends "index.html" %} {% block title %}Catalogue{% endblock %} {% block head %}
+<link rel="stylesheet" href="../static/css/catalogue.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+{% endblock %} {% block navbar %}
+<ul class="menu__list" id=" navbar ">
+    <li><a href="/ ">Accueil</a></li>
+    <li><a href="/catalogue">Catalogue</a></li>
+    <li><a href="/ajouter">Ajout</a></li>
+    <li><a href="/profil">Profil</a></li>
+    <li>
+        <a href="/logout">
+            <button class="btn--entete" onclick="{{ url_for('logout') }}">Quitter <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+        </a>
+    </li>
+</ul>
+{% endblock %} {% block content %}
+
+<main>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+            {% for msg in messages %}
+                <p class="blink">{{ msg }}</p>
+            {% endfor %} {% endif %} {% endwith %}
+    <div class="search-wrapper">
+        <form class="recherche" method="POST" action="/recherche">
+            <input type="text" placeholder="Rechercher un jouet..." name="query">
+            <button type="submit"><img class="searchIcon " src="../static/img/recherche.png"
+                                           alt="recherche_icon "></button>
+        </form>
+    </div>
+
+    <div class="filter-wrapper">
+        <form class="filtres" method="POST" action="/filtre">
+            <select class="filtre" name="categorie" id="categorie">
+                    <option value="any">Toutes catégories</option>
+                    <option value="Jouets en bois">Jouets en bois</option>
+                    <option value="Livres">Livres</option>
+                    <option value="Poupées et figurines">Poupées et figurines</option>
+                    <option value="Voitures, trains et avions">Voitures, trains et avions</option>
+                    <option value="Personnages de film et émission">Personnages de film et d'émission</option>
+                    <option value="Jeux éducatifs">Jeux éducatifs</option>
+                    <option value="Jouets pour touts petits">Jouets pour tout-petits</option>
+                    <option value="Jeux de société">Jeux de société</option>
+                    <option value="Jeux extérieur">Jeux d'extérieur</option>
+                    <option value="Instruments de musique">Instruments de musique</option>
+                    <option value="Jeu imitation">Jeux d'imitation</option>
+                </select>
+
+            <select name="categorieAge" id="categorieAge">
+                    <option value="any">Toutes catégories d'âge</option>
+                    <option value="0-6 mois">0-6 mois</option>
+                    <option value="6-12 mois">6-12 mois</option>
+                    <option value="12-24 mois">12-24 mois</option>
+                    <option value="2-5 ans">2-5 ans</option>
+                </select>
+
+            <select name="etat" id="etat">
+                    <option value="any">Tous les états</option>
+                    <option value="Neuf">Neuf</option>
+                    <option value="Comme neuf">Comme neuf</option>
+                    <option value="Bon état">Bon état</option>
+                    <option value="Assez bon état">Assez bon état</option>
+                </select>
+            <button type="submit">Appliquer les filtres</button>
+        </form>
+    </div>
+    {#Résultat recherche#}
+    <div id="jouets-container " class="product-grid ">
+        {% for jouet in jouets %}
+        <div class="item item-1 ">
+            <img class="img_jouet " src="{{ url_for( 'static', filename='storage/img_jouet/' + jouet[4]) }}" alt="photoJouet " height="200 ">
+            <div class="item-body ">
+                <a href="{{ url_for( 'jouet_individuel', id=jouet[0]) }} ">{{ jouet[1] }}</a>
+                <p style=" margin: 5% 0 0 0; ">{{ jouet[9] }} points</p>
+            </div>
+            <br>
+            <div class="boutonWishlist ">
+                <form class="btn-wishlist " method="POST" action="{{ url_for( 'ajout_wishlist', idJouet=jouet[0]) }} ">
+                    <button type="submit" name="ajoutWishlist ">Ajouter à ma wishlist</button>
+                </form>
+
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+    {% endblock %}
+</main>

@@ -1,0 +1,166 @@
+﻿body {
+    font-family: verdana;
+    font-size: 13pt;
+    color: Black;
+}
+
+.sTexteCentre {
+    text-align: center;
+}
+
+.sLargeurDiv {
+    width: 850px;
+    padding-left: 10px;
+}
+
+.sEntete {
+    background-color: #DDDDDD;
+    margin-bottom: 5px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.sCorps {}
+
+.sFlottantAGauche {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.sFlottantADroite {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.sPiedDePage {
+    clear: both;
+    background-color: #DDDDDD;
+    font-size: 90%;
+    margin-top: 5px;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+.sTitreApp {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.sTitreSection {
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sAuteurApp {
+    font-size: 120%;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sResultat {
+    color: Green;
+    font-weight: bold;
+    border: solid 1px black;
+    text-align: right;
+}
+
+.sResultatC {
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    border: solid 1px black;
+    text-align: right;
+}
+
+.sResultatCNA {
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    border: solid 1px black;
+    text-align: right;
+}
+
+.sEnteteColonneTableau {
+    color: black;
+    background-color: yellow;
+    border: solid 1px black;
+    text-align: right;
+}
+
+.sEnteteLigneTableau {
+    color: black;
+    background-color: yellow;
+    border: solid 1px black;
+    text-align: left;
+}
+
+.sHauteurReduit {
+    line-height: 5px;
+}
+
+.sZoneDeTexteNormal {}
+
+.sCouleurFondZoneDeTexteNormal {
+    background-color: #DDDDDD;
+}
+
+input {
+    text-align: right;
+    font-weight: bold;
+    font-size: 100%;
+    width: 25%;
+}
+
+input[type="button"] {
+    font-size: 120%;
+    font-variant: small-caps;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    border-style: outset;
+}
+
+a:link {
+    color: Black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: Red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: Green;
+    text-decoration: underline;
+}
+
+a:link img,
+a:visited img {
+    border: none;
+}
+
+a:hover img {
+    border-style: double;
+    border-width: 2px;
+    border-color: Green;
+}
+
+.sValide {
+    background-color: greenyellow;
+}
+
+.sHorsLimite {
+    background-color: orange
+}
+
+.sNonNumerique {
+    background-color: red;
+}
+
+.sNon-QuartHeure {
+    background-color: skyblue;
+}

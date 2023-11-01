@@ -1,0 +1,83 @@
+.menu__logo h1{
+    font-size: 1.5vw;
+}
+
+/*Menu list*/
+.menu__list{
+    display: flex;
+    /*align-items: center;
+    justify-content: space-between;
+    gap: 15px;*/
+}
+.menu--principal+.menu--secondaire{
+    margin-left: 4vw;
+}
+.menu__list>li{
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.menu__list>li>a, .menu__list>li>a>button{
+    color: var(--grise);
+    display: flex;
+    font-size: inherit;
+}
+::selection {
+    background-color: var(--primaire);
+    color: var(--neutral);
+    text-shadow: none;
+}
+/*donnez un rythme entre les listes*/
+.menu__list li+li{
+    margin-left: 2.5vw;
+}
+
+/*animation underline*/
+.menu__list>li a,.menu__list>li>a button{
+    transition: color .3s ease;
+    color: var(--grise);
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.menu__list>li a::after, .menu__list>li>a button::after{
+    /*transition vers la droite*/
+    right: 0;
+    transition: width .3s ease;
+    width: 0;
+    /*mise en forme de l'animation underline*/
+    content: "";
+    background-color: var(--primaire);
+    bottom: -4px;
+    height: 6px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Bouton quitter */
+.btn--entete{
+    border: none;
+    background-color:var(--transparent);
+    color: var(--grise);
+    font-weight: bold;
+
+}
+
+/*Bannière hero*/
+/*.entete__hero{
+    /*insertion de l'image dans son parent
+    background-image: url("../../img/sebastian-pandelache-VtD5d7MWE1A-unsplash.jpg");
+    /* s'assurer que l'image couvre toute la section
+    background-size: cover;
+    /* centrer l'image horizontalement et verticalement
+    background-position: center center;
+}*/
+.banniere__hero{
+    /*insertion de l'image dans son parent*/
+    background-image: url("../../img/sebastian-pandelache-VtD5d7MWE1A-unsplash.jpg");
+    /* s'assurer que l'image couvre toute la section */
+    background-size: cover;
+    /* centrer l'image horizontalement et verticalement */
+    background-position: center center;
+    height: 100%;
+}

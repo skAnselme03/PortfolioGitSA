@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource name="jdbc/sql9641461" 
+  			auth="Container" type="javax.sql.DataSource"
+  			maxActive="20" maxIdle="5" maxWait="10000"
+  			username="" password="" 
+  			driverClassName="com.mysql.cj.jdbc.Driver"
+  			url="jdbc:mysql://sql9.freemysqlhosting.net:3306/?useSSL=false&amp;serverTimezone=UTC"/>
+</Context>

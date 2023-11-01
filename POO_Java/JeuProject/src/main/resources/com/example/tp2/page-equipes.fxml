@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="760.0" prefWidth="530.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp2.PageEquipesController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label contentDisplay="TOP" text="Créer une équipe" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.4368908405303955" green="0.010721247643232346" blue="0.5789473652839661" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.7372549176216125" green="0.5058823823928833" blue="0.9686274528503418" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <TextField fx:id="strNomEquipe" promptText="Nom de l'équipe" />
+   <TextField fx:id="intBudgetEquipe" promptText="Budget de l'équipe" />
+   <Button fx:id="btnCreerEquipe" alignment="CENTER" contentDisplay="CENTER" onAction="#creerEquipe" prefHeight="40.0" prefWidth="292.0" style="-fx-background-color: #bc81f7;" text="Créer une nouvelle équipe" textAlignment="CENTER" textFill="#fffabe">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Separator prefWidth="200.0" />
+   <Label contentDisplay="TOP" text="Ajouter un joueur dans une équipe" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.4368908405303955" green="0.010721247643232346" blue="0.5789473652839661" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.7372549176216125" green="0.5058823823928833" blue="0.9686274528503418" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <TabPane prefHeight="164.0" prefWidth="490.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Attaquants">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ListView fx:id="listAttaque" prefHeight="105.0" prefWidth="490.0" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Défenseurs">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ListView fx:id="listDefense" prefHeight="105.0" prefWidth="490.0" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+         <Tab text="Gardiens">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ListView fx:id="listGardien" prefHeight="110.0" prefWidth="490.0" />
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+         <Tab text="Entraîneurs">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ListView fx:id="listEntraineur" prefHeight="105.0" prefWidth="490.0" />
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+   <ListView fx:id="listEquipes" prefHeight="98.0" prefWidth="490.0" />
+   <Button fx:id="btnConfirmerEquipe" alignment="CENTER" contentDisplay="CENTER" onAction="#confirmerAjoutEquipes" prefHeight="40.0" prefWidth="292.0" style="-fx-background-color: #bc81f7;" text="Ajouter joueur dans équipe" textAlignment="CENTER" textFill="#fffabe">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Separator prefWidth="200.0" />
+   <GridPane prefHeight="66.0" prefWidth="367.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="67.19998779296876" minHeight="10.0" prefHeight="49.60002059936524" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <Button fx:id="btnPageTournois" alignment="CENTER" contentDisplay="CENTER" onAction="#goPageTournois" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #666666;" text="Faire un tournoi" textAlignment="CENTER" textFill="#fafafa" wrapText="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="btnPageJoueurs" alignment="CENTER" contentDisplay="CENTER" onAction="#goPageJoueurs" prefHeight="48.0" prefWidth="166.0" style="-fx-background-color: #666666;" text="Gérer joueurs" textAlignment="CENTER" textFill="#fafafa" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </GridPane>
+   <Button fx:id="btnPagePrincipale" alignment="CENTER" contentDisplay="CENTER" onAction="#switchPagePrincipale" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #666666;" text="Menu principal" textAlignment="CENTER" textFill="#fafafa" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+</VBox>

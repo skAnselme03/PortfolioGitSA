@@ -1,0 +1,46 @@
+/*Emplacement automatique*/
+
+.container-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 0.75fr;
+    grid-template-rows: 50px 250px 250px 250px 400px 300px 100px 50px;*/
+    /*grid-template-rows: 50px 400px 400px 400px 50px;*/
+    /*haque colonne doit avoir une taille minimale de 250px et 
+    une taille maximale de 1fr (pour remplir l'espace restant)*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /*Espacement entre les pistes*/
+    gap: 20px 10px;
+    /*Perment de combler tout les trous*/
+    grid-auto-flow: dense;
+    /*padding-left: 10rem;
+    padding-right:10rem;*/
+    /*margin-top: 2rem;*/
+}
+.sous-entete-profil {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.compte {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.sous-entete-profil,
+.compte,
+.avis-recus,
+.annonces-achats,
+.ma-wishlist {
+    grid-column-end: span 3;
+}
+
+.compte,
+.ma-wishlist,
+.annonces-achats {
+    grid-row-end: span 3;
+}
+
+.avis-recus {
+    grid-row-end: span 2;
+}

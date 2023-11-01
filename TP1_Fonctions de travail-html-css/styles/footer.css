@@ -1,0 +1,19 @@
+.pied-de-page {
+    flex-basis: 100%;
+    background-color: #2d2d2d;
+    color: #dddddd;
+    align-self: flex-end;
+}
+
+.pied-de-page p {
+    font-size: 12px;
+    line-height: 32px;
+    padding: 6px;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: end;
+}
+
+.pied-de-page :first-child {
+    text-transform: uppercase;
+}

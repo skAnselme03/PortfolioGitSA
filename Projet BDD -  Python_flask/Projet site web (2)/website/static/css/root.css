@@ -1,0 +1,70 @@
+
+:root{
+    --primaire: #F2BE5C;
+    --secondaire:#dcf2e2;
+    --ternaire : #f2de77;
+    --quaternaire: #d3d92b;
+    --grise:#3d3c3c;
+    --grise2: #7c7b7b;
+    --transparent:transparent;
+    --neutral: #eae9e9;
+    --input:#f3f6f3;
+    --deleted: #f3583b;
+    --color-color: #9b9999;
+    /**/
+    --gouttiere-scroll:20px;
+
+    /*FONTS*/
+    --font-primary: sans-serif;
+    --font-secondary: serif;
+    --font-tertiary: monospace;
+
+    --font-size-default: 16px;
+    --font-weight-default: 300;
+    --font-weight-medium: 400;
+    --font-weight-heavy: 600;
+    --font-weight-bold: 700;
+
+    --letter-spacing-moyen: 0.02em;
+    --letter-spacing-large: 0.03em;
+    --letter-spacing-xlarge: 0.08em;
+
+    --line-height-default: 1;
+    --line-height-small: 1.2;
+    --line-height-normal: 1.4;
+    --line-height-medium: 1.6;
+    --line-height-large: 1.8;
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Helvetica, 'Helvetica', sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%
+}
+a{
+    text-underline: none;
+}
+
+ul, ol{
+    font-family: var(--font-primary);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

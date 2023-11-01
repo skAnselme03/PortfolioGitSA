@@ -1,0 +1,29 @@
+body>section {
+    text-align: center;
+}
+
+body>section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table_auteurs>*+* {
+    margin-top: 4vw;
+}
+
+.table_auteurs,
+th,
+td {
+    /* width: 100%; */
+    border: 1px solid rgb(106, 105, 105);
+}
+
+.table_auteurs>thead th {
+    display: flex;
+    width: 100%;
+    background-color: rgb(211, 209, 207);
+    padding: calc((24px/2)*1.5) 0;
+    margin-bottom: 1vw;
+    justify-content: center;
+}

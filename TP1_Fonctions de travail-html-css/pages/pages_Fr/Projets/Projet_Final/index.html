@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP3 - Camille Andriamamonjy & Stéphanie Anselme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .fa-keyboard-o {
+            font-size: 200px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projets</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-padding-large">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-padding-large">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Projets</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+        <h1 class="w3-margin w3-jumbo">TP3</h1>
+        <p class="w3-xlarge">Comparer le métier de deux employés en informatique qui travaillent dans deux entreprises différentes.</p>
+        <p class="w3-large">Par Stéphanie Anselme & Camille Andriamamonjy</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Introduction</h1>
+                <h5>Nous avons réalisé une entrevue avec deux développeurs, l'une développeuse de jeux vidéos dans le privé, l'autre technicien informatique dans le public.</h5>
+                <p class="w3-text-grey">Ce travail nous a permis d'en apprendre plus sur leur métier respectif, que ce soit à propos de leurs journées de travail à leur équipe, des défis rencontrés et des objectifs fixés, et des différents avantages et inconvénients.</p>
+                <p class="w3-text-grey">Nous vous proposons ici un résumé de chacune de ces entrevues, ainsi qu'un comparatif entre nos deux participants. Il vous suffit de cliquer sur les liens plus haut pour vous y retrouver.</p>
+                <h5 class="w3-text-dark-grey">Bonne lecture!</h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <i class="fa fa-keyboard-o w3-padding-64 w3-text-blue"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-opacity">
+        <p>Template provenant de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

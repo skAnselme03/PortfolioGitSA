@@ -1,0 +1,16 @@
+@import "./elementsDeBase.css";
+@import "./entetePrincipale.css";
+@import "./acceuil.css";
+@import "./paletteDeCouleur.css";
+@import "./sectionPrincipale.css";
+@import "./tables.css";
+@import "./buttons.css";
+@import "./inputs.css";
+@import "./formulaire.css";
+@import "./image.css";
+@import "./liste.css";
+@import "./page404.css";
+
+/* * {
+    outline: 1px dotted green;
+} */

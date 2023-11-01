@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+
+    <!-- Nécessaire pour validation -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A" />
+
+    <!-- Titre de la page -->
+    <title>Examen pratique No 1 par Stéphanie Anselme</title>
+
+    <!-- Insertion d’un fichier contenant une feuille de style -->
+    <link rel="stylesheet" type="text/css" href="styleNo1.css" />
+
+    <!-- Insertion d’un fichier contenant le code JavaScript -->
+    <script type="text/javascript" src="libValidationBase.js"></script>
+
+    <!-- Feuille de style locale -->
+    <style type="text/css">
+
+    </style>
+
+    <!-- Code JavaScript local -->
+    <script type="text/javascript">
+        function validerNombreRomain() {
+            // A Programmer
+        }
+
+        function effacerNombreRomain(strDonnee) {
+            // A Programmer
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="divEntete" class="sTexteCentre sLargeurDiv sEntete">
+        <p>
+            <span class="sTitreApp">
+                Validation d'un nombre romain<br />
+            </span> par
+            <span class="sAuteurApp">
+                Stéphanie Anselme
+            </span>
+        </p>
+    </div>
+
+    <div id="divCorps" class="sLargeurDiv sCorps">
+        <table>
+            <tr>
+                <th>
+                    Nombre romain :
+                </th>
+                <td>
+                    <input id="tbNombreRomain" name="tbNombreRomain" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <input id="btnVerdict" name="btnVerdict" type="button" value="Verdict" onclick="validerNombreRomain()" />
+                    <script>
+                        function validerNombreRomain() {
+                            let strInput = document.getElementById('tbNombreRomain');
+                            let lblVerdict = document.getElementById('lblVerdict');
+                            if (contientSeulementUnNombreRomain(strInput.value)) {
+                                lblVerdict.innerHTML = convertirUnNombreRomainEnDecimal(strInput.value);
+                                lblVerdict.className = 'sVerdict';
+
+                            } else {
+                                lblVerdict.innerHTML = 'Non valide';
+                                lblVerdict.className = 'sNonverdict';
+                            }
+
+                        }
+                    </script>
+                </th>
+                <td>
+                    <br>
+                    <span id="lblVerdict" class="sVerdict"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divPiedDePage" class="sLargeurDiv sPiedDePage">
+        <p>
+            <a href="http://www.cgodin.qc.ca">
+                <img src="logoCGG.jpg" alt="logoCGG" />
+            </a>
+            <a href="http://www.cgodin.qc.ca/programme/techniques-informatique/">
+	           Département d'informatique du Cégep Gérald-Godin
+	        </a>
+            <br /> &copy; 2022
+        </p>
+    </div>
+
+</body>
+
+</html>

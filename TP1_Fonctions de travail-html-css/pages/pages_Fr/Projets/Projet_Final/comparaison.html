@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP3 - Camille Andriamamonjy & Stéphanie Anselme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .fa-copy,
+        .fa-cogs {
+            font-size: 200px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-padding-large w3-white">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projets</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 2</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-padding-large">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Projets</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+        <h1 class="w3-margin w3-jumbo">Comparaison</h1>
+        <p class="w3-xlarge">Similitudes & Différences</p>
+        <p class="w3-large">Qu'est-ce que nos deux programmeurs ont (ou n'ont pas) en commun?</p>
+    </header>
+
+    <!-- Premier bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Similitudes</h1>
+                <ul class="w3-text-grey">
+                    <li>Des journées-type similaires : nos deux programmeurs passent leurs journées à « faire du code », et leurs journées sont entrecoupées de réunions entre les différentes équipes pour discuter des différentes tâches, des problèmes rencontrés
+                        et des solutions possibles.</li>
+                    <li>Aussi, la majorité de leurs mandats consiste à faire du développement pour répondre aux différents besoins de leur clientèle.</li>
+                    <li>Depuis la pandémie, tous les deux rencontrent des difficultés avec le travail à distance, notamment en ce qui concerne la construction de liens et d’un esprit d’équipe avec leurs collègues de travail.</li>
+                    <li>Les deux rencontrent également certaines frustrations avec leur clientèle, puisque le manque de communication peut amener les clients à émettre des demandes peu pertinentes ou peu claires. Trop souvent, les clients demandent qu’un
+                        travail soit refait intégralement car les besoins n’ont pas été répondus ou les attentes étaient mal comprises.</li>
+                    <li>On constate tout de même une certaine fidélité chez nos programmeurs : tous deux sont restés plus de cinq ans dans le même poste, ce qui a amené à une certaine stagnation professionnelle.</li>
+                    <li>Cette fidélité pourrait s’expliquer par le fait que, même si les deux domaines sont différents, l’emploi de programmeur amène de nombreux avantages monétaires, mais aussi humains avec l’emphase sur le travail d’équipe.</li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-center">
+                <i class="fa fa-copy w3-padding-64 w3-text-blue"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deuxième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="fa fa-cogs w3-padding-64 w3-text-blue w3-margin-right"></i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Différences</h1>
+                <ul class="w3-text-dark-grey">
+                    <li>La complexité des projets diffère selon qu’on est développeur d’application maison ou développeur logiciel. En effet, le travail de Nyota demande d’être un détenteur de bac ou plus, tandis que le travail de Jeremy demande d’être un
+                        technicien en informatique.</li>
+                    <li>De ce fait, les outils qu’ils emploient sont différents. Si tous les deux utilisent Visual Studio, c’est le seul logiciel qu’ils ont en commun. Jérémy travaille avec MySQL et Postman, là où Nyota utilisera plus régulièrement Unity
+                        3D et Unreal Engine. L’emploi de logiciels différents es logique puisque, bien que tous deux soient des programmeurs, ils ont deux emplois différents.</li>
+                    <li>Les deux travaillent dans deux secteurs différents. Jérémy est au secteur public, ce qui lui permet d’avoir un emploi plus « relax », avec un rythme moins intense. À l’inverse, Nyota, qui est dans le secteur privé, doit faire face
+                        à plus de pressions concernant son travail, notamment avec des livrables et des dates de remise serrées. Une autre différence est que, même si leurs deux salaires sont bons, ceux du privé sont plus importants que ceux du public.</li>
+                    <li>Ils ont obtenu leurs emplois de manière différentes : là où Jérémy a facilement obtenu son emploi après un stage référencé par le CEGEP où il a suivi sa formation, Nyota a, quant à elle, du rechercher activement un emploi après son
+                        BAC. À la suite de ça, Nyota a acquis une certaine expérience en recherche d’emploi, là où pour Jérémy c’est encore quelque chose dont il n’a pas l’habitude.</li>
+                    <li>Les deux ont des objectifs de carrières différents. Nyota veut se réorienter en développement de jeux vidéo, tandis que Jérémy veut prendre une pause dans le domaine informatique.</li>
+                    <li>Les deux développeurs ont des personnalités différentes en ce qui a trait à la collaboration d’équipe. C’est-à-dire, Nyota va consulter ces collègues si elle rencontre des bloquant car elle ne peut se permettre de passer beaucoup de
+                        temps pour trouver des solutions. Jérémy lui va avoir le temps de faire plus de recherche personnelle lorsqu’il rencontre des bloquant et il aura moins tendance à demander de l’aide aux autres.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-opacity">
+        <p>Template provenant de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

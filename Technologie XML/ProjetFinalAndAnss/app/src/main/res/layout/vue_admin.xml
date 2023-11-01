@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <include layout="@layout/header_layout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:shadowColor="#151515"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:text="Liste des usagers"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Bouton pour ajouter un usager -->
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Usager"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- ListView pour afficher les usagers -->
+    <ListView
+        android:id="@+id/listViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Ligne de division -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/itemUtilisateur"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Formulaire pour supprimer un usager -->
+    <EditText
+        android:id="@+id/suppNomAuComplet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter NomAuComplet"
+        android:padding="12dp"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/suppUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter UserID"
+        android:padding="12dp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

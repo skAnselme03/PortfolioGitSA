@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+
+    <!-- Nécessaire pour validation -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Titre de la page -->
+    <title>Projet 1 par Stéphanie ANSELME</title>
+
+    <!-- Insertion d’un fichier contenant une feuille de style -->
+    <link rel="stylesheet" type="text/css" href="styleProjet1.css" />
+
+
+    <!-- Feuille de style locale -->
+    <style type="text/css">
+
+    </style>
+
+    <!-- Insertion d’un fichier contenant le code JavaScript -->
+    <script type="text/javascript" src="libValidationBase.js">
+    </script>
+    <!--######################################################-->
+    <!-- A ENLEVER AVANT LA REMISE -->
+    <script type="text/javascript" src="./scipt_0.js"></script>
+    <script type="text/javascript" src="script_1_effacerDonnees.js"></script>
+    <script type="text/javascript" src="./script_2_ValiderNombre.js"></script>
+    <script type="text/javascript" src="./script_3_Resultat.js"></script>
+    <script type="text/javascript" src="./script_calculePaie.js"></script>
+    <!--######################################################-->
+
+    <script type="text/javascript">
+        /*  function calculePaie() {
+                                                                                                                            /* Insérer votre code ici 
+                                                                                                                } * /
+    </script>
+
+    <script type="text/javascript">
+        /* function effaceDonnees() {
+                                                                                                                                                    /* Insérer votre code ici 
+                                                                                                                                                }*/
+    </script>
+
+</head>
+
+<body>
+    <div id="divEntete" class="sTexteCentre sLargeurDiv sEntete">
+        <p>
+            <span class="sTitreApp">
+                Projet 1 - Bordereau de paie pour la semaine<br />
+                du 14 au 20 mars 2022<br />
+            </span> par
+            <span class="sAuteurApp">
+                Stéphanie ANSELME
+            </span>
+        </p>
+    </div>
+
+    <div id="divCorps" class="sLargeurDiv sCorps">
+        <div id="divPanneauSaisie" class="sFlottantAGauche">
+            <p class="sTitreSection">
+                Saisie des données
+            </p>
+            Taux<br />
+            <input id="tbTauxHor" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> $<br /><br /> Heures travaillées<br /><br /> Lundi
+            <br />
+            <input id="tbNbHrs0" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Mardi
+            <br />
+            <input id="tbNbHrs1" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Mercredi
+            <br />
+            <input id="tbNbHrs2" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Jeudi
+            <br />
+            <input id="tbNbHrs3" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Vendredi
+            <br />
+            <input id="tbNbHrs4" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Samedi
+            <br />
+            <input id="tbNbHrs5" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h<br /><br /> Dimanche
+            <br />
+            <input id="tbNbHrs6" name="tbSaisie" class="sCouleurFondZoneDeTexteNormal" type="text" maxlength="5" /> h
+        </div>
+
+        <div id="divPanneauResultats" class="sFlottantADroite">
+            <p class="sTitreSection">
+                Calcul du salaire
+            </p>
+            <table>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>
+                        <input id="btnCalculer" name="btnCalculer" type="button" value="Calculer" onclick="calculePaie()" />
+                    </td>
+                    <td>
+                        <input id="btnEffacer" name="btnEffacer" type="button" value="Effacer" onclick="effaceDonnees()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="sHauteurReduit">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="sEnteteColonneTableau">Heures&nbsp;</td>
+                    <td class="sEnteteColonneTableau">Taux horaire&nbsp;</td>
+                    <td class="sEnteteColonneTableau">Salaire brut&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="sEnteteLigneTableau">Heures normales&nbsp;</td>
+                    <td id="lblHeuresNormales" class="sResultat"></td>
+                    <td id="lblTauxHoraireNormal" class="sResultat"></td>
+                    <td id="lblSalaireNormal" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td class="sEnteteLigneTableau">Heures à temps et demi&nbsp;</td>
+                    <td id="lblHeuresDemies" class="sResultat"></td>
+                    <td id="lblTauxHoraireDemi" class="sResultat"></td>
+                    <td id="lblSalaireDemi" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td class="sEnteteLigneTableau">Heures à temps double&nbsp;</td>
+                    <td id="lblHeuresDoubles" class="sResultat"></td>
+                    <td id="lblTauxHoraireDouble" class="sResultat"></td>
+                    <td id="lblSalaireDouble" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td class="sEnteteLigneTableau">Heures travaillées totales&nbsp;</td>
+                    <td id="lblHeuresTotales" class="sResultatC"></td>
+                    <td id="lblNA" class="sResultatCNA">N/A</td>
+                    <td id="lblSalaireBrut" class="sResultatC"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="sHauteurReduit"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="sEnteteColonneTableau">Déductions&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Assurances personnelles&nbsp;</td>
+                    <td id="lblAssurances" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Cotisations syndicales&nbsp;</td>
+                    <td id="lblSyndicat" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Assurance-emploi&nbsp;</td>
+                    <td id="lblAE" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">R.R.Q.&nbsp;</td>
+                    <td id="lblRRQ" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Impôt fédéral&nbsp;</td>
+                    <td id="lblImpotFederal" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Impôt provincial&nbsp;</td>
+                    <td id="lblImpotProvincial" class="sResultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="sEnteteLigneTableau">Déductions totales&nbsp;</td>
+                    <td id="lblDeductionsTotales" class="sResultatC"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="sHauteurReduit"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="sEnteteColonneTableau">Salaire net&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                    <td id="lblSalaireNet" class="sResultatC"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="divPiedDePage" class="sLargeurDiv sPiedDePage">
+        <p>
+            <a href="http://www.cgodin.qc.ca">
+                <img src="logoCGG.jpg" alt="logoCGG" />
+            </a>
+            <a href="http://www.cgodin.qc.ca/programme/techniques-informatique/">
+	           Département d'informatique du Cégep Gérald-Godin
+	        </a>
+            <br /> &copy; <span class="sAuteurApp"> Stéphanie ANSELME </span> 2022
+        </p>
+    </div>
+
+</body>
+
+</html>

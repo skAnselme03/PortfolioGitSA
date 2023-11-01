@@ -1,0 +1,21 @@
+/*------------- POLICES DE CARACTHÈRES -------------*/
+
+.contenu_principal-teams h2 {
+    font-size: 2.5em;
+    font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", Georgia, Times New Roman, serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contenu_principal-teams ul>li,
+ol>li {
+    list-style: none;
+}
+
+.contenu_principal-teams li {
+    list-style: none;
+}
+
+.contenu_principal-teams ol.ligne-du-temps>li>.date {
+    font-size: 110%;
+}

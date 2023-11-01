@@ -1,0 +1,114 @@
+/*Palette de couleur
+    vert pastel: #dcf2e2;
+    vert olive: #d3d92b;
+    orange pastel: #F2BE5C;
+    jaune pastel : #f2de77;
+    grise - texte : #3d3c3c;
+    transparent - input: transparent
+
+
+*/
+
+*{
+    color: var(--grise);
+}
+
+
+/*application d'une palette sur les enfants direct du main*/
+
+main>:nth-child(1){
+   background-color: var(--transparent);
+}
+main>:nth-child(1){
+    /*border-bottom: 5px solid var(--quaternaire);*/
+    border-bottom: 5px solid var(--primaire);
+}
+/**
+
+main>:nth-child(2){
+   background-color: var(--primaire);
+}
+*/
+main>:nth-child(3){
+   background-color: var(--secondaire);
+}
+
+main>:nth-child(4) {
+   background-color: var(--neutral);
+}
+
+main>:nth-child(5) {
+    background-color: var(--primaire);
+}
+
+/*Application de style sur les enfant du compte*/
+.compte>section:nth-child(1) {
+    border-bottom: 2px solid var(--primaire);
+}
+.masquer-profil button {
+    background-color: var(--primaire);
+}
+#profilPhoto,
+.detail-compte,
+.adresse,
+.modif-password{
+    background-color: var(--ternaire);
+}
+.compte>section:nth-child(6){
+    border-top: 2px solid var(--primaire);
+
+}
+/*Mise en forme boutton reset*/
+
+.compte>section:last-child button:nth-child(1) {
+    background-color: var(--ternaire);
+    border: 2px solid var(--ternaire);
+}
+
+/*Mise en forme boutton modifié*/
+
+.compte>section:last-child button:nth-child(2) {
+    background-color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+}
+
+.compte>section:last-child button {
+    transition: background-color 0.2s;
+}
+
+.compte>section:last-child button:nth-child(1):active,
+.compte>section:last-child button:nth-child(1):focus,
+.compte>section:last-child button:nth-child(1):hover {
+    background-color: var(--primaire);
+}
+.compte>section:last-child button:nth-child(2):active,
+.compte>section:last-child button:nth-child(2):focus,
+.compte>section:last-child button:nth-child(2):hover {
+    background-color: var(--quaternaire);
+}
+
+/*--------------------*/
+/*       Wishlist     */
+/*--------------------*/
+.ma-wishlist header{
+    border-bottom: 5px solid var(--secondaire);
+}
+
+.tuile{
+    background-color: var(--ternaire);
+}
+.tuile form>button{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--secondaire);
+    color:var(--grise);
+    transition: background-color 0.2s;
+}
+.tuile form>button:active,
+.tuile form>button:focus,
+.tuile form>button:hover {
+    background-color: var(--grise);
+    color:var(--secondaire);
+    border-top: 1vw solid var(--secondaire);
+}

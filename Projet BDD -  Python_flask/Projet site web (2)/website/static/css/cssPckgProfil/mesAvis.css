@@ -1,0 +1,14 @@
+.avis-recus {
+    margin: 0;
+    padding: 5vw;
+}
+.avis-recus>*+*{
+    margin-top: 2.5vw;
+}
+
+/* MEF sous-entête*/
+.avis-recus header{
+        border-bottom: 5px solid var(--secondaire);
+}
+
+.avis-recus{margin-bottom: 2vw}

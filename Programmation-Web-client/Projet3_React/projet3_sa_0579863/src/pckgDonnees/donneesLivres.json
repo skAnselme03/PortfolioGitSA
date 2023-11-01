@@ -1,0 +1,202 @@
+[
+	{
+		"Id" : 1,
+		"Auteur" : "Alexandre Dumas",
+		"Titre" : "Les 3 mousquetaires",
+		"Genre" : "Roman historique en feuilletons",
+		"Editeur" : "Le Siècle",
+		"Publication" : "1844-03-01"
+	},
+	{
+		"Id" : 2,
+		"Auteur" : "Victor Hugo",
+		"Titre" : "Les misérables",
+		"Genre" : "Roman",
+		"Editeur" : "Albert Lacroix et Cie.",
+		"Publication" : "1862-01-01"
+	},
+	{
+		"Id" : 3,
+		"Auteur" : "Albert Camus",
+		"Titre" : "L'étranger",
+		"Genre" : "Roman",
+		"Editeur" : "Éditions Gallimard",
+		"Publication" : "1942-05-19"
+	},
+	{
+		"Id" : 4,
+		"Auteur" : "Michel Tremblay",
+		"Titre" : "Les belles-soeurs",
+		"Genre" : "Comédie dramatique",
+		"Editeur" : "Leméac",
+		"Publication" : "1968-08-28"
+	},
+	{
+		"Id" : 5,
+		"Auteur" : "Gabrielle Roy",
+		"Titre" : "Bonheur d'occasion",
+		"Genre" : "Roman",
+		"Editeur" : "Pascal",
+		"Publication" : "1947-12-01"
+	},
+	{
+		"Id" : 6,
+		"Auteur" : "Alice Peterson",
+		"Titre" : "capsicin pleiotropism",
+		"Genre" : "pragmarize",
+		"Editeur" : "rariety",
+		"Publication" : "2000-03-26"
+	},
+	{
+		"Id" : 7,
+		"Auteur" : "John Price",
+		"Titre" : "outfigured whiskerless",
+		"Genre" : "scapulothoracic",
+		"Editeur" : "tomosis",
+		"Publication" : "2020-05-07"
+	},
+	{
+		"Id" : 8,
+		"Auteur" : "Judith Ward",
+		"Titre" : "scrofulaweed prefabricated",
+		"Genre" : "aerostatic",
+		"Editeur" : "oligocholia",
+		"Publication" : "1918-08-27"
+	},
+	{
+		"Id" : 9,
+		"Auteur" : "Charles Lewis",
+		"Titre" : "hotels noil",
+		"Genre" : "unmonopolized",
+		"Editeur" : "unrotary",
+		"Publication" : "1904-09-11"
+	},
+	{
+		"Id" : 10,
+		"Auteur" : "Lowell Archer",
+		"Titre" : "chilly preinvestigation",
+		"Genre" : "unmetamorphic",
+		"Editeur" : "origenist",
+		"Publication" : "2005-12-24"
+	},
+	{
+		"Id" : 11,
+		"Auteur" : "Jeremy Lat",
+		"Titre" : "silverly fancies",
+		"Genre" : "ostealgia",
+		"Editeur" : "soign",
+		"Publication" : "2002-11-05"
+	},
+	{
+		"Id" : 12,
+		"Auteur" : "Holly Boykin",
+		"Titre" : "asterozoa dominion",
+		"Genre" : "supercharge",
+		"Editeur" : "nonhistrionical",
+		"Publication" : "1902-05-24"
+	},
+	{
+		"Id" : 13,
+		"Auteur" : "Sally Loughmiller",
+		"Titre" : "pauciarticulate armament",
+		"Genre" : "oryzorictes",
+		"Editeur" : "syllogistics",
+		"Publication" : "1903-08-26"
+	},
+	{
+		"Id" : 14,
+		"Auteur" : "Chantelle Becker",
+		"Titre" : "distraught carrack",
+		"Genre" : "disobliger",
+		"Editeur" : "accable",
+		"Publication" : "1930-06-13"
+	},
+	{
+		"Id" : 15,
+		"Auteur" : "Clarence Garcia",
+		"Titre" : "aphroditeum bribers",
+		"Genre" : "chippiest",
+		"Editeur" : "physicking",
+		"Publication" : "1999-02-02"
+	},
+	{
+		"Id" : 16,
+		"Auteur" : "Alexis Huland",
+		"Titre" : "nautiform indorsees",
+		"Genre" : "jack",
+		"Editeur" : "preaccused",
+		"Publication" : "1941-03-06"
+	},
+	{
+		"Id" : 17,
+		"Auteur" : "Irene Radaker",
+		"Titre" : "seventeenths galbe",
+		"Genre" : "partialising",
+		"Editeur" : "algivorous",
+		"Publication" : "1981-03-02"
+	},
+	{
+		"Id" : 18,
+		"Auteur" : "Dorothy Jones",
+		"Titre" : "preornamental readaptive",
+		"Genre" : "melampyrin",
+		"Editeur" : "bandless",
+		"Publication" : "1956-08-17"
+	},
+	{
+		"Id" : 19,
+		"Auteur" : "Eric Hutchinson",
+		"Titre" : "dysaptation fyrdung",
+		"Genre" : "libertine",
+		"Editeur" : "trecentist",
+		"Publication" : "1921-02-15"
+	},
+	{
+		"Id" : 20,
+		"Auteur" : "Anthony Smith",
+		"Titre" : "stonegale balebos",
+		"Genre" : "tannogallate",
+		"Editeur" : "breechloader",
+		"Publication" : "1989-04-04"
+	},
+	{
+		"Id" : 21,
+		"Auteur" : "Mary Carson",
+		"Titre" : "album lodge",
+		"Genre" : "prole",
+		"Editeur" : "hick",
+		"Publication" : "1989-06-23"
+	},
+	{
+		"Id" : 22,
+		"Auteur" : "Thomas Skidmore",
+		"Titre" : "calamars unphilological",
+		"Genre" : "coptine",
+		"Editeur" : "bakwiri",
+		"Publication" : "2021-07-13"
+	},
+	{
+		"Id" : 23,
+		"Auteur" : "Ellen Boyer",
+		"Titre" : "eosinophilia teleosteous",
+		"Genre" : "dactyliographic",
+		"Editeur" : "psammous",
+		"Publication" : "1959-11-23"
+	},
+	{
+		"Id" : 24,
+		"Auteur" : "Ronald Williams",
+		"Titre" : "zircofluoride urocystitis",
+		"Genre" : "constipating",
+		"Editeur" : "mylodei",
+		"Publication" : "1993-08-24"
+	},
+	{
+		"Id" : 25,
+		"Auteur" : "Charles Stephens",
+		"Titre" : "gabfest contrafissure",
+		"Genre" : "yammerers",
+		"Editeur" : "exquire",
+		"Publication" : "1913-02-25"
+	}
+]

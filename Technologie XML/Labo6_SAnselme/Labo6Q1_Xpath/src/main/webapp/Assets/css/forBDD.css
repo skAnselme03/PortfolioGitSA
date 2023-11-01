@@ -1,0 +1,20 @@
+.connection-fail {
+    padding: 1vw;
+    color: brown;
+    background-color: yellow;
+    border: 1px solid brown;
+}
+
+.connection-succeeded {
+    padding: 1vw;
+    color: green;
+    background-color: yellowgreen;
+    border: 1px solid green;
+}
+
+.requete-fail {
+    padding: 1vw;
+    color: red;
+    background-color: yellow;
+    border: 1px solid red;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP3 - Camille Andriamamonjy & Stéphanie Anselme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+        
+        .indent {
+            text-indent: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-padding-large w3-white">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projets</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-padding-large">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-padding-large">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Projets</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+        <h1 class="w3-margin w3-jumbo">Premier programmeur rencontré</h1>
+        <p class="w3-xlarge">Jérémy Tchamssik-Fouquet</p>
+        <p class="w3-large">Technicien informatique pour une commission scolaire</p>
+    </header>
+
+    <!-- Premier bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Présentation générale</h1>
+            <h5>Jérémy Tchamssik-Fouquet est technicien informatique classe principale, ou « grosso-modo juste programmeur ». Il est employé par la <a href="https://cssmv.gouv.qc.ca/">commission scolaire Marie-Victorin</a> depuis maintenant 5 ans.</h5>
+        </div>
+    </div>
+
+    <!-- Deuxième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Mandat</h1>
+            <h5>Jérémy a pour rôle de développer des applications web pour répondre aux différents besoins de la commission.</h5>
+            <p class="w3-text-dark-grey indent">Les applications développées dépendent en grande partie des demandes avancées par les différents départements de la commission scolaire, en majorité du département des ressources humaines et à l’occasion de celui des finances. Généralement,
+                cela demande de passer des formulaires papier à un support sur le web.</p>
+            <p class="w3-text-grey indent">Par exemple, Jérémy évoque que le département des ressources humaines avait un formulaire d’intervention que les employés devaient remplir jusqu’à présent à la main – son projet était alors d’en créer l’équivalent en application web. Il fallait
+                aussi (re)voir les procédures associées à ces formulaires. Autrefois, lorsque les ressources humaines recevaient ces formulaires, elles devaient les transférer par courriel aux différentes directions concernées ou aux syndicats. Avec l’application
+                web, une fois que le formulaire est approuvé par un responsable, les courriels peuvent être envoyés automatiquement aux personnes pertinentes. Dans ce cas-ci, cela permettait de retirer une grosse charge de travail aux secrétaires.</p>
+        </div>
+    </div>
+
+    <!-- Troisième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Journée-type</h1>
+            <h5>Les journées de travail sont assez <i>« tranquilles »</i> dans le public. L’emploi de Jérémy est un classique 9 à 5 où il <i>« code toute la journée »</i>.</h5>
+            <p class="w3-text-grey indent">Pour coder, il utilise Visual Studio. Pour la gestion de bases de données, il utilise MySQL. Et pour tester une requête, notamment pour les API, Postman est l’application généralement employée.</p>
+            <p class="w3-text-grey indent">Les tâches de travail sont réparties en équipes de deux. Il est très rare qu’il n’y ait qu’une seule personne sur un projet, afin d’éviter les problèmes et les retards en cas d’absence. Régulièrement, les équipes participent à des rencontres
+                d’équipe sur Scrum pour discuter de l’avancement des différents projets et des difficultés rencontrées afin de s’entraider. La plateforme Azure DevOps permet aussi aux équipes d’avoir un tableau de bord avec différentes tâches que les
+                programmeurs peuvent s’attribuer ou attribuer à d’autres. Cela permet aussi de savoir qui travaille sur quoi et de ne pas empiéter sur le travail des autres.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">En termes hiérarchiques, le département d’informatique est composé de techniciens informatiques, comme Jérémy, dont le rôle est de programmer. Au-dessus des techniciens informatiques, on retrouve les analystes, dont le rôle est de rentrer
+                en contact avec les clients, de prendre en note leurs demandes et leurs besoins, et de les informer des contraintes que les programmeurs peuvent rencontrer lors de la réalisation de ces demandes. C’est le pont de communication entre les
+                programmeurs et les clients. L’analyste joue également un rôle de chef de projet. Et au-dessus de tout ça, on retrouve <i>« le big boss »</i>, le directeur du département informatique, celui en charge de la gestion de tous les projets
+                et de leur priorisation. Le directeur attribue les projets aux analystes, qui répartissent les tâches aux techniciens.</p>
+            <p class="w3-text-dark-grey indent">L’équipe a aussi changé au cours des années. Au début, ils étaient proches d’une dizaine. Mais après la pandémie il y a eu une « exode », avec de nombreux collègues quittant après avoir trouvé un meilleur emploi, avec un meilleur salaire notamment.
+                L’équipe a diminué de moitié, mais elle est à présent revenue aux alentours d’une dizaine. Jérémy mentionne une constante – <i>« c’est pratiquement que des barbus »</i>.</p>
+            <br>
+            <p class="w3-text-grey indent">La pandémie de la COVID-19 a changé les habitudes de travail pour le département informatique de la commission scolaire. Selon Jérémy, il y a vraiment un « avant » et un « après ».</p>
+            <p class="w3-text-grey indent">Avant la pandémie, Jérémy se rendait au bureau pour effectuer ses tâches et participer aux réunions d’équipe. Pendant la pandémie, il a fallu travailler à distance et revoir l’organisation du travail.</p>
+            <p class="w3-text-grey indent">Après la pandémie, le travail à distance est resté – notamment parce que la commission scolaire a transformé les locaux non utilisés du département d’informatique en espace de stockage pour les ordinateurs portables des élèves. Désormais,
+                chacun travaille de chez soi, les rencontres Scrum s’organisent en ligne via la plateforme de Microsoft Teams. Le travail est maintenant plus individuel et autonome – <i>« une fois que t’as tes tâches, tu travailles sur tes tâches. Puis quand t’as des bloquantes, tu contactes quelqu’un pis t’essayes de trouver une solution »</i>.
+                De plus, les rencontres au bureau se font maintenant une à deux fois dans l’année.</p>
+        </div>
+    </div>
+
+    <!-- Quatrième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Défis</h1>
+            <h5>Pour Jérémy, il peut être difficile de demander de l’aide. Pourtant, ses collègues ont tous des expériences différentes et certains pourraient l’aider à sortir d’un problème rapidement.</h5>
+            <p class="w3-text-dark-grey indent">C’est un métier qui demande du travail d’équipe, et donc de devoir ravaler sa fierté pour demander du soutien. <i>« Il ne faut pas avoir peur de demander aux autres de l’aide parce que c’est à ça que ça sert une équipe – on a différentes connaissances qu’on met en commun pour accomplir un objectif »</i>.</p>
+            <br>
+            <p class="w3-text-grey indent">Jérémy mentionne également que la communication est clé. Il arrive parfois que les équipes fassent du travail en double car elles ne se rendent pas compte que quelqu’un est déjà en train de travailler sur un point.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Aussi, les <b>merges</b> sont un aspect du métier à la fois récurrent et stressant. <i>« Quand vous fusionnez vos codes, votre travail, là c’est le moment où tu pries pour que ça marche parce qu’il peut y avoir tellement de problèmes dans les <b>merges</b> »</i>.
+                C’est pourquoi il faut faire des <b>merges</b> le plus souvent possible pour éviter d’avoir des gros <b>merges</b> avec beaucoup de différences et donc beaucoup de conflits qu’il faut examiner individuellement.</p>
+            <br>
+            <p class="w3-text-grey indent">Sinon, on retrouve les défis classiques du monde de la programmation. <i>« Des fois, tu te demandes “pourquoi est-ce que ça marche pas?”. Mais ce qui est encore plus drôle, c’est quand tu te demandes “pourquoi est-ce que marche?’” Parce que des fois, ton code, ça fait aucun sens pis ça marche. Et ça aussi c’est un problème, parce que oui ça marche mais tu sais pas pourquoi. Et quand ça marchera plus, tu sauras pas comment le régler. »</i>                Jérémy mentionne aussi avoir passer des semaines sur des bugs sans savoir d’où venait le problème pour finalement réaliser que <i>« c’était tellement bête »</i> et que la solution était évidente. Il ajoute qu’il faut aimer fouiller dans
+                son code.</p>
+        </div>
+    </div>
+
+    <!-- Cinquième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Avantages</h1>
+            <h5>La possibilité de travail à distance est un avantage non négligeable.</h5>
+            <p class="w3-text-grey indent">Concernant le métier de technicien informatique, Jérémy mentionne que, <i>« l’avantage ou l’inconvénient dépendamment des points de vue »</i> est que c’est un métier qui offre beaucoup moins d’interactions sociales que d’autres (dans son cas
+                personnel, il voit cela comme un avantage). Il y a <i>« moins de gens à gérer »</i>, en plus d’être un métier très autonome où il est possible de travailler sur ses affaires dans son coin.</p>
+            <p class="w3-text-grey indent">Jérémy mentionne aussi le plaisir du travail en équipe, surtout que dans son cas il s’entend très bien avec ses collègues.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Bien évidemment, la programmation inclue beaucoup de logique ce qui est un plus pour ceux qui, comme Jérémy, aime ça. Ceux qui aiment faire de la résolution de problèmes et apprendre en permanence y trouveront également leur bonheur.</p>
+            <br>
+            <p class="w3-text-grey indent">Pour ce qui est du travail au public, c’est <i>« relax »</i>, pour reprendre les mots de Jérémy. Le rythme est loin d’être intense et il n’y a pas beaucoup de pression. Le public offre également des avantages sociaux et plus de protections
+                qu’au privé. Même si ces avantages n’étaient pas personnellement très attrayants pour Jérémy, il est quand même resté <i>« par confort »</i>. </p>
+        </div>
+    </div>
+
+    <!-- Sixième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Désavantages</h1>
+            <h5>Les salaires au public sont moins attrayants que ceux du privé, ce qui selon Jérémy explique l’exode qui a eu lieu dans son département il y a quelques années.</h5>
+            <p class="w3-text-dark-grey indent">Jérémy mentionne également une chose <i>« qui l’énerve »</i> dans le travail dans le public : contrairement au privé, les clients (les autres départements de la commission scolaire) ne paient pas pour leur produit. De ce fait, ils ne réalisent
+                pas le temps que les programmeurs passent derrière les applications qu’ils développent. Cela fait que, trop souvent, le produit est <i>« jeté à la poubelle »</i> ou simplement jamais utilisé. <i>« C’est de l’argent envoyé aux poubelles parce qu’on passe des heures sur un truc qui finit par pas servir »</i>.
+                C’est une frustration pour les développeurs qui pourrait être évitée si les clients communiquaient mieux ou réfléchissaient mieux à leurs besoins.</p>
+            <p class="w3-text-dark-grey indent">Parfois, les clients vont également demander des projets qui ont très peu de valeur ajoutée mais qui demandent un énorme temps de développement. Par exemple, une application peut être montée d’une certaine façon – mais la demande d’un client
+                peut amener à changer toute la structure de la base de données, ce qui demande beaucoup de temps. Tout ça pour ajouter une fonctionnalité qui n’est pas forcément très pertinente. Dans ce cas-ci, les analystes doivent prévenir le client
+                qu’ils peuvent réaliser cette demande, mais que cela va demander beaucoup de temps pour trop peu de résultats – le client peut s’en passer la plupart du temps. C’est par ailleurs le rôle des analystes d’assurer ce genre de communication
+                avec les clients, de leur apporter cette réalité.</p>
+            <br>
+            <p class="w3-text-grey indent">Aussi, même si le travail à distance est un avantage non négligeable, Jérémy considère que le contact humain n’est pas une mauvaise chose. Ce contact humain peut difficilement être établi sur Zoom ou Teams, il faut fournir des efforts supplémentaires
+                pour l’obtenir. La dynamique d’équipe est aussi complètement différente à distance qu’en présentiel – Jérémy n’a jamais vu en personne certains de ses nouveaux collègues.</p>
+            <br>
+            <p class="w3-text-dark-grey indent">Enfin, même si Jérémy aime beaucoup ses collègues et apprécie donc le travail en équipe, il mentionne que parfois il a été amené à travailler avec <i>« un gars insupportable »</i>. C’était d’autant plus inévitable que <i>« l’énergumène »</i>                en question est un excellent programmeur et que le travail en équipe rend la coopération obligatoire.</p>
+        </div>
+    </div>
+
+    <!-- Septième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Cheminement</h1>
+            <h5>Jérémy a fait une technique en informatique de gestion, au Cégep Édouard-Montpetit.</h5>
+            <p class="w3-text-grey indent">Il s’agit d’un DEC de trois ans. À la suite de ça, son Cégep lui a proposé une liste de plusieurs employeurs pour faire un stage. Jérémy a donc choisi la commission scolaire Marie-Victorin pour faire son stage et il a été engagé par la suite.
+                <i>« Travaillez bien dans vos stages comme ça vous aurez votre poste! »</i></p>
+            <br>
+            <p class="w3-text-dark-grey indent">Il mentionne qu’il a dû passer un examen de français, étape obligatoire pour travailler au public. Il a également passé un examen technique pour s’assurer qu’il avait les compétences nécessaires en programmation. Cet examen technique n’était
+                pas obligatoire jusqu’à récemment, mais la commission scolaire a reçu plusieurs candidats qui n’avaient pas les compétences, <i>« notamment un boulanger qui avait zéro connaissance en programmation »</i> - il a donc fallu filtrer les candidatures.</p>
+        </div>
+    </div>
+
+    <!-- Huitième bloc -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Objectifs de carrière</h1>
+            <h5>Jérémy a récemment démissionné de son emploi, pour se concentrer sur des projets plus personnels. Il ne sait pas trop quels sont ses objectifs à court ou long termes, mais il compte continuer à faire des projets de programmation sur le côté.
+            </h5>
+            <p class="w3-text-dark-grey indent">Cependant, il admet que son métier lui offrait une possibilité d’avancement professionnel. S’il l’avait souhaité, Jérémy aurait pu devenir analyste – c’est ce qu’a fait un de ses collègues avec le même niveau d’ancienneté. Et après ça, <i>« pourquoi pas directeur »</i>,
+                puisque son directeur était aussi un programmeur à la base.</p>
+        </div>
+    </div>
+
+    <!-- Neuvième bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h1>Conseils et recommandations</h1>
+            <h5>Avant de terminer l’entrevue, Jérémy nous a partagé les commentaires suivants :</h5>
+            <ul class="w3-text-dark-grey indent">
+                <li>Éviter de faire du travail à distance si possible;</li>
+                <li>Les personnes qui aiment la logique, la résolution de problèmes et les mathématiques seront heureuses en programmation.</li>
+                <li>Il faut de la patience, beaucoup de patience : pour résoudre les problèmes, les bugs, les conflits d’équipe et les clients difficiles.</li>
+                <li>Enfin, il ne faut pas avoir d’apprendre et de découvrir de nouveaux outils et fonctionnalités, car le milieu évolue sans cesse. Les logiciels se mettent à jour, et les programmeurs aussi.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-opacity">
+        <p>Template provenant de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

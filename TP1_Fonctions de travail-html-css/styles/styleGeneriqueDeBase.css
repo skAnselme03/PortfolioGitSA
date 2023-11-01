@@ -1,0 +1,19 @@
+/* Style générique de base----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    /*Marge pour alignement des puce*/
+    padding-left: 1rem;
+}

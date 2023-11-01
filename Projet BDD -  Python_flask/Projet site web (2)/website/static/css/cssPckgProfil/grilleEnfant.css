@@ -1,0 +1,68 @@
+/*
+*  Sous-entete-profil *
+*/
+
+.sous-entete-profil {
+    display: flex;
+    align-items: center;
+    /*padding-left: 1rem;*/
+    justify-content: stretch;
+}
+
+
+/*Compte*/
+
+.compte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 20px 60px 60px 55px 25px;*/
+    /*grid-template-rows: 0.20fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;*/
+    /*haque colonne doit avoir une taille minimale de 250px et 
+    une taille maximale de 1fr (pour remplir l'espace restant)*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*espacement entre les éléments */
+    /*gap: 15px;*/
+
+    grid-auto-flow: dense;
+}
+
+
+.compte>section {
+    align-items: center;
+    justify-content: center;
+}
+
+.compte>section:nth-child(1) {
+    grid-column-end: span 3;
+}
+
+.compte>section:nth-child(2) {
+    /*Interchanger la colonne photo profil avec detail du compte*/
+    grid-column-start: 3;
+    grid-row-end: span 6;
+}
+
+.compte>section:nth-child(3) {
+    /*Interchanger la colonne photo profil avec detail du compte*/
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 4;
+}
+
+.compte>section:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 6;
+}
+
+.compte>section:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-end: span 6;
+}
+
+.compte>section:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+}

@@ -1,0 +1,78 @@
+/* Inspiration source:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro  */
+
+.table_questionnaire-entete {
+    /*  background-color: #dddddd; */
+    background-color: #cbcbcb;
+    color: rgb(85, 82, 82);
+}
+
+.table_questionnaire {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_questionnaire td,
+.table_questionnaire th {
+    border: 1px solid #bdbbbb;
+    /*  text-align: left; */
+    padding: 8px;
+}
+
+
+/*
+.table_questionnaire-champ {
+    display: flex;
+    align-items: center;
+    /* gap: 0.25em; 
+
+padding: 0.05em;
+
+}
+.table_questionnaire-champ label {
+    flex-basis: 30%;
+}
+.table_questionnaire-champ input {
+    flex-basis: 80%;
+}
+.table_questionnaire-champ input:not([type=checkbox]):not([type=radio]),
+textarea {
+    /* width: 100%; */
+
+
+/*  margin-top: 0;
+    margin-bottom: 0; */
+
+
+/* padding: 15px; 
+	
+    
+    border: none;
+    /*  border-radius: 10px; 
+    
+    box-sizing: border-box;
+    /* resize: vertical; 
+
+margin-bottom: 1em;
+padding: 3px;
+
+}
+*/
+
+.table_questionnaire input {
+    border: none;
+    border-radius: 4%;
+    padding: 10px;
+    border: none;
+}
+
+.table_questionnaire #autres,
+#langAutre {
+    border-bottom: 1px solid rgb(132, 130, 130);
+}
+
+
+/*-- Typographie --*/
+
+.table_questionnaire-entete {
+    text-transform: uppercase
+}

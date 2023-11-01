@@ -1,0 +1,316 @@
+{% extends "index.html" %} {% block title %}Profil{% endblock %} {% block head %}
+    <link rel="stylesheet" href="../static/css/profil.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+          integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../static/js/profil.js"></script>
+
+
+    <!--<script src="../static/js/login.js"></script>-->
+{% endblock %} {% block navbar %}
+    <ul class="menu__list">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue">Catalogue</a></li>
+        <li><a href="/ajouter">Ajout</a></li>
+        <li><a href="/profil">Profil</a></li>
+        <li>
+            <a href="/logout">
+                <button class="btn--entete" onclick="{{ url_for('logout') }}">Quitter <i class="fa fa-sign-out"
+                                                                                         aria-hidden="true"></i>
+                </button>
+            </a>
+        </li>
+    </ul>
+{% endblock %} {% block content %}
+    <main class="container-grid">
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in messages %}
+            <p class="blink">{{ msg }}</p>
+        {% endfor %} {% endif %} {% endwith %}
+        <section class="sous-entete-profil">
+            <h2>Mon Profil</h2>
+        </section>
+        <form id="compteForm" action="{{ url_for('modif_profil', username=g.user.username) }}" class="compte"
+              method="POST">
+            <section id="masquerProfil" class="masquer-profil">
+                <button id="masqueInfos">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+            </section>
+            <section id="profilPhoto" class="profil-photo">
+                <h4 class="ligne-complete ">Photo de profil</h4>
+                <section class="photo">
+                    <img src="{{ source_photo_profil }}" alt="Photo de profil" id="photoProfilImg">
+                </section>
+                <label for="photoProfil">Choisir un photo de profil</label>
+                <input type="file" id="photoProfil" name="photoProfil" accept=".jpg, .jpeg, .png">
+                <p>Solde de point: {{ SoldePoints }}</p>
+            </section>
+            <section id="detailCompte" class="detail-compte">
+                <h4 class="ligne-complete">Détails du compte</h4>
+                <section class="prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" value="{{ g.user.prenom }}">
+                </section>
+                <section class="nom">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" value="{{ g.user.nom }}">
+                </section>
+                <section class="numTelephone">
+                    <label for="numeroTelephone">Numéro de téléphone</label>
+                    <input type="text" id="numeroTelephone" name="numeroTelephone"
+                           pattern="\d{3}[-\(\)\s]*\d{3}[-\(\)\s]*\d{4}" placeholder="Télephone"
+                           value="{{ g.user.numeroTelephone }}">
+                </section>
+                <section class="courriel">
+                    <label for="courriel">Courriel</label>
+                    <input type="email" id="courriel" name="courriel" placeholder="monadresse@adresse.xxx"
+                           value="{{ g.user.email }}">
+                </section>
+            </section>
+            <section id="mon_adresse" class="adresse">
+                <h4 class="ligne-complete">Adresse</h4>
+                <section class="numCivique">
+                    <label for="numeroCivique">Numéro Civique</label>
+                    <input type="text" id="numeroCivique" name="numeroCivique" value="{{ g.user.numeroCivique }}">
+                </section>
+
+                <section class="rue">
+                    <label for="rue">Rue</label>
+                    <input type="text" id="rue" name="rue" value="{{ g.user.rue }}">
+                </section>
+
+                <section class="code-postal">
+                    <label for="codepostal">Code postal</label>
+                    <input type="text" id="codepostal" name="codepostal" value="{{ g.user.codePostal }}">
+                </section>
+                <section class="ville">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville" name="ville" value="{{ g.user.ville }}">
+                </section>
+                <section class="province">
+                    <label for="province">Province</label>
+                    <select id="province" name="province">
+                        <option value="" selected>{{ g.user.province }}</option>
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="MB">MB</option>
+                        <option value="NB">NB</option>
+                        <option value="NL">NL</option>
+                        <option value="NS">NS</option>
+                        <option value="NT">NT</option>
+                        <option value="NU">NU</option>
+                        <option value="ON">ON</option>
+                        <option value="PE">PE</option>
+                        <option value="QC">QC</option>
+                        <option value="SK">SK</option>
+                        <option value="YT">YT</option>
+                    </select>
+                </section>
+                <section class="pays">
+                    <label for="pays">Pays</label>
+                    <select id="pays" name="pays">
+                        <option value="" selected>{{ g.user.pays }}</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </section>
+            </section>
+            <section id="modifPassword" class="modif-password">
+                <h4 class="ligne-complete">Changer votre mot de passe</h4>
+                <section class="oldPassword">
+                    <label for="ancienPassword">Ancien mot de passe *</label>
+                    <input type="text" name="ancienPassword" id="ancienPassword" placeholder="Ancien mot de passe">
+                </section>
+                <section class="newPassword">
+                    <label for="nouveauPassword">Nouveau mot de passe *</label>
+                    <input type="text" name="nouveauPassword" id="nouveauPassword" placeholder="Nouveau mot de passe">
+                </section>
+                <section class="confirmNewPassword ">
+                    <label for="confirmerNewPassword">Confirmer le nouveau mot de passe *</label>
+                    <input type="text" name="confirmerNewPassword" id="confirmerNewPassword"
+                           placeholder="Confirmer nouveau mot de passe">
+                </section>
+            </section>
+            <section id="modifProfil" class="modify-profil">
+                <button type="reset" class="delete-compte delete-user-btn" name="supprimer">Supprimer mon compte
+                </button>
+                <button id="modifierProfil" class="modifier_profil" name="modifier">Modifier</button>
+                <button type="submit" id="enregistreModif" class="modif_enregistrer" name="enregistrer">Enregistrer
+                </button>
+            </section>
+        </form>
+
+        <section class="annonces-achats container section-affiche">
+            <section class="annonces">
+                <section class="ma-wishlist annonces-reservees">
+                    <header class="entete-wishlist">
+                        <h2>Annonces</h2>
+                    </header>
+                    <section class="wishlist cards-container">
+                        <div class="wishlist-grille cards">
+                            {% for jouet in jouets_annonces %}
+                                <article class="tuile annonce annonce-res card">
+                                    <a class="titre-annonce" href="{{ url_for('jouet_individuel', id=jouet[0]) }}">
+                                        <picture class="contenu-annonce">
+                                            <img class="img_jouet"
+                                                 src="{{ url_for( 'static', filename='storage/img_jouet/' + jouet[4]) }}"
+                                                 alt="photoJouet">
+                                        </picture>
+                                        <section class="type-points">
+                                            <h3>{{ jouet[1] }} : </h3>
+                                            <p class="tuile-titre">{{ jouet[9] }} points</p>
+                                        </section>
+                                    </a>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </section>
+                <section class="ma-wishlist annonces-reservees">
+                    <header class="entete-wishlist">
+                        <h3>Mes réservations</h3>
+                    </header>
+                    <section class="wishlist cards-container">
+                        <div class="wishlist-grille cards">
+                            {% for jouet in jouets_reserves %}
+                                <article class="tuile annonce annonce-res card">
+                                    <a class="titre-annonce" href="{{ url_for('jouet_individuel', id=jouet[0]) }}">
+                                        <picture class="contenu-annonce">
+                                            <img class="img_jouet"
+                                                 src="{{ url_for( 'static', filename='storage/img_jouet/' + jouet[4]) }}"
+                                                 alt="photoJouet">
+                                        </picture>
+                                        <section class="type-points">
+                                            <h3>{{ jouet[1] }} : </h3>
+                                            <p class="tuile-titre">{{ jouet[9] }} points</p>
+                                        </section>
+                                    </a>
+                                    <form class="btn-reserver" method="POST"
+                                          action="{{ url_for('vendre_jouet', idJouet=jouet[0]) }}">
+                                        <button class="vendre" type="submit" name="vendreJouet">J'ai vendu!</button>
+                                    </form>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </section>
+                <section class="ma-wishlist annonces-vendues">
+                    <header class="entete-wishlist">
+                        <h3>Mes ventes</h3>
+                    </header>
+                    <section class="wishlist cards-container">
+                        <div class="wishlist-grille cards">
+                            {% for jouet in jouets_vendus %}
+                                <article class="tuile annonce card">
+                                    <a class="titre-annonce" href="{{ url_for('jouet_individuel', id=jouet[0]) }}">
+                                        <picture class="contenu-annonce">
+                                            <img class="img_jouet" src="{{ url_for( 'static', filename='storage/img_jouet/' +
+                                     jouet[2]) }}" alt="photoJouet">
+                                        </picture>
+                                        <section class="type-points">
+                                            <h3>{{ jouet[1] }} : </h3>
+                                            <p class="tuile-titre">{{ jouet[3] }} points</p>
+                                        </section>
+                                    </a>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="achat">
+                <header>
+                    <h2>Achats</h2>
+                </header>
+                <section class="ma-wishlist achats">
+                    <header class="entete-wishlist">
+                        <h3>Articles achetés récemment</h3>
+                    </header>
+                    <section class="wishlist cards-container">
+                        <div class="wishlist-grille cards">
+                            {% for jouet in jouets_achetes %}
+                                <article class="tuile annonce card">
+                                    <a class="titre-annonce" href="{{ url_for('jouet_individuel', id=jouet[0]) }}">
+                                        <picture class="contenu-annonce">
+                                            <img class="img_jouet" src="{{ url_for( 'static', filename='storage/img_jouet/' +
+                                     jouet[2]) }}" alt="photoJouet">
+                                        </picture>
+                                        <section class="type-points">
+                                            <h3>{{ jouet[1] }} : </h3>
+                                            <p class="tuile-titre">{{ jouet[3] }} points</p>
+                                        </section>
+                                    </a>
+                                    <div class="avis-send">
+                                        {% if avis_complete == False %}
+                                            <h5>Comment s'est déroulé la transaction?</h5>
+                                            <form method="POST" action="{{ url_for('ajout_avis', idJouet=jouet[0]) }}">
+                                                <select class="avis" name="note" id="note">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                                <label for="msg_avis"></label><br>
+                                                <textarea id="msg_avis" placeholder="Description de l'avis"
+                                                          name="msg_avis"></textarea><br>
+                                                <button class="btn__avis-send" type="submit" name="ajoutAvis">Envoyer
+                                                    mon avis
+                                                </button>
+                                            </form>
+                                        {% endif %} {% if avis_complete == True %}
+                                        <p>Vous avez déjà envoyé un avis pour cette transaction.</p>
+                                    {% endif %}
+                                    </div>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="ma-wishlist">
+            <header class="entete-wishlist">
+                <h2>Ma wishlist</h2>
+            </header>
+            <section class="wishlist cards-container">
+                <div class="wishlist-grille cards">
+                    {% for jouet in jouets_wishlist %}
+                        <article class="tuile annonce card">
+                            <a class="titre-annonce" href="{{ url_for('jouet_individuel', id=jouet[0]) }}">
+                                <picture class="contenu-annonce">
+                                    <img class="img_jouet"
+                                         src="{{ url_for( 'static', filename='storage/img_jouet/' + jouet[4]) }}"
+                                         alt="photoJouet" height="80%">
+                                </picture>
+                                <section class="type-points">
+                                    <h3>{{ jouet[1] }} : </h3>
+                                    <p class="tuile-titre">{{ jouet[9] }} points</p>
+                                </section>
+                            </a>
+                            <form class="btn-reserver" method="POST"
+                                  action="{{ url_for('reserver_jouet', idJouet=jouet[0]) }}">
+                                <button class="reserver" type="submit" name="reserverJouet">Réserver
+                                </button>
+                            </form>
+                        </article>
+                    {% endfor %}
+                </div>
+            </section>
+        </section>
+
+        <section class="avis-recus container section-affiche">
+            <header>
+                <h2>Mes avis reçus</h2>
+            </header>
+            <ul class="avis">
+                {% for x in avis %}
+                    <li class="annonce">
+                        <h3 class="titre-annonce">{{ x[1] }}</h3>
+                        <h3 class="titre-annonce">Note:{{ x[2] }}</h3>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+{% endblock %}

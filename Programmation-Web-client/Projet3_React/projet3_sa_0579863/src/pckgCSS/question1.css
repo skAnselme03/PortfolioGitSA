@@ -1,0 +1,110 @@
+body>main{
+	display: flex;
+	position: relative;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	min-height: 50vmin;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 40px;
+	gap:0.5vw;
+
+}
+main>section h2,  main>section ul{
+ margin-top: 1rem;
+ flex-basis: 100%;
+}
+main>section h2{
+  max-width: 80ch;
+}
+.titre_entete_heros{
+	text-align: center;
+	padding: 1rem;
+	border-bottom: 2px solid var(--flame);
+}
+.lst_heros>*+*{
+	margin-top: 1vw;
+}
+/*Tables*/
+/*
+*    ---------------------------------------------   *
+*              Application du rythme                 *
+*    ---------------------------------------------   *
+*/
+section>table{
+	margin-top: 1vw;
+}
+section>table {
+    border-collapse: collapse;
+    cursor: pointer;
+    /*    margin: 100px auto;*/
+    margin-top: 0.5em;
+	margin-bottom: 1vw;
+}
+/*
+*    ---------------------------------------------   *
+*              Application des dimension             *
+*    ---------------------------------------------   *
+*/
+section>table {
+    min-width: 400px;
+    width: auto;
+}
+
+th,
+td {
+    padding: 15px 20px;
+}
+/*
+*    ---------------------------------------------   *
+*           Application de la typographie            *
+*    ---------------------------------------------   *
+*/
+thead tr {
+    text-align: left;
+}
+
+/*
+*    ---------------------------------------------   *
+*        Application de la palette de couleurs       *
+*    ---------------------------------------------   *
+*/
+
+td {
+    color: #3d3c3c;
+}
+
+thead tr {
+    background-color:var(--flame);
+	color: var(--floral-white);
+}
+section>table {
+    box-shadow: 0 5px 25px var(--eerie-black);
+    border: 1px solid #ddd;
+}
+
+tbody tr,
+td,
+th {
+    border: 1px solid var(--timberwolf);
+}
+
+
+/*couleur de fond des lignes pair: tableau zébré*/
+
+tbody tr:nth-child(odd) {
+    background-color: var(--floral-white);
+}
+tbody tr:nth-child(even) {
+    background-color: var(--black-olive);
+}
+tbody tr:nth-child(even) td {
+    color: var(--floral-white);
+}
+table{
+    border-bottom: 2px solid var(--flame);
+}
+tbody tr:last-of-type {
+    border-bottom: 2px solid var(--flame);
+}

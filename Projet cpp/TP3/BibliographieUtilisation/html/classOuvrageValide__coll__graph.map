@@ -1,0 +1,6 @@
+<map id="OuvrageValide" name="OuvrageValide">
+<area shape="rect" id="node1" title="Fixture OuvrageValide, créer un objet Ouvrage valide pour les tests." alt="" coords="5,171,123,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,81,67,108"/>
+<area shape="rect" id="node3" href="$classbiblio_1_1Ouvrage.html" title="Classe Ouvrage représente les références de la catégorie Ouvrage." alt="" coords="91,81,213,108"/>
+<area shape="rect" id="node4" href="$classbiblio_1_1Reference.html" title="La classe Reference permet de modéliser les références bibliographiques." alt="" coords="86,5,218,32"/>
+</map>

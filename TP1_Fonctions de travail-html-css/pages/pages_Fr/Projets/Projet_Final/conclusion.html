@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP3 - Camille Andriamamonjy & Stéphanie Anselme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .fa-connectdevelop {
+            font-size: 200px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comparaison</a>
+            <a href="conclusion.html" class="w3-bar-item w3-button w3-padding-large w3-white">Conclusion</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projets</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+            <a href="programmeur1.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 1</a>
+            <a href="programmeur2.html" class="w3-bar-item w3-button w3-padding-large">Programmeur 2</a>
+            <a href="comparaison.html" class="w3-bar-item w3-button w3-padding-large">Comparaison</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Projets</a>
+        </div>
+    </div>
+
+    <header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+        <h1 class="w3-margin w3-jumbo">Conclusion</h1>
+        <p class="w3-xlarge">Résumé du TP3</p>
+        <p class="w3-large">Ou le TL;DR pour ceux qui n'ont pas le temps de lire</p>
+    </header>
+
+    <!-- Bloc -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="fa fa-connectdevelop w3-padding-64 w3-text-blue w3-margin-right"></i>
+            </div>
+
+            <div class="w3-twothird">
+                <p class="w3-text-dark-grey">Le marché de la programmation et du développement d’application est ouvert, dans des secteurs variés comme ceux des commissions scolaires ou des entreprises en robotique ou en jeux vidéo. Il est possible de trouver un emploi dans n’importe
+                    quel domaine, car le besoin en programmation est de plus en plus présent. Les conditions actuelles du marché permettent à de nouveaux programmeurs de trouver un emploi dès la sortie de leur formation – dès qu’ils demeurent ouverts
+                    d’esprit et prêts à découvrir et manipuler de nouvelles technologies.</p>
+                <p class="w3-text-grey">Peu importe où il travaille, le programmeur réalise du code à longueur de journée, en collaboration étroite avec une équipe. Contrairement à une idée répandue, la programmation n’est pas un métier individuel et isolé, et des compétences
+                    en communication sont plus que nécessaires pour pouvoir collaborer en équipe mais aussi pour échanger et réaliser les besoins de la clientèle.</p>
+                <p class="w3-text-dark-grey">Ce métier étant en constante évolution, il ne faut pas avoir peur d’élargir ses horizons et d’au besoin changer d’employeurs. C’est un excellent moyen d’obtenir un meilleur salaire, mais surtout d’être exposé à de nouveaux défis et à des
+                    technologies auxquelles on ne pourrait pas avoir accès autrement.</p>
+                <h5 class="w3-text-dark-grey">Merci d'avoir pris le temps de lire notre travail!</h5>
+                <p class="w3-text-grey w3-medium" style="text-align:right" ;>Camille Andriamamonjy [6213659] & Stéphanie Anselme [0579863]</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-opacity">
+        <p>Template provenant de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

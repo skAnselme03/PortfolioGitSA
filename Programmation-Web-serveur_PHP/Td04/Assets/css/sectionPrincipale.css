@@ -1,0 +1,14 @@
+body>section {
+    text-align: center;
+}
+
+body>section>*+* {
+    margin-top: 2vw;
+}
+
+body>section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

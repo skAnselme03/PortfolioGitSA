@@ -1,0 +1,78 @@
+// Function to render a calendar
+const renderCalendar = () => {
+    // Initializes date object
+    const date = new Date();
+
+    // Gets container element for calendar's days
+    const monthDays = document.querySelector(".days");
+
+    // Get last day of the current month
+    const lastDay = new Date(
+        date.getFullYear(), 
+        date.getMonth() + 1,
+        0).getDate();
+
+    // Get last day of the previous month
+    const prevLastDay = new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        0).getDate();
+    
+    // Get first day index of current month
+    const firstDayIndex = date.getDay();
+
+    // Get last day index of current month
+    const lastDayIndex = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0).getDay();
+
+    // Calculates dates of the next month to fill empty cells
+    const nextDays = 7 - lastDayIndex - 1;
+
+    // Month names array
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+
+    // Updates header on the page with current month name
+    document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+
+    // Updates date
+    document.querySelector(".date p").innerHTML = new Date().toDateString();
+
+    // Initializes calendar days' string
+    let days = "";
+
+    // Fills empty cells with dates of the previous month
+    for (let x = firstDayIndex; x > 0; x--) {
+        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+    }
+
+    // Fills main part of the calendar with dates of the current month
+    for (let i = 1; i <= lastDay; i++) {
+        // Highlights today's date
+        if (
+            i === new Date().getDate() 
+            && 
+            date.getMonth() === new Date().getMonth()
+        ) {
+            days += `<div class="today">${i}</div>`;
+            // Default date
+        } else {
+            days += `<div>${i}</div>`;
+        }
+    }
+
+    // Fills empty cells with dates of the next month

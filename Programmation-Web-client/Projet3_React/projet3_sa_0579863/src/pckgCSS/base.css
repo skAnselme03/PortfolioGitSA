@@ -1,0 +1,65 @@
+/* Base générique */
+
+/* Retirer les marges par défaut */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Rétablir les couleurs des liens visités */
+a:visited {
+	color: inherit;
+}
+
+p, ul{
+	max-width: 80ch
+}
+
+*+p, *+ul, *+img, *+blockquote,
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
+	margin-top: 20px;
+}
+
+main>*+*,
+.entete>nav>*+* {
+	margin-top: 20px;
+}
+main{
+	margin-top: 25px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* Retirer les les lignes sur
+	tous les liens de navigation */
+nav a {
+	text-decoration: none;
+}
+
+/* Établir une marge intérieure
+	qui aligne mieux les puces */
+ul {
+	padding-left: 1rem;
+}
+
+/* Rythme minimal pour les items de liste */
+ul>*+* {
+	margin-top: 10px;
+}
+ul {
+	padding-left: 2rem;
+}
+
+h5, h6 {
+	font-size: 0.9em;
+}
+/* Corps de page */
+
+
+body {
+	background-color: var(--timberwolf);
+}

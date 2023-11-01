@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:shadowColor="#151515"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="Ajouter un nouvel usager"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#673AB7"
+            android:textColorHighlight="#03A9F4"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin" />
+
+            <RadioButton
+                android:id="@+id/radioSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security" />
+
+            <RadioButton
+                android:id="@+id/radioVisitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitor" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextNomUsager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom d'usager"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextNomAuComplet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom au complet"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextMotPasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/buttonAjouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter" />
+
+        <Button
+            android:id="@+id/buttonRetour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour en arrière" />
+    </LinearLayout>
+
+</LinearLayout>

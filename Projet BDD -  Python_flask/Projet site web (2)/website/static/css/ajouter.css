@@ -1,0 +1,173 @@
+* {
+    /* Dimensionnés de cette façon plus intuitive*/
+    box-sizing: border-box;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*              Application du rythme                 *
+*    ---------------------------------------------   *
+*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px auto;
+}
+
+
+/* Créer une composition plus équilibrée et améliorer la lisibilité */
+header+main{
+    margin-top: 10vw;
+}
+
+main form {
+    width: 50vw;
+    max-width: 500px;
+    /* width: 75em;*/
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
+main form>fieldset {
+    padding: 1em;
+    border: 0.5em solid transparent;
+    border-radius: 4%;
+}
+
+
+/* Appliquer un rythme verticale dans le formulaire*/
+
+
+/*parent*/
+
+main form>fieldset>*+* {
+    margin-top: 0.50em;
+}
+
+
+/*enfants de fieldset*/
+
+main label {
+    margin-top: 10px;
+    padding: 0.25em 0.25em 0.25em 0;
+    display: inline-block;
+}
+
+label {
+    width: 100%;
+}
+
+
+/*Forcer les champs à prendre tout l'espace nécessaire */
+
+main>form input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*           Application de la typographie            *
+*    ---------------------------------------------   *
+*/
+
+body {
+    text-align: center;
+    font-family: Helvetica, 'Helvetica', sans-serif;
+}
+
+label {
+    text-align: left;
+}
+
+a {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*
+*    ---------------------------------------------   *
+*        Application de la palette de couleurs       *
+*    ---------------------------------------------   *
+*/
+
+main form {
+    background-color: #F2BE5C;
+}
+
+a {
+    color: #F2BE5C;
+}
+
+button {
+    background-color: #dcf2e2;
+}
+
+main>form input,
+textarea,
+select,
+select {
+    background-color: #f3f6f3;
+}
+
+h1,
+button,
+p,
+label {
+    color: #3d3c3c;
+}
+
+
+/*
+*    --------------   *
+*        AUTRES       *
+*    --------------   *
+*/
+
+button {
+    transition: background-color 0.2s;
+}
+
+button:link {
+    color: #dddddd;
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #d3d92b;
+}

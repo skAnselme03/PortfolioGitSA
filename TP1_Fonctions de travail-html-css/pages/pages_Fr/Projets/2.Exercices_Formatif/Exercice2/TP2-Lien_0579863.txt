@@ -1,0 +1,3 @@
+Liens:
+	TP1: http://katchasa.ca/TP1/index.html
+	TP2: http://katchasa.ca/TP2/index.html

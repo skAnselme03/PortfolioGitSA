@@ -1,0 +1,202 @@
+\hypertarget{classbiblio_1_1Reference}{}\doxysection{biblio\+::Reference Class Reference}
+\label{classbiblio_1_1Reference}\index{biblio::Reference@{biblio::Reference}}
+
+
+La classe \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} permet de modéliser les références bibliographiques.  
+
+
+
+
+{\ttfamily \#include $<$Reference.\+h$>$}
+
+
+
+Inheritance diagram for biblio\+::Reference\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbiblio_1_1Reference__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbiblio_1_1Reference_a0f5a0dd7d1a1993e90111e4dde6de866}{Reference}} (const std\+::string \&p\+\_\+auteurs, const std\+::string \&p\+\_\+titre, const unsigned int \&p\+\_\+annee, const std\+::string \&p\+\_\+identifiant)
+\begin{DoxyCompactList}\small\item\em Le constructeur, construit un objet \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} avec les pamamètres auteur, titre, année d\textquotesingle{}édition et identifiant \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+auteurs un ou des auteurs de la référence. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbiblio_1_1Reference_a376896263d84704f450119184761e39d}{operator==}} (const \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} \&p\+\_\+reference) const
+\begin{DoxyCompactList}\small\item\em Surchage de l\`{}opérateur de comparaison, doit le faire sur tous les attributs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbiblio_1_1Reference_ac11ef827df644d5bdff4722c9adf2265}{asg\+Annee}} (const unsigned int \&p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em Le mutateur de l{\ttfamily année d}édition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a4fbf37871826470e732d4fd42558eff1}\label{classbiblio_1_1Reference_a4fbf37871826470e732d4fd42558eff1}} 
+virtual const std\+::string \mbox{\hyperlink{classbiblio_1_1Reference_a4fbf37871826470e732d4fd42558eff1}{req\+Reference\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Formate les informations sur la référence. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classbiblio_1_1Reference_a3c2099d3da55d10c801bd9b0d1765ca0}{req\+Annee}} () const
+\begin{DoxyCompactList}\small\item\em l{\ttfamily accesseur pour l}année \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbiblio_1_1Reference_afb28ea00ae8f7127a514b61c0c0270cd}{req\+Auteurs}} () const
+\begin{DoxyCompactList}\small\item\em l\`{}accesseur pour les auteurs \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbiblio_1_1Reference_a5ba86d9b4f4ec5c947e6d211e057f31f}{req\+Identifiant}} () const
+\begin{DoxyCompactList}\small\item\em l{\ttfamily accesseur pour l}identifiant \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbiblio_1_1Reference_a8c9bd1df6483647a417f9b49d206009f}{req\+Titre}} () const
+\begin{DoxyCompactList}\small\item\em l\`{}accesseur pour le titre \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} $\ast$ \mbox{\hyperlink{classbiblio_1_1Reference_ac8776de68f1d8ea0586a85af09cbcf25}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em La méthode virtuelle d{\ttfamily accès aux informations d}une référence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} permet de modéliser les références bibliographiques. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a0f5a0dd7d1a1993e90111e4dde6de866}\label{classbiblio_1_1Reference_a0f5a0dd7d1a1993e90111e4dde6de866}} 
+\index{biblio::Reference@{biblio::Reference}!Reference@{Reference}}
+\index{Reference@{Reference}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{Reference()}{Reference()}}
+{\footnotesize\ttfamily biblio\+::\+Reference\+::\+Reference (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+auteurs,  }\item[{const std\+::string \&}]{p\+\_\+titre,  }\item[{const unsigned int \&}]{p\+\_\+annee,  }\item[{const std\+::string \&}]{p\+\_\+identifiant }\end{DoxyParamCaption})}
+
+
+
+Le constructeur, construit un objet \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} avec les pamamètres auteur, titre, année d\textquotesingle{}édition et identifiant \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+auteurs un ou des auteurs de la référence. 
+
+\begin{DoxyPrecond}{Precondition}
+valider selon util\+::validernom \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+titre 
+
+ne doit pas être vide \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+annee l{\ttfamily année d}édition 
+
+p\+\_\+annee doit être plus grand que 0 \textbackslash{}parma\mbox{[}in\mbox{]} p\+\_\+identifiant peut être un code I\+S\+SN ou I\+S\+BN 13 
+
+p\+\_\+identifiant ne doit pas être vide
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+auteur prend la valeur de p\+\_\+auteur 
+
+m\+\_\+titre prend la valeur de p\+\_\+titre 
+
+m\+\_\+annee prend la valeur de p\+\_\+annee 
+
+m\+\_\+identifiant prend la valeur de p\+\_\+identifiant 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Reference_ac11ef827df644d5bdff4722c9adf2265}\label{classbiblio_1_1Reference_ac11ef827df644d5bdff4722c9adf2265}} 
+\index{biblio::Reference@{biblio::Reference}!asgAnnee@{asgAnnee}}
+\index{asgAnnee@{asgAnnee}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{asgAnnee()}{asgAnnee()}}
+{\footnotesize\ttfamily void Reference\+::asg\+Annee (\begin{DoxyParamCaption}\item[{const unsigned int \&}]{p\+\_\+annee }\end{DoxyParamCaption})}
+
+
+
+Le mutateur de l{\ttfamily année d}édition. 
+
+test Le mutateur de l{\ttfamily année d}édition cas valide\+: asg\+Annee\+Valide\+: l\textquotesingle{}année est plus grande que 0 cas invalide\+: asg\+Annee\+Invalide\+: l\textquotesingle{}année n\textquotesingle{}est pas plus grande que 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+annee} & la nouvelle année d{\ttfamily édition obtenue \textbackslash{}pre L}année doit être plus grande que 0\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+annee prend la valeur de p\+\_\+annee 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbiblio_1_1Reference_ac8776de68f1d8ea0586a85af09cbcf25}\label{classbiblio_1_1Reference_ac8776de68f1d8ea0586a85af09cbcf25}} 
+\index{biblio::Reference@{biblio::Reference}!clone@{clone}}
+\index{clone@{clone}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} $\ast$ biblio\+::\+Reference\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+La méthode virtuelle d{\ttfamily accès aux informations d}une référence. 
+
+\begin{DoxyReturn}{Returns}
+Les informations formatées d\`{}une référence (en string) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbiblio_1_1Ouvrage_aa3f2ba49d6a7959b0b7b679f2320765d}{biblio\+::\+Ouvrage}}, \mbox{\hyperlink{classbiblio_1_1Journal_acdd8476b57fc1a8035407c605349d156}{biblio\+::\+Journal}}, and \mbox{\hyperlink{classReferenceTest_a00a1fce77e78a8eb63b7f9b190241aa0}{Reference\+Test}}.
+
+\mbox{\Hypertarget{classbiblio_1_1Reference_a376896263d84704f450119184761e39d}\label{classbiblio_1_1Reference_a376896263d84704f450119184761e39d}} 
+\index{biblio::Reference@{biblio::Reference}!operator==@{operator==}}
+\index{operator==@{operator==}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool biblio\+::\+Reference\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbiblio_1_1Reference}{Reference}} \&}]{p\+\_\+reference }\end{DoxyParamCaption}) const}
+
+
+
+Surchage de l\`{}opérateur de comparaison, doit le faire sur tous les attributs. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+reference} & la référence\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen spécifiant si les deux références sont égales ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a3c2099d3da55d10c801bd9b0d1765ca0}\label{classbiblio_1_1Reference_a3c2099d3da55d10c801bd9b0d1765ca0}} 
+\index{biblio::Reference@{biblio::Reference}!reqAnnee@{reqAnnee}}
+\index{reqAnnee@{reqAnnee}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{reqAnnee()}{reqAnnee()}}
+{\footnotesize\ttfamily unsigned int Reference\+::req\+Annee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l{\ttfamily accesseur pour l}année 
+
+test l{\ttfamily accesseur pour l}année req\+Annee\+: vérifie le retour de l{\ttfamily année cas invalide\+: s}il n{\ttfamily y a pas d}année
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}année d\textquotesingle{}édition de la référence 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_afb28ea00ae8f7127a514b61c0c0270cd}\label{classbiblio_1_1Reference_afb28ea00ae8f7127a514b61c0c0270cd}} 
+\index{biblio::Reference@{biblio::Reference}!reqAuteurs@{reqAuteurs}}
+\index{reqAuteurs@{reqAuteurs}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{reqAuteurs()}{reqAuteurs()}}
+{\footnotesize\ttfamily string Reference\+::req\+Auteurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l\`{}accesseur pour les auteurs 
+
+test l{\ttfamily accesseur pour les auteurs req\+Auteurs\+: vérifie le retour de l}auteur cas invalide\+: s{\ttfamily il n}y a pas d\`{}auteur(s)
+
+\begin{DoxyReturn}{Returns}
+le nom de l\textquotesingle{}auteur ou des auteurs de la référence 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a5ba86d9b4f4ec5c947e6d211e057f31f}\label{classbiblio_1_1Reference_a5ba86d9b4f4ec5c947e6d211e057f31f}} 
+\index{biblio::Reference@{biblio::Reference}!reqIdentifiant@{reqIdentifiant}}
+\index{reqIdentifiant@{reqIdentifiant}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{reqIdentifiant()}{reqIdentifiant()}}
+{\footnotesize\ttfamily string Reference\+::req\+Identifiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l{\ttfamily accesseur pour l}identifiant 
+
+test l{\ttfamily accesseur pour l}identifiant req\+Identifiant\+: vérifie le retour de l{\ttfamily identifiant cas invalide\+: s}il n{\ttfamily y a pas d}identifiant
+
+\begin{DoxyReturn}{Returns}
+l’identifiant de la référence 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a8c9bd1df6483647a417f9b49d206009f}\label{classbiblio_1_1Reference_a8c9bd1df6483647a417f9b49d206009f}} 
+\index{biblio::Reference@{biblio::Reference}!reqTitre@{reqTitre}}
+\index{reqTitre@{reqTitre}!biblio::Reference@{biblio::Reference}}
+\doxysubsubsection{\texorpdfstring{reqTitre()}{reqTitre()}}
+{\footnotesize\ttfamily string Reference\+::req\+Titre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+l\`{}accesseur pour le titre 
+
+test l\`{}accesseur pour le titre req\+Titre\+: vérifie le retour du titre cas invalide\+: s{\ttfamily il n}y a pas de titre
+
+\begin{DoxyReturn}{Returns}
+le titre de la référence 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/Reference.\+h\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/Reference.\+cpp\item 
+/home/etudiant/\+Bureau/\+T\+P2/\+Sources/tests/Reference\+Testeur.\+cpp\end{DoxyCompactItemize}

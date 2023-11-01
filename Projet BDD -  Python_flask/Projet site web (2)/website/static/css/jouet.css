@@ -1,0 +1,21 @@
+@import "root.css";
+@import url("./cssPckgJouet/imageDescription.css");
+@import url("./cssPckgJouet/infosComplet.css");
+
+* {
+    color: #333333;
+}
+
+/* Increase the font size of the <h1> element */
+/*https://www.w3schools.in/html/blink-tag*/
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+    text-align: center;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
