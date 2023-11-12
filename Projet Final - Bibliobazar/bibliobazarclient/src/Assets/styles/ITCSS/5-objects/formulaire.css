@@ -1,0 +1,138 @@
+/*------------------------------------*\
+  Formulaire / components
+\*------------------------------------*/
+/*Style pour tout les formulaire sauf le formulaire de recherche*/
+form:not(.form-recherche){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Limiter la largeur du formulaire sur les écrans plus larges.
+    Utilisation de max-width pour la réactivité */
+    max-width: 875px;
+
+}
+form>*{
+    width: 100%;
+}
+
+form>*+*{
+    margin-top: 2vw;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    border: 1px solid var(--color-transparent);
+}
+form fieldset>input, fieldset>select{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+form textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(99, 114, 53, 0.74);
+    border-radius: 5px;
+    width: 60%;
+    height: 100px;
+
+}
+/*
+    STYLES pour les selecteur options
+    ref: https://codepen.io/vkjgr/pen/VYMeXp
+*/
+
+select {
+    background-image: linear-gradient(45deg, transparent 50%, var(--color-button) 50%),
+    linear-gradient(135deg, var(--color-button) 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 0.5em 3.5em 0.5em 1em;
+}
+
+select:focus {
+    background-image: linear-gradient(45deg, var(--color-secondary) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, var(--color-secondary) 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: var(--color-secondary);
+    outline: 0;
+}
+
+
+
+/* Ajoutez ces styles pour la case à cocher */
+form input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    padding: 4px;
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+}
+
+form fieldset>*{
+    width: 100%;
+}
+
+form button{
+    padding: 20px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+}
+
+form input, form button, form select{
+    border-radius: 12px;
+}
+
+/* Cacher les labels des formulaires*/
+form label {
+    display: none;
+}
+
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    form input {
+        padding: 8px;
+    }
+    form button {
+        padding: 10px;
+    }
+}
+
+/* Media Queries pour les écrans très petits (mobile) */
+@media (max-width: 400px) {
+    form {
+        max-width: 100%;
+        border: none;
+    }
+    form label {
+        font-size: 16px;
+    }
+    form input, form select {
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    form button {
+        font-size: 16px;
+    }
+}

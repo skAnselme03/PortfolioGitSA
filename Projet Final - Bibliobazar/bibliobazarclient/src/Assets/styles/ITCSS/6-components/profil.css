@@ -1,0 +1,219 @@
+.profil>*+*{
+    margin-top: 2vw;
+}
+.profil{
+    margin: 0 4vw;
+    display: flex;
+    flex-direction: column;
+}
+/* STYLE GÉNÉRALE */
+.profil>article:not(.profil__details){
+    border-top: 1px solid var(--color-button);
+}
+
+/* STYLE POUR LES DÉTAILS DU PROFILE*/
+.profil__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.profil__details>*+*{
+    margin-top: 2vw;
+}
+
+/*entête profile*/
+.profil__entete{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0;
+    background-color: var(--color-primary);
+}
+
+/*Profile details corps*/
+.profil__details-corps{
+    border-top: 1px solid var(--color-button);
+}
+
+.profil__details-corps>button{
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligne le bouton tout à droite */
+    font-weight: var(--font-weight-bold);
+    padding: 2px;
+}
+.mon-profil_wrapper{
+    display: block;
+    color: var(--color-texte-principale);
+}
+.profile-entet__titre{
+    font-size: var(--font-size-entete-xlarge);
+
+}
+.mon-profil_wrapper div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 50px;
+}
+/* Masquer ou non la section profil*/
+#profil__masquer {
+    cursor: pointer;
+}
+
+.mon-profil {
+    display: none; /* Au départ, le profil est masqué */
+}
+
+.montrer-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    background-color: var(--color-tertiary);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(204, 210, 166, 0.3),
+    0 8px 16px rgba(97, 100, 84, 0.3);
+}
+.montrer-profil div{
+    padding:2vw;
+    width: 100%;
+    display: flex;
+}
+
+.montrer-profil div>section{
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.montrer-profil div>section>*{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: var(--color-texte-principale);
+}
+.montrer-profil form{
+    padding: 2vw;
+    width: 100%;
+    max-width: 100%;
+}
+.montrer-profil form>fieldset>section,
+.montrer-profil form>section{
+    display: flex;
+    gap: 20px;
+}
+
+.montrer-profil form>section>*{
+    width: 50%;
+}
+/*.profil>article h2{
+    font-size: var(--font-size-entete);
+    letter-spacing: var(--letter-spacing-large);
+}*/
+.mon-profil_wrapper img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--color-img-profile);
+}
+.mon-profil_wrapper input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+/* STYLE POUR LES ANNONCES*/
+.profil-annonces .catalogue-grid__item{
+    color: var(--color-texte-principale);
+}
+/*
+    STYLE POUR LES FAVORIS, LES ANNONCES,
+    LES ANNONCES ARCHIVÉS
+*/
+.profil-annonces{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+}
+.profil-annonces>div{
+    flex: 1;
+    margin: 0;
+
+}
+.profil-annonces>div:nth-child(1)>*+*{
+    margin-top: 2vw;
+}
+.mes-annonces__wrapper>*+*{
+    margin-top: 1.5vw;
+}
+/*Style card du détails des annonces */
+
+.mes-archives .mes-annonces__details,
+.mes-favoris .mes-annonces__details{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    max-height: 400px; /* Hauteur maximale de la section avec barre de défilement */
+    overflow-x: auto; /* Barre de défilement vertical */
+}
+/*grid item*/
+.mes-annonces__details {
+    display: flex;
+    overflow-x: auto; /* Barre de défilement horizontal */
+    gap: 15px;
+   width: 100%; /* Assurez-vous que le conteneur prend toute la largeur disponible */
+
+
+}
+.mes-annonces__details>div{
+    border: 1px solid var(--color-transparent);
+    border-radius: 8px;
+    overflow: hidden; /* Pour cacher tout contenu débordant */
+    transition: box-shadow 0.3s;
+    background-color: var(--color-primary);
+}
+.mes-annonces__details>div>*+*{
+    margin-top: 0.5vw;
+}
+.mes-annonces__details>div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mes-annonces__details img{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.mes-annonces__details>div div{
+  display: flex;
+    flex-direction: column;
+
+}
+.mes-annonces__details>div div>*+*{
+    margin-top: 5px;
+}
+
+
+/*  STYLE GÉNÉRALE */
+.profil-annonces>div{
+    border-top: 1px solid var(--color-button);
+}
+.mes-annonces__wrapper{
+    padding: 1.5vw;
+}
+.profil-annonces>div p, a{
+    color: var(--color-titre-livre); /* Couleur du texte */
+}
+
+.mes-favoris{
+    background-color: var(--color-tertiary);
+}
+
+.mes-favoris .mes-annonces__details>div{
+    background-color: var(--color-tertiary);
+}

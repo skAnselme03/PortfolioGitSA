@@ -1,0 +1,67 @@
+/*-------------------------------------------------------------------*\
+  SETTINGS - Variables globales comme les polices et les couleurs
+\*-------------------------------------------------------------------*/
+@import "ITCSS/1-settings/colors.css";
+@import "ITCSS/1-settings/ease.css";
+@import "ITCSS/1-settings/fonts.css";
+@import "ITCSS/1-settings/z-index.css";
+
+/*-------------------------------------------------------------------*\
+  TOOLS - Mixins et fonctions par défaut
+\*-------------------------------------------------------------------*/
+
+@import "ITCSS/2-tools/mixins.css";
+
+/*-------------------------------------------------------------------*\
+  GENERIC - Styles de base (réinitialisation, box-sizing, etc.)
+\*-------------------------------------------------------------------*/
+
+@import "ITCSS/3-generic/purify.css";
+
+/*-------------------------------------------------------------------*\
+  ELEMENTS - Éléments HTML
+\*-------------------------------------------------------------------*/
+
+@import "ITCSS/4-elements/link.css";
+@import "ITCSS/4-elements/list.css";
+@import "ITCSS/4-elements/typography.css";
+
+/*-------------------------------------------------------------------*\
+  OBJECTS - Classes non décorées
+\*-------------------------------------------------------------------*/
+
+@import "ITCSS/5-objects/wrapper.css";
+@import "ITCSS/5-objects/racine.css";
+@import "ITCSS/5-objects/menuBurger.css";
+@import "ITCSS/5-objects/media.css";
+@import "ITCSS/5-objects/messages.css";
+@import "ITCSS/5-objects/cards.css";
+
+/*-------------------------------------------------------------------*\
+  COMPONENTS
+\*-------------------------------------------------------------------*/
+
+@import "ITCSS/6-components/app.css";
+@import "ITCSS/6-components/header.css";
+@import "ITCSS/6-components/menu.css";
+@import "ITCSS/6-components/footer.css";
+@import "ITCSS/6-components/accueil.css";
+@import "ITCSS/5-objects/formulaire.css";
+@import "ITCSS/6-components/connexion.css";
+@import "ITCSS/6-components/creeruncompte.css";
+@import "ITCSS/6-components/catalogue.css";
+@import "ITCSS/6-components/annonce.css";
+@import "ITCSS/6-components/creerUneAnnonce.css";
+@import "ITCSS/6-components/profil.css";
+
+/*-------------------------------------------------------------------*\
+  UTILITIES - Utilitaires et !important (peu)
+\*-------------------------------------------------------------------*/
+
+
+/*
+    Sources Cours :
+        582-21W-MA Création et design de site Web,
+        cours 13,
+        Les bonnes pratiques générales de composition CSS
+*/

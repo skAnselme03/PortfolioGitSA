@@ -1,0 +1,38 @@
+/*------------------------------------*\
+  colors / settings
+\*------------------------------------*/
+
+
+:root {
+    --color-primary: #EBF2B3;
+    --color-secondary: #586242;
+    --color-tertiary: rgba(255, 203, 105, 0.27);/* # FFCB69 -(26.67%)*/
+    --color-quaternaire: #F1E4C4;
+
+    /* white to black */
+    --color-white: #fff;
+    --color-light-gray: whitesmoke;
+    --color-gray: rgb(128, 128, 128);
+    --color-black: black;
+    --color-transparent: transparent;
+
+    /*Couleur de certaines composantes particulières*/
+    --color-img-profile:#F1DCA7;
+    --color-liste:#636363;
+
+    /*Couleur des boutons*/
+    --color-button: #593B02;
+    --color-bckg-etoile-note-annonce:#FFCB69;
+
+    /* Couleur input */
+    --color-form-input: #dcdbdb;
+
+    /*Couleur des textes*/
+    --color-texte-principale:#2C231C;
+    --color-titre-livre: #676767;
+    --color-etat-livre:#8A8988;
+    --color-filtre-selecteur-option:#333333;
+
+
+   
+}

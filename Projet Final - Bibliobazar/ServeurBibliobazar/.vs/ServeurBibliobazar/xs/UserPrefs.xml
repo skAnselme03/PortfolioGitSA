@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{54D0DE58-1EAD-468C-AA7F-8C969ED02630}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/MembreController.cs">
+    <Files>
+      <File FileName="Program.cs" Line="8" Column="30" IsPinned="True" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Controllers/MembreController.cs" Line="337" Column="17" />
+      <File FileName="Startup.cs" Line="41" Column="108" />
+      <File FileName="Entities/Membre.cs" />
+      <File FileName="Entities/Utilisateur.cs" />
+      <File FileName="Controllers/AnnonceController.cs" />
+      <File FileName="Controllers/GenreController.cs" />
+      <File FileName="Controllers/FavorisController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ServeurBibliobazar">
+            <Node name="ServeurBibliobazar">
+              <Node name="Controllers" expanded="True">
+                <Node name="MembreController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ServeurBibliobazar PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

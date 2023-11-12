@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  menu / components
+\*------------------------------------*/
+
+.App>header>section:nth-child(1) nav{
+    display: flex;
+    /*font-size: 1.5vw;*/
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/*Style pour le logo (si on a du texte*/
+.App>header>section:nth-child(1) nav>picture{
+    font-size: 2.5vw;
+    font-weight: 600;
+
+}
+
+/*  Style pour les lien du menu */
+.App>header>section:nth-child(1) nav>ul{
+    display: flex;
+}
+
+.menu__link {
+    color: black;
+    display: flex;
+    font-size: inherit;
+}
+.App>header>section:nth-child(1) nav>ul>*+*{
+    margin-left: 1.5vw;;
+}
+.App>header>section:nth-child(1) nav>ul>li{
+    align-items: center;
+    display: flex;
+    position: relative;
+    color: var(--color-texte-principale);
+}
+
+/*Animation des lies du menu */
+
+.App > header > section:nth-child(1) nav > ul > li {
+    align-items: center;
+    display: flex;
+    position: relative;
+    color: var(--color-texte-principale);
+    transition: color 0.2s var(--ease-in-out-quad); /* Animation de transition de couleur */
+    font-weight: var(--font-weight-regular) ;
+}
+
+.App > header > section:nth-child(1) nav > ul > li:hover {
+    color: var(--color-secondary); /* Change la couleur au survol */
+}
+
+/* Ajout de l'effet d'animation du soulignement à droite */
+.App > header > section:nth-child(1) nav > ul > li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px; /* Hauteur du soulignement */
+    background-color: var(--color-secondary); /* Couleur du soulignement au survol */
+    transition: width 0.2s var(--ease-in-out-quad); /* Animation de transition de largeur */
+    bottom: 0;
+    left: 0;
+}
+
+.App > header > section:nth-child(1) nav > ul > li:hover::after {
+    width: 100%; /* Fait croître la largeur au survol */
+}
+
+/*.App > header > section:nth-child(1) nav>ul>li a{
+    font-size: var(--font-size-entete);
+}*/

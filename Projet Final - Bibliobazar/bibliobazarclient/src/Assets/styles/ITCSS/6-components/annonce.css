@@ -1,0 +1,117 @@
+.annonce>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.annonce>*+*{
+    margin-top: 4vw;
+}
+
+.annonce-details-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 1vw;
+    box-shadow: 0 2px 4px rgba(204, 210, 166, 0.3), 0 8px 16px rgba(97, 100, 84, 0.3);
+    border-radius: 15px;
+}
+.annonce-details-wrapper>*{
+    margin-top: 15px;
+}
+/* COMPONENT : entete-annonce*/
+.entete-annonce{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: var(--color-texte-principale);
+}
+
+.entete-annonce>*{
+    width: 50%;
+}
+
+.entete-annonce .entete-titre-annonce>*+*{
+    margin-top: 5px;
+}
+.entete-titre-annonce{
+    line-height: var(--line-height-medium);
+}
+.entete-titre-annonce h2{
+    text-transform: uppercase;
+    font-size: var(--font-size-default-medium)
+}
+.entete-titre-annonce p:nth-child(3){
+        font-weight: var(--font-weight-bold);
+}
+
+/* COMPONENT : details-annonce*/
+.details-annonce{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom:1vw;
+    padding-top: 1vw;
+    border-top: 1px solid var(--color-secondary);
+}
+.wrapper-img-annonce,
+.wrapper-details-annonce {
+    width: 50%;
+}
+.wrapper-img-annonce {
+    align-items: center;
+    justify-content: center;
+   display: flex;
+}
+.wrapper-img-annonce{
+    display: flex;
+    position: relative;
+}
+.wrapper-details-annonce{
+    background-color: var(--color-quaternaire);
+    height: fit-content;
+    padding: 1.5vw;
+    transform: translateX(-10%);
+}
+.wrapper-details-annonce p+p{
+    margin-top: 15px;
+}
+
+.wrapper-details-annonce p{
+    color: var(--color-button);
+    line-height: var(--line-height-medium);
+}
+
+.wrapper-details-annonce p>span{
+    font-weight: var(--font-weight-bold)
+}
+.wrapper-details-annonce p>em{
+    font-size: var(--font-size-extra-small);
+}
+
+/* COMPONENT : action-annonce*/
+.action-annonce{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    padding-top: 1vw;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.action-annonce button {
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+}
+/* Placé la dernière bouton à la fin*/
+.action-annonce button:nth-child(3) {
+    flex-basis: 100%;
+}

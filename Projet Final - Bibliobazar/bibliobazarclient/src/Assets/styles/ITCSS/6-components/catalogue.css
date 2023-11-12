@@ -1,0 +1,89 @@
+/*---------------------------------------------------------------*\
+  Catalogue / components
+  Inspiration: 582-21W-MA_Création et design de site Web
+  Cours 14: 4-transition-sur-parent
+/*---------------------------------------------------------------*\*/
+.catalogue-grid__container{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;
+    margin: 0 -10px;*/
+    padding: 2%;
+}
+
+.catalogue-grid__item{
+    width: 15%;
+    margin: 0 2% 3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+}
+.item-image__wrapper{
+    text-align: left;
+}
+.item-image__wrapper img{
+    border-radius: 5%;
+    margin-bottom: 1%;
+    max-width: 100%;
+    object-fit: cover;
+    width: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalogue-grid__container article>*+*{
+    margin-top: 10px;
+}
+
+/* Ajoutez des styles spécifiques à l'intérieur de chaque carte, par exemple, pour les titres, les prix, etc. */
+.item-contenu__wrapper h3 {
+    font-size: 1vw;/*18px;*/
+    margin-top: 10px; /* Espacement au-dessus du titre */
+
+    color: var(--color-titre-livre); /* Couleur du texte */
+    font-weight: var(--font-weight-bold)
+}
+
+.item-contenu__wrapper p {
+    font-size: 16px; /* Taille de la police pour les paragraphes */
+    color: var(--color-titre-livre); /* Couleur du texte */
+}
+
+/*Bouton favori*/
+.bouton-favori {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 2em; 
+    width: 2em; 
+    height: 2em; 
+}  
+
+
+/* Media query for screens with a maximum width of 768px (tablets) */
+@media (max-width: 700px) {
+    .catalogue-grid__item {
+        width: 30%; /* Adjust the width as needed for smaller screens */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (mobile devices) */
+@media (max-width: 480px) {
+    .catalogue-grid__item {
+        width: 100%; /* Adjust the width as needed for even smaller screens */
+    }
+
+    .item-image__wrapper img {
+        width: 100%; /* Make images take full width on smaller screens */
+    }
+    .item-contenu__wrapper h3 {
+        font-size: initial;
+    }
+}

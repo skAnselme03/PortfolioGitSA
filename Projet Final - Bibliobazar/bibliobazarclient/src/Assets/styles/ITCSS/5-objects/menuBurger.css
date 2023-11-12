@@ -1,0 +1,98 @@
+/*---------------------------------------------------------------*\
+  Menu Burger / components
+  Inspiration: 582-11W-MA_Initiation à la création de site Web
+  Cours 21: Contenu de navigation
+/*---------------------------------------------------------------*\
+
+/* Menu hamburger */
+@media (max-width: 700px) {
+    /*Fixer l'emplacement du menu burger*/
+    section>nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    /*Masquer le contenue de la page pour afficher seulement le menu*/
+    nav>ul{
+        position: fixed;
+        padding: 5vw;
+        background-color: var(--color-secondary);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 200ms ease-in-out;
+        transition-property: opacity, transform;
+    }
+
+    nav>ul a{
+        display: block;
+    }
+
+    .menu-burger{
+        display: inline-block;
+        /*margin: 20px 20px 40px;*/
+        margin: 2vh 2vh 4vh;
+        appearance: none;
+        position: relative;
+        z-index: 1;
+    }
+    /*Dessiner le menu burger*/
+
+    /* Fermer le menu */
+    .menu-burger:before{
+        content: "\0026dd";
+        font-size: 5vh;
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+    }
+
+    /* Ouvrir le menu */
+    .menu-burger:not(:checked):before {
+        content: "\2630";
+        font-size: 5vh;
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+    }
+
+    .menu-burger:not(:checked)+ul{
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(.95);
+    }
+    .App > header > section:nth-child(1) nav>ul>*{
+        margin-top: 2vh;
+    }
+
+    .App > header > section:nth-child(1) nav>ul>li a{
+        font-size: 4vh;
+        color: var(--color-primary);
+        font-weight:var(--font-weight-regular) ;
+
+    }
+}
+
+/*Menu pour petit écran*/
+@media (max-width: 700px) {
+    section>nav>input {
+        display: none;
+    }
+    section>nav {
+        margin-bottom: 40px;
+        /* Pour centrer le menu avec le logo à droite */
+        justify-content: space-between;
+    }
+    section>nav a+a {
+        margin-left: 20px;
+    }
+    section>nav>ul{
+        display: flex;
+        /* Pour aligner verticalement les éléments du menu */
+        align-items: center;
+    }
+}

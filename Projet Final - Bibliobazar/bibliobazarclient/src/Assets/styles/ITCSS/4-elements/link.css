@@ -1,0 +1,10 @@
+/*------------------------------------*\
+  link / elements
+\*------------------------------------*/
+
+
+a {
+    color: inherit;
+    font-family: var(--font-primary);
+    text-decoration: none;
+}

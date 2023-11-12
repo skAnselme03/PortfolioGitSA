@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  Se connecter / components
+\*------------------------------------*/
+
+.seconnecter,
+.creeruncompte,
+.creer-une-annonce{
+    display: flex;
+    flex: initial;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 2vw 1vh;
+    margin: 3vw auto;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 4px rgba(204, 210, 166, 0.3), 0 8px 16px rgba(97, 100, 84, 0.3);
+    border-radius: 15px;
+}
+.seconnecter{
+    height: 50vh;
+    /*width:400px;*/
+}
+
+.seconnecter>div,
+.creeruncompte>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.seconnecter>div h2>span{
+    padding:0 1vw ;
+}
+
+/* Ajuster le CSS pour aligner le lien "Mot de passe oublié?" à droite */
+.mdpOublie-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.mdpOublie-container a{
+    text-decoration: underline;
+    color: var(--color-button);
+    font-weight:var(--font-weight-semi-bold);
+    /*font-size: calc(var(--font-size-entete)/2);*/
+    font-size: 14px;
+}
+/* Ajuster du fieldset
+.seconnecter>form fieldset{
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0;
+
+}*/

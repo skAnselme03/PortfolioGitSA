@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  App / components
+\*------------------------------------*/
+.App{
+    /* Permet à App de prendre tout l'espace disponible dans racine */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* gap: 15px;
+    margin: 0 auto;*/
+
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(204, 210, 166, 0.3);
+}
+
+.App>*{
+    flex: 1;
+}
+
+.App>*+*{
+    margin-top: 5vh;
+}
+.App>section{
+
+    flex: 1;
+    padding: 20px;
+
+}
+/*.App>header,
+.App>footer {
+    /* Empécher l'entête et le footer de s'étendent pour ne pas remplir l'espace
+    flex: none;
+}*/

@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  racine / components
+\*------------------------------------*/
+/**/
+
+*{
+    /*background-color: #EBF2B3;
+   DO: Conserver jusqu'à la fin enlever plus tard
+   outline: 1px dashed seagreen;*/
+
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/* Styles de base pour le corps de la page */
+body{
+    font-family: var(--font-primary);
+    background-color: #EBF2B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styles pour la section principale */
+.racine{
+    /* Utilisation de flexbox pour que App occupe toute la hauteur */
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;  100vh signifie 100% de la hauteur de la fenêtre */
+    min-height: 100%;
+    /*max-width: 1200px;*/
+    width: 100%;
+
+    letter-spacing: var(--letter-spacing-large);
+}

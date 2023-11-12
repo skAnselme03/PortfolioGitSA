@@ -1,0 +1,159 @@
+/*------------------------------------*\
+  purify / generic
+\*------------------------------------*/
+
+
+/*
+  1. Hériter du box-sizing défini sur la racine (:root) pour éviter les problèmes de largeur/rembourrage.
+  2. Modifier la famille de polices par défaut dans tous les navigateurs.
+  3. Définir une taille de police par défaut pour la racine dans tous les navigateurs.
+  4. Définir une hauteur de ligne fixe dans tous les navigateurs.
+  5. Empêcher les ajustements de la taille de police après les changements d'orientation sur Windows Phone/IOS.
+  6. Définir @viewport provoque le chevauchement des barres de défilement avec le contenu dans IE11 et Edge, donc nous forçons une barre de défilement non chevauchante et non auto-masquante pour contrecarrer cela.
+  7. Changer la mise en surbrillance au toucher par défaut pour être complètement transparente sous iOS.
+  8. Définir l'anti-crénelage de police pour OSX/Webkit.
+  9. Tout simplement hériter du box-sizing, car il est plus facile à remplacer sans spécifier de manière excessive si nécessaire.
+  10. Sélection de texte
+=============================================================================*/
+
+:root {
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: var(--color-black);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-shadow: none;
+}
+
+/* Sections
+ ========================================================================== */
+
+/**
+ * Supprimer la marge dans tous les navigateurs.
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sémantique au niveau du texte
+ ========================================================================== */
+
+/**
+ * Ajouter le poids de police correct dans Chrome, Edge et Safari.
+ */
+
+b,
+strong {
+    font-weight: 600;
+}
+
+/**
+ * Ajouter la taille de police correcte dans tous les navigateurs.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Empêcher les éléments `sub` et `sup` d'affecter la hauteur de ligne dans
+ * tous les navigateurs.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Contenu intégré
+ ========================================================================== */
+
+/**
+ * Définit max-width: 100% car nous travaillons principalement dans des grilles.
+ */
+
+img {
+    max-width: 100%;
+}
+
+/* Formulaires
+ ========================================================================== */
+
+/**
+ * 1. Modifier les styles de police dans tous les navigateurs.
+ * 2. Supprimer la marge dans Firefox et Safari.
+ * 3. Empêche la border-radius sur les champs de saisie.
+ */
+
+
+/* reset */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: var(--line-height-default);
+    margin: 0;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/**
+ * Supprimer l'héritage de la transformation de texte dans Edge, Firefox et IE.
+ * 1. Supprimer l'héritage de la transformation de texte dans Firefox.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Supprimer la bordure intérieure et le rembourrage dans Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Corriger le rembourrage dans Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}

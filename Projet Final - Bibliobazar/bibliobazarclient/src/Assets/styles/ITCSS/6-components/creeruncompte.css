@@ -1,0 +1,69 @@
+.creeruncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*width:550px;*/
+}
+
+.creeruncompte form> fieldset{
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-button);
+}
+.creeruncompte section {
+    display: flex;
+    gap: 12px;
+}
+.creeruncompte section>input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.conditionGeneral{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style de la case à cocher
+.conditionGeneral input {
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-button);
+    width: 2vh;
+}*/
+
+
+/* Style du label de la case à cocher*/
+/* Style de la case à cocher */
+.checkConditionGeneral {
+    width: 2vw; /*15px;*/
+    height: 2vw;/*15px;*/
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+    margin-right: 5px; /* Ajoutez de la marge à droite pour l'espacement */
+}
+
+.conditionGeneral label {
+    display: initial;
+}
+
+.conditionGeneral a,
+.connectervous-container a{
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight:bold;
+}
+.conditionGeneral label,
+.connectervous-container{
+    font-size: 14px;
+    color: var(--color-button);
+}
+
+.connectervous-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

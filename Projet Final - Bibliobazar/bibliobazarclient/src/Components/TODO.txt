@@ -1,0 +1,11 @@
+À Faire:
+    - Mettre à jour le bouton se deconnecter
+    - Mettre à jour le style pour les recherche
+    - Mettre à jour la hauteur du hero
+    - Ajouter une condition pour les connexions admins (codeUtilisateur == 1 || codeUtilisateur == 3)
+
+Priorités pour dernier sprint :
+    - LE MANUEL UTILISATEUR!!!
+    - Améliorer l'interface! (surtout les dropdowns qui ne ressemblent pas à des dropdowns)
+    - Modifier annonce (inclus archiver)
+    - Modifier membre (inclus archiver)

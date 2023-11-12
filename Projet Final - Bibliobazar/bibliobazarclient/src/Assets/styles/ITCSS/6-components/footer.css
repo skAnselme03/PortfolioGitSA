@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  footer / components
+\*------------------------------------*/
+/* Styles pour l'élément <footer> à l'intérieur du composant .App */
+.App>footer{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6vw;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+/* Appliquer une marge en haut à tous les enfants directs de <footer> qui ne sont pas le premier enfant */
+.App>footer>*+*{
+    margin-top: 2vh;
+}
