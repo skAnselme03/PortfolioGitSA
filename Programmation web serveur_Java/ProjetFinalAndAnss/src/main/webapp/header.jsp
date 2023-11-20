@@ -1,67 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-        <!DOCTYPE html>
-        <html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<header class="main-header">
+    <div class="logo">
+        <a href="${pageContext.request.contextPath}/acceuil"><img src="${pageContext.request.contextPath}/Assets/Img/logo.png" alt="Logo de notre site sans nom"></a>
+    </div>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="${pageContext.request.contextPath}/acceuil">Accueil</a></li>
+            <li><a href="${pageContext.request.contextPath}/contact">Contactez-nous</a></li>
+            <li><a href="${pageContext.request.contextPath}/catalogue">Produits</a></li>
+            <c:if test="${not clientConnecte && not isAdmin}">
+                <li><a href="login">Se connecter</a></li>
+            </c:if>
+             
+            <c:if test="${sessionScope.clientConnecte && not isAdmin}">                    
+               <li> <a href="${pageContext.request.contextPath}/profilClient" class="btn btn-danger">${clientDonnees.nom}, ${clientDonnees.prenom} (Profil)</a></li>
+            </c:if>
+            <%-- Afficher le bouton sigUp si l'utilisateur n'existe pas et n'est pas un admin --%>
+            <c:if test="${(not empty(errorMessageLogin) or not clientConnecte) && not isAdmin}">
+  				<li><a href="signUp">Créer un compte</a></li>
+			</c:if>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./Assets/Styles/main.css" type="text/css">
-        </head>
-
-        <body>
-            <header class="main-header">
-                <div class="logo">
-                    <!-- TODO: UTILISATION D'UN IMAGE EN RESSOURCE QUE D'UN SITE, CAR NE S'AFFICHE PAS PAR MOMENT DE MON COTÃ‰ 
-    <img src="https://imageupload.io/ib/3Ng0jPdVjaVBEl7_1693459444.png" alt="Logo de notre site sans nom">-->
-                    <img src="./Assets/Img/logo.png" alt="Logo de notre site sans nom">
-                </div>
-                <nav class="nav-links">
-                    <ul>
-                        <li>
-                            <form action="CatalogueServlet" method="GET">
-                                <input type="text" name="search" placeholder="Chercher un produit spÃ©cifique">
-                                <button type="submit">Rechercher</button>
-                            </form>
-                        </li>
-                        <li><a href="acceuil">Accueil</a></li>
-                        <li><a href="contact.jsp">Contactez-nous</a></li>
-                        <li><a href="catalogue">Produits</a></li>
-
-                        <!-- DÃ©finition d'une variable isClient en fonction du rÃ´le de l'utilisateur -->
-                        <% request.setAttribute("isClient", request.isUserInRole("client")); %>
-                            <!-- TODO: Ã€ CONTINUER VOIR EXEMPLE CRUD3 -->
-
-                            <%-- Masque le boutton de login si le client est connecter --%>
-                                <!-- <li><a href="login">Se connecter</a></li>-->
-
-                                <c:if test="${not clientConnecte}">
-                                    <li><a href="login">Se connecter</a></li>
-                                </c:if>
-                                <c:if test="${clientConnecte}">
-                                    <a href="profilClient" class="btn btn-danger">${clientDonnees.nom}, ${clientDonnees.prenom}</a>
-                                </c:if>
-                                <%-- Afficher le boutton sigUp si l'utilisateur n'existe pas --%>
-                                    <c:if test="${not empty(errorMessageLogin) or not clientConnecte}">
-                                        <a href="signUp">CrÃ©er un compte</a>
-                                    </c:if>
-                                    <%-- Afficher le boutton de dÃ©connection si le client est connecter --%>
-                                        <c:if test="${clientConnecte}">
-                                            <li><a href="logout" class="btn btn-danger">DÃ©connexion</a></li>
-                                        </c:if>
-                                        <li><a href="#">Panier</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="main-container">
-                <!-- Le contenu des JSP se trouve lÃ  -->
-            </div>
-
-            <!-- TODO: TEST Afficher la valeur de la variable clientConnecte
-    <c:out value="${not clientConnecte}" />  -->
-
-        </body>
-
-        </html>
+             <!-- Afficher le bouton de page admin si l'internaute est un admin -->
+		     <c:if test="${sessionScope.isAdmin or isAdmin}">
+		          <li><a href="${pageContext.request.contextPath}/pageAdmin">Administration</a></li>
+		     </c:if>
+             <%-- Afficher le bouton de déconnection si le client ou l'admin est connecté --%>
+             <c:if test="${clientConnecte or isAdmin}">
+                 <li><a href="${pageContext.request.contextPath}/logout" class="btn btn-danger">Déconnexion</a></li>
+             </c:if>
+             <li><a href="${pageContext.request.contextPath}/panier">Panier</a></li>
+        </ul>
+    </nav>
+    <form class="nav-recherche" action="${pageContext.request.contextPath}/CatalogueServlet" method="GET">
+        <input type="text" name="search" placeholder="Chercher un produit spécifique">
+        <button type="submit">&#128269;</button>
+    </form>
+</header> 

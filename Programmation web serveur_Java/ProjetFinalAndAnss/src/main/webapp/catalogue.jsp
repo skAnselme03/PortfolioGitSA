@@ -1,4 +1,3 @@
-<%@ include file="header.jsp" %>
 <%@ page import="java.util.List" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -8,7 +7,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalogue</title>
-    <style>
+    
+ 	    <link rel="stylesheet" href="${pageContext.request.contextPath}/Assets/Styles/css/entete.css" type="text/css">
+ 	    <link rel="stylesheet" href="${pageContext.request.contextPath}/Assets/Styles/css/footer.css" type="text/css">
+ 	    
+        <style>
         body, html {
             height: 100%;
             margin: 0;
@@ -60,6 +63,7 @@
     </style>
 </head>
 <body>
+	<%@ include file="header.jsp" %>
     <div class="container">
         <div class="category-menu">
             <ul>
@@ -70,17 +74,36 @@
             </ul>
         </div>
         
-        <div class="product-list">    	
-            <c:forEach var="produit" items="${produits}" varStatus="loop">
-                <div class="product-container">
-                    <img src="${produit.image_url}" class="product-image">
-                    <p><b>${produit.nom}</b></p>
-                    <p>${produit.description}</p>
-                    <p><i><fmt:formatNumber value="${produit.prix}" type="number" pattern="#,##0.00" /> $</i>
-                    &emsp;<button type="button" onclick="">Ajouter</button></p>
-                </div>
-            </c:forEach>
+        <div class="product-list">
+            <c:choose>
+                <c:when test="${empty produits}">
+                    <p>Aucun produit trouvé</p>
+                </c:when>
+                <c:otherwise>
+                    <c:forEach var="produit" items="${produits}" varStatus="loop">
+                        <div class="product-container">
+                            <img src="${produit.image_url}" class="product-image">
+                            <p><b>${produit.nom}</b></p>
+                            <p>${produit.description}</p>
+                            <p><i><fmt:formatNumber value="${produit.prix}" type="number" pattern="#,##0.00" /> $</i>
+                            &emsp;
+                            <form action="${pageContext.request.contextPath}/panier" method="post">
+                                <input type="hidden" name="action" value="AJOUT" />
+                                <input type="hidden" name="produitId" value="${produit.id}">
+                                <input type="hidden" name="produitNom" value="${produit.nom}">
+                                <input type="hidden" name="produitPrix" value="${produit.prix}">
+                                <button type="submit">Ajouter au panier</button>
+                            </form>
+                        </div>
+                    </c:forEach>
+                </c:otherwise>
+            </c:choose>
         </div>
+      
     </div>
+    
+    
+    <%--<%@ include file="footer.jsp" %> --%>
 </body>
+	
 </html>

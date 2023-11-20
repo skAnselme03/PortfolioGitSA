@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web serveur_Java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1448459548.index
+/ProjetFinalAndAnss/src/main/java
+/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web serveur_Java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/749319213.index
+/ProjetFinalAndAnss/src/main/java
+/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web serveur_Java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1795020707.index
+/ProjetFinalAndAnss/src/main/java

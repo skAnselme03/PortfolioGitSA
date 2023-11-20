@@ -3,7 +3,7 @@
  * @param {string} emailId : l'email Id
  * @returns vrai ou faux si l'email est valider
  */
-export function ValidationEmail(emailId) {
+ function ValidationEmail(emailId) {
     // Récupérer l'élément d'entrée d'e-mail en utilisant son ID
     let email = document.getElementById(emailId);
 
@@ -30,7 +30,7 @@ export function ValidationEmail(emailId) {
  * @param {string} dateNaissId : l'id de la date de naissance
  * @returns vrai ou faux si la date de naissance sont valident
  */
-export function validationBirthday(dateNaissId) {
+ function validationBirthday(dateNaissId) {
     // Récupérer l'élément d'entrée de la date de naissance en utilisant son ID
     let dateNaiss = document.getElementById(dateNaissId);
     let dateNaissVal = dateNaiss.value;
@@ -68,7 +68,7 @@ export function validationBirthday(dateNaissId) {
  * @brief Validation d'un mailFormat et de la date de naissance
  * @returns vrai ou faux si l'email et la date de naissance sont valident
  */
-export function validerCreerCompte() {
+ function validerCreerCompte() {
   	// Valider l'email et la date de naissance
     let isEmailValid = ValidationEmail('email');
     let isConfirmEmailValid = ValidationEmail('confirmerEmail');

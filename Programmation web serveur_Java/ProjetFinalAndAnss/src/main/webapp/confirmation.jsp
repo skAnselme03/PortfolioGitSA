@@ -1,4 +1,3 @@
-<%@ include file="header.jsp" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -6,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Confirmation</title>
+    
+ 	<!-- <link rel="stylesheet" href="${pageContext.request.contextPath}/Assets/Styles/main.css" type="text/css">-->
     <style>
         .center-container {
             display: flex;
@@ -14,6 +15,7 @@
     </style>
 </head>
 <body>
+	<%@ include file="header.jsp" %>
     <div class="center-container">
         <h1>Confirmation</h1>
         <% if (request.getAttribute("confirmationMessage") != null) { %>

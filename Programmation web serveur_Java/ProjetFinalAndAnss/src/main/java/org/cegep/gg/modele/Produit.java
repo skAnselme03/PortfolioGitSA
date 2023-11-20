@@ -8,7 +8,8 @@ public class Produit {
     private float prix;
     private String image_url;
     private int responsable;
-    
+    private String categorieNom;
+
     public Produit(int id, String nom, String description, int categorie, float prix, String image_url, int responsable) {
         this.id = id;
         this.nom = nom;
@@ -18,7 +19,7 @@ public class Produit {
         this.image_url = image_url;
         this.responsable = responsable;
     }
-    
+
 	public Produit() {
 		// TODO Auto-generated constructor stub
 	}
@@ -66,6 +67,14 @@ public class Produit {
 	public void setResponsable(int responsable) {
 		this.responsable = responsable;
 	}
-	
+
+	public String getCategorieNom() {
+        return categorieNom;
+    }
+
+    public void setCategorieNom(String categorieNom) {
+        this.categorieNom = categorieNom;
+    }
+
 	// liste des ToString() - à faire...
 }

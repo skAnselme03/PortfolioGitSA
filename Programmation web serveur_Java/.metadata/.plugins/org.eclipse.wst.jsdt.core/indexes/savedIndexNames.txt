@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web serveur_Java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+749319213.index
+1448459548.index
+1795020707.index
+2623980209.index

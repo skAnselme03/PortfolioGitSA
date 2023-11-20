@@ -2,45 +2,42 @@
 
 /* Base */
 
-
 /* Normaliser et modifier certains 
 comportements par défaut */
 
 
 /* Retirer les marges par défaut */
-
-/* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}*/
+}
 
 
-/* Rétablir les couleurs des liens visités */
+/* Rétablir les couleurs des liens visités 
 
 a:visited {
     color: inherit;
-}
+}*/
 
 
 /* Retirer les les lignes sur 
-tous les liens de navigation */
+tous les liens de navigation 
 
 nav a {
     text-decoration: none;
-}
+}*/
 
 
 /* Établir une marge intérieure
-qui aligne mieux les puces */
+qui aligne mieux les puces 
 
 ul {
     padding-left: 1rem;
-}
+}*/
 
 
-/* Rythme minimal pour les items de liste */
-
+/* Rythme minimal pour les items de liste
 ul>*+* {
     margin-top: 10px;
 }
@@ -60,7 +57,8 @@ img {
 
 a {
     text-decoration: none;
-}
+} */
+
 
 
 /*---------------------------------------*/
@@ -83,13 +81,13 @@ body {
     margin-right: auto;*
 }*/
 
-/*body>*+* {
+body>*+* {
     margin-top: 2vw;
-}*/
+}
 
 
-/* autres */
+/* autres 
 
 header {
     text-transform: uppercase;
-}
+}*/

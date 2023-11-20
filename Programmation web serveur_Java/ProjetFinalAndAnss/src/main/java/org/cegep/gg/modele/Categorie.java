@@ -4,8 +4,11 @@ public class Categorie {
     private int id;
     private String nom;
     private int responsable;
-    
-    // Getters et Setters
+
+    public Categorie() {
+		// TODO Auto-generated constructor stub
+	}
+	// Getters et Setters
 	public int getId() {
 		return id;
 	}

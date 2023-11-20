@@ -1,0 +1,125 @@
+@charset "UTF-8";@charset "UTF-8";
+  body {
+        margin-top: 120px;
+        box-sizing: border-box;
+    }
+    
+    body>*+* {
+        margin-top: 1vw;
+    }
+    
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 2vw;
+        /*margin-top: 1.5vw*/
+        ;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .contact-form-container form {
+        /*width:100;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form-container form>*+* {
+        margin-top: 1vw;
+    }
+   	
+    /* Appliquer un affichage en grille au fieldset */
+	.contact-form-container>form fieldset {
+      border: none;  
+	  display: grid;
+	  /* grid-template-columns: repeat(2, 1fr); Deux colonnes égales */	  
+  	  grid-template-columns: auto auto;
+	}
+
+    /* Appliquer un affichage en grille au premier enfant direct du fieldset */
+	.infos-perso{
+		 grid-area: 1/span 2/span 3/span 4;
+		 
+	 }
+    /* Appliquer un affichage en grille au premier enfant direct du fieldset */
+	 .contact-form-container>form>fieldset>fieldset {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;  /* Une seule colonne */
+	  gap: 10px; /* Espacement entre les éléments */
+	}
+
+	contact-form-container>form>fieldset {
+	  border: 1px solid #ccc;
+	  padding: 10px;
+	  margin-bottom: 20px;
+	}
+    
+    .contact-form-container>form fieldset>*+* {
+        margin-top: 1.5vw;
+    }
+    
+    .contact-form-container>form fieldset>* {
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    .contact-form-container>form legend {
+        font-size: 1.25rem;
+        margin: 0;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+    }
+        
+    .contact-form-container>form>fieldset section>label {
+        margin-bottom: 10px;
+        color: #333;
+        display: block;
+    }
+    
+    .contact-form-container>form>fieldset section>input,
+    section>textarea,
+    section>select {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    
+    .contact-form-container>form>section{    
+    	display: flex;
+	    width: 100%;
+	    justify-content: center;
+	    align-items: center;
+        width: 100%;
+    }
+    
+    .contact-form-container>form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 20px 30px;
+        border-radius: 3px;
+        font-size: 18px;
+        cursor: pointer;
+        margin:5px;
+        flex-basis:100%;
+    }
+        
+    .contact-form-container>form .contact-form-container>form button:hover {
+        background-color: #0056b3;
+   }

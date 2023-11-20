@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+.category-menu {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    position: fixed;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ustify-content: center; -- Commenté pour faire fonctionner avec le header
+}
+.category-menu ul {
+    list-style-type: none; /* Retire les points de la liste 
+    padding: 0;
+}
+.category-menu ul li a {
+    margin: 5px 0;
+    text-decoration: none;
+}
+.product-list {
+    margin-left: 20%;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.product-container {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+.product-image {
+    width: 100px;
+    height: 100px;
+}*/
