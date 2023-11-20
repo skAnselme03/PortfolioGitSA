@@ -2,13 +2,14 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <display-name>ProjetFinalAndAnss</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
+    <welcome-file>acceuil</welcome-file>
   </welcome-file-list>
+  
+   <context-param>
+       <param-name>log4j-fichier</param-name>
+       <param-value>WEB-INF/log/log4j.properties</param-value>
+  </context-param>
+  
   <servlet>
     <description>Servlet pour controler l'affichage du catalogue</description>
     <display-name>CatalogueServlet</display-name>
@@ -19,7 +20,8 @@
     <servlet-name>CatalogueServlet</servlet-name>
     <url-pattern>/CatalogueServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
+  
+  <!--<servlet>
     <description>Servlet permettant d'établir la connection</description>
     <display-name>SeConnecterServletControleur</display-name>
     <servlet-name>SeConnecterServletControleur</servlet-name>
@@ -28,7 +30,32 @@
   <servlet-mapping>
     <servlet-name>SeConnecterServletControleur</servlet-name>
     <url-pattern>/login</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping>-->
+  	<security-constraint>
+	   <web-resource-collection>
+	      <web-resource-name>ClientSec</web-resource-name>
+	      <url-pattern>/client/*</url-pattern>
+	      <http-method>GET</http-method>
+	      <http-method>POST</http-method>
+	   </web-resource-collection>
+	   <auth-constraint>
+	      <role-name>client</role-name>
+	   </auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+	  	<realm-name>file</realm-name>
+	  	<form-login-config>
+	     	<form-login-page>/client/seConnecter.jsp</form-login-page>
+	     	<form-error-page>/client/erreur.jsp</form-error-page>
+	  	</form-login-config>
+	</login-config>
+	<security-role>
+		<description/>
+		<role-name>client</role-name>
+	</security-role>
+  
+  
   <servlet>
     <description>Servlet pour déconnecter le client</description>
     <display-name>SeDeconnecter</display-name>
@@ -39,4 +66,97 @@
     <servlet-name>SeDeconnecter</servlet-name>
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Servlet permetant de controler la page d'acceuil</description>
+    <display-name>AcceuilServletControleur</display-name>
+    <servlet-name>AcceuilServletControleur</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.AcceuilServletControleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AcceuilServletControleur</servlet-name>
+    <url-pattern>/acceuil</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet pour controler la création d'un nouveau compte</description>
+    <display-name>CreerUnCompte</display-name>
+    <servlet-name>CreerUnCompte</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.CreerUnCompte</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerUnCompte</servlet-name>
+    <url-pattern>/signUp</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/erreur404.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/erreurGlobale.jsp</location>
+  </error-page>
+  <servlet>
+    <description>Servlet pour le module Administrateur</description>
+    <display-name>PageAdminServlet</display-name>
+    <servlet-name>PageAdminServlet</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.PageAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageAdminServlet</servlet-name>
+    <url-pattern>/PageAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet permettant aux admins de gérer les catégories du catalogue</description>
+    <display-name>GererCategorieServlet</display-name>
+    <servlet-name>GererCategorieServlet</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.GererCategorieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GererCategorieServlet</servlet-name>
+    <url-pattern>/GererCategorieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet pour gérer les produits en page Admin</description>
+    <display-name>GererProduitServlet</display-name>
+    <servlet-name>GererProduitServlet</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.GererProduitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>GererProduitServlet</servlet-name>
+	    <url-pattern>/GererProduitServlet</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+    <description>Servlet pour controler la gestion du compte client</description>
+    <display-name>GestionClientServlet</display-name>
+    <servlet-name>GestionClientServlet</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.GestionClientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionClientServlet</servlet-name>
+    <url-pattern>/profilClient</url-pattern>
+  </servlet-mapping>
+  
+  <!--<filter>
+    <description>Servlet pour controler le type de connection (admin ou client)</description>
+    <display-name>ConnexionFilter</display-name>
+    <filter-name>ConnexionFilter</filter-name>
+    <filter-class>org.cegep.gg.controleur.ConnexionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ConnexionFilter</filter-name>
+    <url-pattern>/conClient</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>org.cegep.gg.context.listener.ContextListerner</listener-class>
+  </listener>-->
+  
+ <!--<servlet>
+    <description></description>
+    <display-name>Log4JServlet</display-name>
+    <servlet-name>Log4JServlet</servlet-name>
+    <servlet-class>org.cegep.gg.controleur.Log4JServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>servlet-name>Log4JServlet</servlet-name>
+    <url-pattern>/Log4JServlet</url-pattern>
+  </servlet-mapping>-->
 </web-app>

@@ -1,3 +1,4 @@
+<%@ include file="header.jsp" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -14,18 +15,22 @@
 </head>
 
 <body>
-    <!--TODO: À MODIFIER OU ENLEVER À LA FIN-->
+    <!--TODO: À MODIFIER OU ENLEVER À LA FIN
     <header>
         <h1>TD 1: Accueil</h1>
         <nav>
-            <a href="./index.jsp">Accueil</a>
-            <a href="seConnecter.jsp">Se connecter</a>
+            <a href="acceuil">Accueil</a>
+            <a href="login">Se connecter</a>
+            <a href="signUp">Créer un compte</a>
            <%-- Afficher le bouton de déconnexion si l'utilisateur est connecté --%>
         <c:if test="${not empty clientAuthentifier}">
             <a href="logout" class="btn btn-danger">Déconnexion</a>
         </c:if>
         </nav>
-    </header>
+    </header>-->
+    
+    
+    
     <section class="section_accueil">
         <p>Tester toutes les pages sans BDD</p>
     </section>

@@ -1,3 +1,4 @@
+<%@ include file="header.jsp" %>
 <%@ page import="java.util.List" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -29,7 +30,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            /*justify-content: center; -- Commenté pour faire fonctionner avec le header*/
         }
         .category-menu ul {
             list-style-type: none; /* Retire les points de la liste */
@@ -65,17 +66,11 @@
                 <c:forEach var="categorie" items="${categories}">
                     <li><h2><a href="?category=${categorie.id}">${categorie.nom}</a></h2></li>
                 </c:forEach>
-                <li><h2><a href="/ProjetFinalAndAnss/catalogue">Toutes les catégories</a></h2></li>            	
-		        <!-- Logout link -->
-		        <li><a href="logout" class="btn btn-danger">Déconnexion</a></li>
+                <li><h2><a href="/ProjetFinalAndAnss/catalogue">Toutes les catégories</a></h2></li>
             </ul>
-            <form action="CatalogueServlet" method="GET">
-                <input type="text" name="search" placeholder="Chercher un produit spécifique">
-                <button type="submit">Rechercher</button>
-            </form>
         </div>
         
-        <div class="product-list">        
+        <div class="product-list">    	
             <c:forEach var="produit" items="${produits}" varStatus="loop">
                 <div class="product-container">
                     <img src="${produit.image_url}" class="product-image">
@@ -88,4 +83,4 @@
         </div>
     </div>
 </body>
-</html>s
+</html>

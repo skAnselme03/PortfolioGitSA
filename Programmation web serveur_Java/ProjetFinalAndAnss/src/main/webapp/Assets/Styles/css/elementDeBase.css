@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Base */
+
+
+/* Normaliser et modifier certains 
+comportements par défaut */
+
+
+/* Retirer les marges par défaut */
+
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+/* Rétablir les couleurs des liens visités */
+
+a:visited {
+    color: inherit;
+}
+
+
+/* Retirer les les lignes sur 
+tous les liens de navigation */
+
+nav a {
+    text-decoration: none;
+}
+
+
+/* Établir une marge intérieure
+qui aligne mieux les puces */
+
+ul {
+    padding-left: 1rem;
+}
+
+
+/* Rythme minimal pour les items de liste */
+
+ul>*+* {
+    margin-top: 10px;
+}
+
+h5,
+h6 {
+    font-size: 0.9em;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*---------------------------------------*/
+
+
+/* Structure */
+
+
+/* Tout ce qui est de l'ordre de la structure maîtresse */
+
+
+/* Marges, dimensions, positionnement, etc. 
+
+body {
+    /* Limiter la largeur maximale de la page 
+	et aligner le contenu 
+    max-width: 75vw;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;*
+}*/
+
+/*body>*+* {
+    margin-top: 2vw;
+}*/
+
+
+/* autres */
+
+header {
+    text-transform: uppercase;
+}
