@@ -1,0 +1,25 @@
+/*Class générique de taille*/
+
+.wd--un-quart {
+    width: calc(var(--width-basis) * 5);
+}
+
+.wd--un-tiers {
+    width: calc(var(--width-basis) * 6);
+}
+
+.wd--une-demie {
+    width: calc(var(--width-basis) * 10);
+}
+
+.wd--deux-tiers {
+    width: calc(var(--width-basis) * 12);
+}
+
+.wd--trois-quart {
+    width: calc(var(--width-basis) * 15);
+}
+
+.wd--un {
+    width: calc(var(--width-basis) * 20);
+}

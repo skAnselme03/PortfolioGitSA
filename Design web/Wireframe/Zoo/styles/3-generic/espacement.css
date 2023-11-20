@@ -1,0 +1,25 @@
+/*Classe générique d'espacement*/
+
+.mt--xxsmall {
+    margin-top: calc(var(--space-basis)/2)
+}
+
+.mt--xsmall {
+    margin-top: calc(var(--space-basis))
+}
+
+.mt--small {
+    margin-top: calc(var(--space-basis) * 2)
+}
+
+.mt--medium {
+    margin-top: calc(var(--space-basis) * 4);
+}
+
+.mt--large {
+    margin-top: calc(var(--space-basis) * 10)
+}
+
+.mt--xlarge {
+    margin-top: calc(var(--space-basis) * 20)
+}

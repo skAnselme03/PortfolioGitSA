@@ -1,0 +1,18 @@
+/*------------------------------------*\
+  purify / generic
+\*------------------------------------*/
+
+:root {
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(-color-gray);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}

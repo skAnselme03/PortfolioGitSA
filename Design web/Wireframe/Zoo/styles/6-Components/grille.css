@@ -1,0 +1,48 @@
+.grille {
+    display: grid;
+}
+
+.grille__item:first-child {
+    grid-column: span 3;
+    grid-row: 1;
+    /* z-index: 0; */
+}
+
+.grille__item:last-child {
+    grid-row: end;
+    grid-column: span 4;
+}
+
+
+/*-------------------------------------------------------------------*\
+  Composante: main_grille
+\*-------------------------------------------------------------------*/
+
+.main_grille {
+    display: grid;
+    grid-template-areas: "aside aside main__item main__item main__item main__item" "aside aside main__item main__item main__item main__item" "contenus contenus contenus contenus contenus contenus";
+    gap: 1vw;
+    justify-items: center;
+}
+
+.main_grille__item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aside {
+    grid-area: aside;
+    display: flex;
+}
+
+.main__item {
+    grid-area: main__item;
+}
+
+.contenus {
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: contenus;
+}

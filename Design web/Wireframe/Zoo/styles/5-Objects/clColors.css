@@ -1,0 +1,25 @@
+/*clS-----------------------------*/
+
+.cl-primaire {
+    color: var(--color-primaire);
+}
+
+.cl-noir {
+    color: var(--color-noir);
+}
+
+.cl-blanc {
+    color: var(--blanc);
+}
+
+.cl-ight-gray {
+    color: var(--color-light-gray);
+}
+
+.cl-gray {
+    color: var( --color-gray);
+}
+
+.cl-light-grey {
+    color: var(--color-light-grey);
+}

@@ -1,0 +1,281 @@
+/*Entête principale*/
+
+@import "entetePrincipale.css";
+
+/*Bloc img a utilisé*/
+
+@import "bloc.css";
+
+/*Typographie*/
+
+@import "typography.css";
+
+/*Class générique*/
+
+@import "classGeneric.css";
+
+/*Pied-de-page*/
+
+@import "footer.css";
+
+/*SETTING*/
+
+ :root {
+    --noir: #101010a1;
+    --xnoir: #101010de;
+    --blanc: #fcfcfcf7;
+    --xblanc: #ddd;
+    --gris-pale: rgb(222, 218, 218);
+    --gris-xpale: rgb(208, 208, 208);
+    --gris-fonce: #787878;
+    --gris: #B1AEAE;
+    --police-primaire: sans-serif;
+    /*Base d'espacement*/
+    --space-basis: 1vw;
+    --width-basis: 5%;
+}
+
+
+/* * {
+    /* background-color: rgba(0, 80, 20, .04); *
+    outline: 1px dashed rgb(140, 180, 140);
+} */
+
+
+/*ÉLÉMENTS génériques----------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: var(--police-primaire);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: var(--noir);
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 1.25vw;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+
+/*CLASS----------------------------*/
+
+
+/*Image rectangle et Texte*/
+
+.img-et-text {
+    display: flex;
+    height: 80vh;
+}
+
+.boite {
+    display: block;
+    float: right;
+    position: relative;
+    top: 350px;
+    right: 250px;
+    text-align: center;
+    width: 35%;
+    height: 60%;
+    padding: 4.30%;
+    box-sizing: border-box;
+}
+
+.img-et-text__img-wrapper {
+    padding-bottom: 26.25%;
+    width: 100%;
+}
+
+.img-et-texte__texte-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*Grille et recherche*/
+
+.grille-et-find_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.grille-et-find {
+    display: flex;
+}
+
+.grille-et-find__find {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(var(--space-basis)*4);
+}
+
+.grille-et-find__find-champ {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grille-et-find__find-input {
+    padding: 5px 10px;
+}
+
+.grille-et-find__find-btn {
+    padding: 10px 5px;
+}
+
+
+/*Grille*/
+
+.grille-et-find__grille {
+    width: 55%;
+}
+
+.grille-et-find__grille-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grille-et-find__item-img {
+    position: relative;
+    border-radius: 50%;
+    padding-bottom: 100%;
+}
+
+.grille__item-titre {
+    letter-spacing: .02em;
+}
+
+
+/*franchise*/
+
+.section-texte {
+    display: flex;
+}
+
+.section-texte__wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*philosophie*/
+
+.notre-philo {
+    display: flex;
+}
+
+.notre-philo_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notre-philo_item {
+    display: flex;
+}
+
+
+/*Franchise*/
+
+.franchise_infos_wraper {
+    display: flex;
+    align-items: center;
+}
+
+.menu__galery-grille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu__grille-img {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.reservation {
+    display: flex;
+}
+
+.lien__liste-texte:hover {
+    text-decoration: underline;
+    color: var(--xnoir);
+}
+
+
+/*Réservation*/
+
+.faire_reservation {
+    display: flex;
+}
+
+.reservation_qty {
+    display: flex;
+    flex-direction: column;
+}
+
+.liste-deroulant ul {
+    color: var(--noir);
+    transition: color .3s ease;
+    white-space: nowrap;
+}
+
+ul.liste-deroulant__liste {
+    display: none;
+    left: 0;
+    margin-top: calc(20 px + 1.1 em + 20 px);
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: fit-content;
+}
+
+
+/*Critiques*/
+
+.critiques {
+    display: flex;
+}
+
+.critiques__img--texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

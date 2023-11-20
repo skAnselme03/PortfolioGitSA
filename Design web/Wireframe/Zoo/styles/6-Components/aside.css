@@ -1,0 +1,20 @@
+.aside__item {
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aside__item p {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: var(--line-height-normal);
+    padding: 0 3vw;
+    font-size: minmax(var(--font-size-default) auto);
+}

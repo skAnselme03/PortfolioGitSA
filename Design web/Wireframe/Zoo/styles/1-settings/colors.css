@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  colors / settings
+\*------------------------------------*/
+
+:root {
+    --color-primaire: #161616;
+    --color-noir: black;
+    --color-blanc: #ffff;
+    --color-light-gray: whitesmoke;
+    --color-gray: rgb(75, 74, 74);
+    --color-light-grey: lightgrey;
+    --font-primary: sans-serif;
+}

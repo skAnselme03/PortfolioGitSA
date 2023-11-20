@@ -1,0 +1,117 @@
+    /*Entête et navigation------------------*/
+    /*Entête*/
+    
+    .entete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .entete>* {
+        z-index: 1;
+    }
+    
+    .entete__top {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .entete__top-wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*LOGO*/
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Menu liste */
+    
+    .menu-wrapper {
+        flex-direction: column;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    ul.menu__liste,
+    ul.menu-secondaire {
+        display: flex;
+    }
+    
+    .menu__liste li {
+        background-color: var(--gris-pale);
+        display: block;
+        cursor: pointer;
+        padding: 20px 30px;
+        position: relative;
+        text-decoration: none;
+        transition: background-color .3s ease;
+    }
+    
+    .menu__liste li:hover {
+        background-color: var(--noir);
+    }
+    
+    .menu__liste li a,
+    .menu__liste li:hover ul li a {
+        color: var(--noir);
+        transition: color .3s ease;
+        white-space: nowrap;
+    }
+    
+    li:hover a,
+    li:hover ul li:hover a {
+        color: var(--blanc);
+    }
+    
+    ul li ul.menu__liste__menu-deroulant {
+        display: none;
+        left: 0;
+        margin-top: calc(20px + 1.1em + 20px);
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        width: fit-content;
+    }
+    
+    ul li:hover>ul.menu__liste__menu-deroulant,
+    ul li:focus-within>ul.menu__liste__menu-deroulant,
+    ul li ul.menu__liste__menu-deroulant:hover {
+        display: block;
+    }
+    
+    ul li ul.menu__liste__menu-deroulant li {
+        min-width: 100%;
+        width: fit-content;
+    }
+    
+    li:focus-within a {
+        outline: none;
+    }
+    /*Promotion*/
+    
+    .entete__promotion,
+    .entete__manifeste {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+    
+    .titre--primaire,
+    .entete__promotion-texte,
+    .voir-promotion,
+    .voir-manifeste {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

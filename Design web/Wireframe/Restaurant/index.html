@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Lab 01 - Wireframe: Création d’un prototype « fil de fer » de 3 pages à partir d’une
+    scénarisation">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <title>Vedge : Restaurant Végane</title>
+</head>
+
+<body>
+    <header class="entete item-taille bg-gris-pale bloc--img">
+        <div class="entete__top bg-gris-pale">
+            <div class="entete__top-wrapper wrapper">
+                <div class="logo">
+                    <h1 id="logo" class="titre entete__logo-texte cl-gris">LOGO</h1>
+                </div>
+                <div class="menu-wrapper">
+                    <nav class="menu ">
+                        <ul class="menu__liste">
+                            <li><a href="#logo">Accueil</a>
+                            </li>
+                            <li><a href="#liste_restaurants">Restaurants <small>▼</small></a>
+                                <ul class="menu__liste__menu-deroulant bg-gris-fonce">
+                                    <li><a href="">Trois-Rivières</a></li>
+                                    <li><a href="">Drummondville</a></li>
+                                    <li><a href="">Val-Jalbert</a></li>
+                                    <li><a href="">Dix30</a></li>
+                                    <li><a href="">Toronto</a></li>
+                                    <li><a href="">Berlin</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#trouver-restaurant">Trouver un restaurant</a></li>
+                            <li><a href="./html/fiche-Detailllee-Franchise-VJ.html#faire_reservation">Faire une réservation</a></li>
+                            <li><a href="">Commande en ligne</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="entete__promotion">
+            <div class="entete__promotion-wrapper cl-noir">
+                <h2 class="titre titre--primaire ">Profitez de nos promotions</h2>
+                <p class="entete__promotion-texte italic">Deux Mimosas pour 15$ pendant toute l’heure du brunch</p>
+                <a href="" class="voir-promotion cl-noir">
+                    Voir nos promotions
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wrapper img-et-text mt--large ">
+            <div class="img-et-text__img-wrapper bg-gris-pale bloc--img wd--une-demie">
+                <div class="img-et-text__img"></div>
+            </div>
+            <div class="boite img-et-texte__texte-wrapper bg-gris-pale  wrapper wd--une-demie">
+                <h2 class="titre--secondaire mt--medium cl-noir ">Botanique et décadente</h2>
+                <p class="cl-noir ">Savourez les meilleurs plats dans le respect total de la nature.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper mt--large grille-et-find bg-gris-pale">
+                <div id=" trouver-restaurant " class="grille-et-find__find ">
+                    <h2 class="titre--secondaire ">Trouvez un restaurant « Vedge » près de chez vous</h2>
+                    <div class="grille-et-find__find-champ mt--small ">
+                    </div>
+                    <input type="recherche " id="CP-recherche " placeholder="Entrez votre ville ou votre code postal " name="CP " aria-label="recherche " class="grille-et-find__find-input wd--une-demie "><button class="grille-et-find__find-btn mt--xsmall
+                wd--un-quart bg-gris-pale cl-gris ">Recherche</button>
+                </div>
+                <div id="liste_restaurants" class="grille-et-find__grille ">
+                    <h2 class="titre--secondaire mt--xsmall wrapper--secondaire ">Restaurants en vedette</h2>
+                    <div class="grille-et-find__grille-item mt--small wrapper--secondaire ">
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Trois-Rivières</h3>
+                        </a>
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Drummondville</h3>
+                        </a>
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Val-Jalbert
+                            </h3>
+                        </a>
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Dix30</h3>
+                        </a>
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Toronto</h3>
+                        </a>
+                        <a href=" " class="grille-item__item wd--un-tiers mt--small ">
+                            <!-- [Image de petite taille] -->
+                            <div class="grille-et-find__item-img bg-gris-xpale  bloc--img "></div>
+                            <h3 class="grille__item-titre titre--tertiaire cl-noir ">Berlin</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-texte  mt--large ">
+            <div class="section-texte__wraper wd--un ">
+                <h2 class="titre--secondaire ">Vous voulez établir votre propre restaurant ?</h2>
+                <p class="cl-noir">
+                    Laissez-nous vous convaincre de développer votre propre franchise « Vedge » !
+                </p>
+                <a class="cl-noir titre--tertiaire " href=" ">Contactez-nous</a>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="test " class="pied-de-page bg-gris-pale mt--medium wr ">
+        <nav class="pied-de-page__media-sociaux wd--un-tiers wrapper ">
+            <ul class="pied-de-page__liste-nav ">
+                <!-- Facebook -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href="# "><svg xmlns="http://www.w3.org/2000/svg " style="width:30px; height:30px; " viewBox="0 0 400 400 "><path d="M27.6 16C15.7 16 6.2 25 6.2 36.3v327.4c0 11.3 9.5 20.3 21.4 20.3h185.6V241.4h-50.4v-55.6h50.4V145c0-47.5 30.5-73.4
+                75.2-73.4 21.4 0 39.7 1.5 45.2 2.1v49.6h-30.9c-24.2 0-29 10.9-29 27v35.5h57.9l-7.5 55.6h-50.4V384h98.6c11.9 0 21.4-9 21.4-20.3V36.3C393.6 25 384.1 16 372.2 16H27.6z " fill="#000 "/></svg></a>
+                </li>
+                <!-- Twitter -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href="# "><svg xmlns="http://www.w3.org/2000/svg " style="width:30px; height:30px; " viewBox="0 0 400 400 "><path d="M127.1 359.3c148 0 228.9-122.5 228.9-228.9 0-3.5 0-6.9-.2-10.4 15.7-11.4 29.4-25.5 40.2-41.7-14.7 6.5-30.2 10.8-46.1
+                12.7 16.7-10 29.4-25.9 35.3-44.5-15.7 9.4-33.1 15.9-51 19.6-30.4-32.5-81.5-33.9-113.7-3.5-20.8 19.6-29.8 49-23.3 76.8-64.7-3.3-124.9-33.7-165.8-84.1C9.9 92 20.9 139 56.3 162.7c-12.9-.4-25.3-3.9-36.5-10v1c0 38.4 26.9 71.3 64.5 78.8-11.8 3.3-24.3
+                3.7-36.3 1.4 10.6 32.7 40.6 55.1 75.1 55.9-28.4 22.5-63.7 34.5-99.8 34.5-6.3 0-12.9-.4-19.2-1.2 36.4 23.7 79.3 36.2 123 36.2 " fill="#000 "/></svg></a>
+                </li>
+                <!-- Pinterst -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href="# "><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 774 1000.2 " style="width:30px; height:30px; "><path d="M0 359c0-42 8.8-83.7 26.5-125s43-79.7 76-115 76.3-64 130-86S345.7 0 411 0c106 0 193 32.7 261 98s102 142.3
+                102 231c0 114-28.8 208.2-86.5 282.5S555.3 723 464 723c-30 0-58.2-7-84.5-21s-44.8-31-55.5-51l-40 158c-3.3 12.7-7.7 25.5-13 38.5S259.8 873 253.5 885c-6.3 12-12.7 23.3-19 34s-12.7 20.7-19 30-11.8 17.2-16.5 23.5-9 11.8-13 16.5l-6 8c-2 2.7-4.7
+                3.7-8 3s-5.3-2.7-6-6c0-.7-.5-5.3-1.5-14s-2-17.8-3-27.5-2-22.2-3-37.5-1.3-30.2-1-44.5 1.3-30.2 3-47.5 4.2-33.3 7.5-48c7.3-31.3 32-135.7 74-313-5.3-10.7-9.7-23.5-13-38.5s-5-27.2-5-36.5l-1-15c0-42.7 10.8-78.2 32.5-106.5S303.3 223 334 223c24.7
+                0 43.8 8.2 57.5 24.5S412 284.3 412 309c0 15.3-2.8 34.2-8.5 56.5s-13.2 48-22.5 77-16 52.5-20 70.5c-6.7 30-.8 56 17.5 78s42.8 33 73.5 33c52.7 0 96.2-29.8 130.5-89.5S634 402.7 634 318c0-64.7-21-117.5-63-158.5S470.3 98 395 98c-84 0-152.2 27-204.5
+                81S112 297.7 112 373c0 44.7 12.7 82.3 38 113 8.7 10 11.3 20.7 8 32-1.3 3.3-3.3 11-6 23s-4.7 19.7-6 23c-1.3 7.3-4.7 12.2-10 14.5s-11.3 2.2-18-.5c-39.3-16-68.8-43.5-88.5-82.5S0 411 0 359z "/></svg></a>
+
+                </li>
+                <!-- Instagram -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href="# "><svg xmlns="http://www.w3.org/2000/svg " style="width:30px; height:30px; " viewBox="0 0 400 400 "><g fill="#000 "><path d="M282.4 16H117.6C61.5 16 16 61.5 16 117.6v164.9c0 56 45.5 101.6 101.6 101.6h164.9c56 0 101.6-45.5
+                101.6-101.6V117.6C384 61.5 338.5 16 282.4 16zm68.9 266.4c0 38-30.9 68.9-68.9 68.9H117.6c-38 0-68.9-30.9-68.9-68.9V117.6c0-38 30.9-68.9 68.9-68.9h164.9c38 0 68.9 30.9 68.9 68.9v164.8h-.1z "/><path d="M200 105.1c-52.3 0-94.9 42.5-94.9 94.9 0
+                52.3 42.5 94.9 94.9 94.9s94.9-42.6 94.9-94.9-42.6-94.9-94.9-94.9zm0 157.1c-34.3 0-62.2-27.9-62.2-62.2s27.9-62.2 62.2-62.2 62.2 27.9 62.2 62.2-27.9 62.2-62.2 62.2zM298.8 77.5c-6.3 0-12.5 2.6-16.9 7-4.5 4.4-7 10.6-7 16.9 0 6.3 2.6 12.5 7 16.9
+                4.4 4.4 10.6 7 16.9 7s12.5-2.6 16.9-7c4.5-4.5 7-10.7 7-16.9 0-6.3-2.6-12.5-7-16.9-4.4-4.5-10.5-7-16.9-7z "/></g></svg></a>
+                </li>
+                <!-- Youtube -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href=" "><svg xmlns="http://www.w3.org/2000/svg " style="width:30px; height:30px; " viewBox="0 0 24 24 "><path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5
+                5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z "/></svg></a>
+                </li>
+                <!-- Snapchat -->
+                <li class="pied-de-page__liste-item mt--xsmall wd--un-tiers ">
+                    <a href=" ">
+                        <svg xmlns="http://www.w3.org/2000/svg " style="width:30px; height:30px; " viewBox="-153.591 -252.05 1331.122 1512.3 "><path d="M992.463 748.4c-4.2-13.9-24.3-23.7-24.3-23.7-1.9-1-3.6-1.9-5-2.6-33.5-16.2-63.2-35.7-88.2-57.8-20.1-17.8-37.3-37.4-51.1-58.2-16.9-25.4-24.8-46.6-28.2-58.1-1.9-7.5-1.6-10.5
+                0-14.4 1.3-3.3 5.2-6.4 7-7.9 11.3-8 29.5-19.8 40.7-27 9.7-6.3 18-11.7 22.9-15.1 15.7-11 26.5-22.2 32.8-34.3 8.2-15.6 9.2-32.8 2.8-49.7-8.6-22.8-29.9-36.4-57-36.4-6 0-12.2.7-18.4 2-15.5 3.4-30.2 8.9-42.5 13.7-.9.4-1.9-.3-1.8-1.3 1.3-30.5 2.8-71.5-.6-110.4-3-35.2-10.3-64.9-22.1-90.8-11.9-26-27.4-45.2-39.5-59.1-11.5-13.2-31.8-32.7-62.4-50.2-43-24.6-92-37.1-145.6-37.1-53.5
+                0-102.4 12.5-145.5 37.1-32.4 18.5-53.1 39.4-62.5 50.2-12.1 13.9-27.6 33.1-39.5 59.1-11.9 25.9-19.1 55.5-22.1 90.8-3.4 39.1-2 76.8-.6 110.4 0 1-.9 1.7-1.9 1.3-12.3-4.8-27-10.3-42.5-13.7-6.1-1.3-12.3-2-18.4-2-27 0-48.3 13.6-57 36.4-6.4 16.9-5.4
+                34.1 2.8 49.7 6.4 12.1 17.1 23.3 32.8 34.3 4.8 3.4 13.2 8.8 22.9 15.1 10.9 7.1 28.6 18.6 40 26.5 1.4 1 6.2 4.6 7.7 8.4 1.6 4 1.9 7-.2 15-3.5 11.6-11.4 32.6-28 57.5-13.8 20.9-31 40.4-51.1 58.2-25 22.1-54.7 41.6-88.2 57.8-1.6.8-3.5 1.7-5.5 2.9
+                0 0-20 10.2-23.8 23.4-5.6 19.5 9.3 37.8 24.4 47.6 24.8 16 55 24.6 72.5 29.3 4.9 1.3 9.3 2.5 13.3 3.7 2.5.8 8.8 3.2 11.5 6.7 3.4 4.4 3.8 9.8 5 15.9 1.9 10.3 6.2 23 18.9 31.8 14 9.6 31.7 10.3 54.2 11.2 23.5.9 52.7 2 86.2 13.1 15.5 5.1 29.6 13.8
+                45.8 23.8 34 20.9 76.3 46.9 148.5 46.9 72.3 0 114.9-26.1 149.1-47.1 16.2-9.9 30.1-18.5 45.3-23.5 33.5-11.1 62.7-12.2 86.2-13.1 22.5-.9 40.2-1.5 54.2-11.2 13.6-9.4 17.5-23.4 19.3-33.9 1-5.2 1.6-9.9 4.6-13.7 2.6-3.3 8.4-5.6 11.1-6.5 4.1-1.3
+                8.7-2.5 13.8-3.9 17.5-4.7 39.5-10.2 66.2-25.3 32.2-18.3 34.4-40.7 31-51.8z " fill="#fff "/><path d="M1020.263 737.6c-7.1-19.4-20.7-29.7-36.1-38.3-2.9-1.7-5.6-3.1-7.8-4.1-4.6-2.4-9.3-4.7-14-7.1-48.1-25.5-85.7-57.7-111.7-95.8-8.8-12.9-14.9-24.5-19.2-34-2.2-6.4-2.1-10-.5-13.3
+                1.2-2.5 4.4-5.1 6.2-6.4 8.3-5.5 16.8-11 22.6-14.7 10.3-6.7 18.5-12 23.7-15.6 19.8-13.8 33.6-28.5 42.2-44.9 12.2-23.1 13.7-49.5 4.3-74.3-13-34.4-45.6-55.8-85-55.8-8.2 0-16.5.9-24.7 2.7-2.2.5-4.3 1-6.4 1.5.4-23.4-.2-48.4-2.3-72.8-7.4-86-37.5-131.1-68.9-167-13.1-15-35.9-36.9-70.1-56.5-47.7-27.4-101.7-41.2-160.6-41.2-58.7
+                0-112.7 13.8-160.4 41.1-34.4 19.6-57.2 41.6-70.2 56.5-31.4 35.9-61.5 81-68.9 167-2.1 24.4-2.6 49.4-2.3 72.8-2.1-.5-4.3-1-6.4-1.5-8.2-1.8-16.6-2.7-24.7-2.7-39.4 0-72 21.4-85 55.8-9.4 24.8-7.9 51.2 4.3 74.3 8.6 16.4 22.5 31.1 42.2 44.9 5.3 3.7
+                13.4 9 23.7 15.6 5.6 3.6 13.7 8.9 21.7 14.2 1.2.8 5.5 4 7 7 1.7 3.4 1.7 7.1-.8 13.9-4.2 9.3-10.3 20.7-18.9 33.3-25.5 37.3-62 68.9-108.5 94.1-24.7 13.1-50.3 21.8-61.1 51.2-8.2 22.2-2.8 47.5 17.9 68.8 6.8 7.3 15.4 13.8 26.2 19.8 25.4 14 47 20.9
+                64 25.6 3 .9 9.9 3.1 12.9 5.8 7.6 6.6 6.5 16.6 16.6 31.2 6.1 9.1 13.1 15.3 18.9 19.3 21.1 14.6 44.9 15.5 70.1 16.5 22.7.9 48.5 1.9 77.9 11.6 12.2 4 24.9 11.8 39.5 20.8 35.2 21.7 83.5 51.3 164.2 51.3 80.8 0 129.3-29.8 164.8-51.5 14.6-8.9 27.2-16.7
+                39-20.6 29.4-9.7 55.2-10.7 77.9-11.6 25.2-1 48.9-1.9 70.1-16.5 6.6-4.6 15-12.1 21.6-23.5 7.2-12.3 7.1-21 13.9-26.9 2.8-2.4 8.9-4.5 12.2-5.5 17.1-4.7 39-11.6 64.9-25.9 11.5-6.3 20.4-13.2 27.5-21.1l.3-.3c19.3-21 24.2-45.5 16.2-67.2zm-71.7 38.5c-43.8
+                24.2-72.9 21.6-95.5 36.1-19.2 12.4-7.9 39.1-21.8 48.7-17.2 11.9-67.9-.8-133.4 20.8-54 17.9-88.5 69.2-185.8 69.2-97.5 0-131-51.1-185.8-69.2-65.5-21.6-116.3-8.9-133.4-20.8-13.9-9.6-2.6-36.3-21.8-48.7-22.6-14.6-51.7-12-95.5-36.1-27.9-15.4-12.1-24.9-2.8-29.4
+                158.6-76.7 183.8-195.3 185-204.2 1.4-10.6 2.9-19-8.8-29.9-11.3-10.5-61.6-41.6-75.5-51.3-23.1-16.1-33.2-32.2-25.7-52 5.2-13.7 18-18.8 31.5-18.8 4.2 0 8.5.5 12.6 1.4 25.3 5.5 49.9 18.2 64.1 21.6 2 .5 3.7.7 5.2.7 7.6 0 10.2-3.8 9.7-12.5-1.6-27.7-5.6-81.7-1.2-132.2
+                6-69.4 28.4-103.8 55-134.3 12.8-14.6 72.8-78 187.5-78 115 0 174.7 63.4 187.5 78 26.6 30.4 49 64.8 55 134.3 4.4 50.5.6 104.5-1.2 132.2-.6 9.1 2.2 12.5 9.7 12.5 1.5 0 3.3-.2 5.2-.7 14.2-3.4 38.8-16.1 64.1-21.6 4.1-.9 8.4-1.4 12.6-1.4 13.5 0
+                26.3 5.2 31.5 18.8 7.5 19.8-2.7 35.9-25.7 52-13.9 9.7-64.2 40.8-75.5 51.3-11.7 10.8-10.2 19.2-8.8 29.9 1.1 8.9 26.4 127.5 185 204.2 9 4.5 24.9 14-3 29.4z "/></svg></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu-secondaire wd--deux-tiers ">
+            <ul class="menu-secondaire__liste-nav ">
+                <li class="pied-de-page__liste-menu-sec "><a href="./html/philosophie-VJ.html " class="liste-menu-sec__item ">Notre philosophie</a></li>
+                <li class="pied-de-page__liste-menu-sec "><a href=" " class="liste-menu-sec__item ">Carières</a></li>
+                <li class="pied-de-page__liste-menu-sec "><a href=" " class="liste-menu-sec__item ">Franchises</a></li>
+                <li class="pied-de-page__liste-menu-sec "><a href=" " class="liste-menu-sec__item ">Presse</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+</body>
+
+</html>

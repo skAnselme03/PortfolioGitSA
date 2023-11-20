@@ -1,0 +1,25 @@
+/*bgS-----------------------------*/
+
+.bg-primaire {
+    background-color: var(--color-primaire);
+}
+
+.bg-noir {
+    background-color: var(--color-noir);
+}
+
+.bg-blanc {
+    background-color: var(--color-blanc);
+}
+
+.bg-light-gray {
+    background-color: var(--color-light-gray);
+}
+
+.bg-gray {
+    background-color: var( --color-gray);
+}
+
+.bg-light-grey {
+    background-color: var(--color-light-grey);
+}

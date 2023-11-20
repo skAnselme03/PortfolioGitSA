@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  fonts / settings
+\*------------------------------------*/
+
+:root {
+    --font-primary: sans-serif;
+    --font-secondary: serif;
+    --font-size-default: 14px;
+    --font-weight-default: 300;
+    --font-weight-medium: 400;
+    --font-weight-heavy: 600;
+    --font-weight-bold: 700;
+    --letter-spacing-small: 0.02em;
+    --letter-spacing-large: 0.04em;
+    --letter-spacing-xlarge: 0.08em;
+    --line-height-default: 1;
+    --line-height-small: 1.2;
+    --line-height-normal: 1.4;
+    --line-height-medium: 1.6;
+    --line-height-large: 1.8;
+}

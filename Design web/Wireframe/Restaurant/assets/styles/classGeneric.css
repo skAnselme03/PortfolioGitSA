@@ -1,0 +1,133 @@
+-
+/*colors*/
+
+.cl-gris-pale {
+    color: var(--gris-pale);
+}
+
+.cl-noir {
+    color: var(--noir);
+}
+
+.cl-xnoir {
+    color: var(--xnoir);
+}
+
+.cl-blanc {
+    color: var(--blanc);
+}
+
+.cl-xblanc {
+    color: var(--xblanc);
+}
+
+.cl-gris-fonce {
+    color: var(--gris-fonce);
+}
+
+.cl-gris {
+    color: var(--gris);
+}
+
+
+/*Classe générique d'espacement*/
+
+.mt--xxsmall {
+    margin-top: calc(var(--space-basis)/2)
+}
+
+.mt--xsmall {
+    margin-top: calc(var(--space-basis))
+}
+
+.mt--small {
+    margin-top: calc(var(--space-basis) * 2)
+}
+
+.mt--medium {
+    margin-top: calc(var(--space-basis) * 4);
+}
+
+.mt--large {
+    margin-top: calc(var(--space-basis) * 10)
+}
+
+.mt--xlarge {
+    margin-top: calc(var(--space-basis) * 20)
+}
+
+
+/*Class générique de taille*/
+
+.wd--un-quart {
+    width: calc(var(--width-basis) * 5);
+}
+
+.wd--un-tiers {
+    width: calc(var(--width-basis) * 6);
+}
+
+.wd--une-demie {
+    width: calc(var(--width-basis) * 10);
+}
+
+.wd--deux-tiers {
+    width: calc(var(--width-basis) * 12);
+}
+
+.wd--trois-quart {
+    width: calc(var(--width-basis) * 15);
+}
+
+.wd--un {
+    width: calc(var(--width-basis) * 20);
+}
+
+.wrapper {
+    /*Gestion des marges latérale*/
+    padding: 0 8vw;
+}
+
+.wrapper--secondaire {
+    padding: 0 2vw;
+}
+
+.aligne--centre {
+    justify-content: center;
+}
+
+.texte--centre {
+    text-align: center;
+}
+
+.item-taille {
+    height: 95vh;
+    min-height: 500px;
+}
+
+.flex-col-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Inspiration:https://www.functionofbeauty.com/product/shampoo-conditioner/?cta=NAV */
+
+.collapse-info-wrapper {
+    display: block;
+}
+
+.collapse-lien {
+    width: 50%;
+    line-height: 0.25em;
+}
+
+.collapse-info-lien {
+    position: absolute;
+    height: 1.5vh;
+    right: 0;
+    line-height: 0.5em;
+    bottom: 2px
+}

@@ -1,0 +1,64 @@
+/*Typos*/
+
+.titre {
+    letter-spacing: 0.02em;
+}
+
+.titre--primaire {
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.entete__promotion-texte {
+    font-size: 1.5vw;
+}
+
+.voir-promotion {
+    font-size: 1vw;
+}
+
+.italic {
+    font-style: oblique;
+    letter-spacing: 0.03em;
+}
+
+.titre--secondaire {
+    font-size: 1.50vw;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.titre--tertiaire {
+    font-size: 1.025vw;
+    letter-spacing: 0.02em;
+    font-style: normal;
+}
+
+.paragraphe__sec {
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 0.01em;
+}
+
+.text-surligner {
+    text-decoration: underline;
+}
+
+.lien__liste-texte {
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-size: 1.05vw;
+}
+
+.lien__texte {
+    font-size: 1.50vw;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.menu--titre-secondaire_text {
+    font-size: 1.15vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-style: normal;
+}

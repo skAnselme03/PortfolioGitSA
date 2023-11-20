@@ -1,0 +1,50 @@
+.lollipop {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    grid-template-areas: "loliPop", "loliStick";
+    text-align: center;
+}
+
+.pop {
+    grid-area: loliPop;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pop {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.pop div {
+    width: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.titre--primaire {
+    font-size: min(14px, 500px);
+    justify-content: center;
+    align-items: center;
+}
+
+.pop__item-link {
+    font-size: min(14px, 500px);
+    align-self: center;
+}
+
+.stick {
+    grid-area: loliStick;
+    height: 1vw;
+    width: 35vw;
+    z-index: 0;
+}

@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  lien / elements
+\*------------------------------------*/
+
+a {
+    color: inherit;
+    font-family: var(--font-primary);
+    text-decoration: none;
+}
+
+
+/* Animations underline */
+
+.lien {
+    color: var(--color-noir);
+    font-size: var(--font-size-default / 2);
+    position: relative;
+    text-decoration: none;
+}
+
+.lien+.lien {
+    margin-left: 25px;
+}
+
+.lien--underline {
+    transition: color .3s ease;
+}
+
+.lien--underline::after {
+    content: "";
+    background-color: var(--color-noir);
+    bottom: -4px;
+    height: 6px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* lien--underline--right */
+
+.lien--underline--right::after {
+    right: 0;
+    transition: width .3s ease;
+    width: 0;
+}
+
+.lien--underline--right:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.menu-secondaire__grille {
+    display: grid;
+    grid-template-areas: "apropos   apropos  apropos" "equipe    partenaire carriere";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.75vw;
+    grid-auto-rows: minmax(25px, auto);
+}
+
+.footer__grille__item {
+    align-items: center;
+    display: flex;
+    font-size: var(--font-size-default/4);
+    justify-content: flex-start;
+}
+
+.grille__item--apropos {
+    grid-area: apropos;
+    text-align: start;
+}
+
+.grille__item--partenaire {
+    grid-area: partenaire;
+}
+
+.grille__item--carriere {
+    grid-area: carriere;
+}

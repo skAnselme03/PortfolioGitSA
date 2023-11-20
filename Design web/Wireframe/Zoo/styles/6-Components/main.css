@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grille__item-titre {
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nom__propre::first-letter {
+    text-transform: uppercase;
+}
+
+.grille__item-titre {
+    font-style: italic;
+}
+
+.titre__secondaire {
+    font-family: var(--font-secondary);
+    font-style: oblique;
+    letter-spacing: var(--letter-spacing-large);
+    line-height: var(--line-height-medium);
+}
+
+.contenus {
+    padding: 1vw;
+}
+
+.liste__style-fancy {
+    padding-left: 1.25vw;
+    list-style: circle;
+    line-height: var(--line-height-small);
+}
+
+.liste__style-fancy>li {
+    margin-top: var(--space-basis);
+}
+
+
+/* Ref: https://1stwebdesigner.com/css-shapes/ */
+
+.main__grille {
+    display: grid;
+}

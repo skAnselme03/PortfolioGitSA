@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------------*\
+  SETTINGS - Variables globales comme les polices et les couleurs
+\*-------------------------------------------------------------------*/
+
+@import "./1-settings/colors.css";
+@import "./1-settings/fonts.css";
+@import "./1-settings/spacing.css";
+
+/*-------------------------------------------------------------------*\
+  GENERIC - Styles de base (réinitialisation, box-sizing, etc.)
+\*-------------------------------------------------------------------*/
+
+@import "./3-generic/purify.css";
+@import "./3-generic/espacement.css";
+
+/*-------------------------------------------------------------------*\
+  ELEMENTS - Éléments HTML
+\*-------------------------------------------------------------------*/
+
+@import "./4-elements/liens.css";
+@import "./4-elements/list.css";
+@import "./4-elements/typography.css";
+
+/*-------------------------------------------------------------------*\
+  OBJECTS - Classes non décorées
+\*-------------------------------------------------------------------*/
+
+@import "./5-objects/bgColors.css";
+@import "./5-objects/clColors.css";
+@import "./5-objects/typo.css";
+@import "./5-objects/wrapper.css";
+
+/*-------------------------------------------------------------------*\
+  COMPONENTS
+\*-------------------------------------------------------------------*/
+
+@import "./6-components/aside.css";
+@import "./6-components/entete.css";
+@import "./6-components/footer.css";
+@import "./6-components/grille.css";
+@import "./6-components/lollipops.css";
+@import "./6-components/listbox.css";
+@import "./6-components/main.css";
+@import "./6-components/menu.css";
+@import "./6-components/plan_Incliner.css";
+@import "./6-components/radialtree.css";
+
+/*-------------------------------------------------------------------*\
+  
+\*-------------------------------------------------------------------*/
+
+
+/* * {
+    outline: 1px dashed green;
+} */
