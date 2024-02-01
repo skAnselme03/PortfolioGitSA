@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stephaniejob\\Documents\\Labo\\Labo04\\APISuperHero\\APISuperHero\\APISuperHero.csproj": {}
+    "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web service/Labo04/APISuperHero/APISuperHero/APISuperHero.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stephaniejob\\Documents\\Labo\\Labo04\\APISuperHero\\APISuperHero\\APISuperHero.csproj": {
+    "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web service/Labo04/APISuperHero/APISuperHero/APISuperHero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stephaniejob\\Documents\\Labo\\Labo04\\APISuperHero\\APISuperHero\\APISuperHero.csproj",
+        "projectUniqueName": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web service/Labo04/APISuperHero/APISuperHero/APISuperHero.csproj",
         "projectName": "APISuperHero",
-        "projectPath": "C:\\Users\\stephaniejob\\Documents\\Labo\\Labo04\\APISuperHero\\APISuperHero\\APISuperHero.csproj",
-        "packagesPath": "C:\\Users\\stephaniejob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stephaniejob\\Documents\\Labo\\Labo04\\APISuperHero\\APISuperHero\\obj\\",
+        "projectPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web service/Labo04/APISuperHero/APISuperHero/APISuperHero.csproj",
+        "packagesPath": "/Users/stephaniejob/.nuget/packages/",
+        "outputPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Programmation web service/Labo04/APISuperHero/APISuperHero/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\stephaniejob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/stephaniejob/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

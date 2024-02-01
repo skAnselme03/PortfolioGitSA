@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\stephaniejob\\.nuget\\packages\\": {}
+    "/Users/stephaniejob/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Bureau\\Perso\\ETS\\0.3.FORMATION\\AEC\\TI\\CGodin\\2.H2023\\1.Session-1\\2.Créa-SW-Server\\5,6.Git_Lab & Projets\\420-107-GG_Git_Labs-Projets\\5. Labo\\SA\\Labo4_Collections\\Labo4\\Labo4\\Labo4.csproj",
+      "projectUniqueName": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Creation site web serveur _Csharp/Labo4_Collections/Labo4/Labo4/Labo4.csproj",
       "projectName": "Labo4",
-      "projectPath": "\\\\Mac\\Bureau\\Perso\\ETS\\0.3.FORMATION\\AEC\\TI\\CGodin\\2.H2023\\1.Session-1\\2.Créa-SW-Server\\5,6.Git_Lab & Projets\\420-107-GG_Git_Labs-Projets\\5. Labo\\SA\\Labo4_Collections\\Labo4\\Labo4\\Labo4.csproj",
-      "packagesPath": "C:\\Users\\stephaniejob\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Bureau\\Perso\\ETS\\0.3.FORMATION\\AEC\\TI\\CGodin\\2.H2023\\1.Session-1\\2.Créa-SW-Server\\5,6.Git_Lab & Projets\\420-107-GG_Git_Labs-Projets\\5. Labo\\SA\\Labo4_Collections\\Labo4\\Labo4\\obj\\",
+      "projectPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Creation site web serveur _Csharp/Labo4_Collections/Labo4/Labo4/Labo4.csproj",
+      "packagesPath": "/Users/stephaniejob/.nuget/packages/",
+      "outputPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Creation site web serveur _Csharp/Labo4_Collections/Labo4/Labo4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stephaniejob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/stephaniejob/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }

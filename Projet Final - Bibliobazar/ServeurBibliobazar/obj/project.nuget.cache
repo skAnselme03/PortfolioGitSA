@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b7RggmRPh5FKSLLdemIzJ8n8Cw0ioi0TvExIAWuUX+cxnH8SPDMGz7ENblLckoe7HDs9ZZz2PT3Q2PiT3URlPQ==",
+  "dgSpecHash": "btWOQbzx5lcD0UVTplKr3DeylDHEbriFBG6kIZYlH6aIGOyK+y5SFijw5AJT4SEV78CndqpghYQy5PSm4l1rRA==",
   "success": true,
-  "projectFilePath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.Formation/AEC/TI/CGodin/4.A2023/2.Session-2/2.MISE EN OEUVRE DE PROJET/6.Projet/G2404-114-E3/ServeurBibliobazar/ServeurBibliobazar.csproj",
+  "projectFilePath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Projet Final - Bibliobazar/ServeurBibliobazar/ServeurBibliobazar.csproj",
   "expectedPackageFiles": [
     "/Users/stephaniejob/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/Users/stephaniejob/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",

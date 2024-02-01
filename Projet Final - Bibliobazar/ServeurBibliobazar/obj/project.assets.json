@@ -4106,11 +4106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.Formation/AEC/TI/CGodin/4.A2023/2.Session-2/2.MISE EN OEUVRE DE PROJET/6.Projet/G2404-114-E3/ServeurBibliobazar/ServeurBibliobazar.csproj",
+      "projectUniqueName": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Projet Final - Bibliobazar/ServeurBibliobazar/ServeurBibliobazar.csproj",
       "projectName": "ServeurBibliobazar",
-      "projectPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.Formation/AEC/TI/CGodin/4.A2023/2.Session-2/2.MISE EN OEUVRE DE PROJET/6.Projet/G2404-114-E3/ServeurBibliobazar/ServeurBibliobazar.csproj",
+      "projectPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Projet Final - Bibliobazar/ServeurBibliobazar/ServeurBibliobazar.csproj",
       "packagesPath": "/Users/stephaniejob/.nuget/packages/",
-      "outputPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.Formation/AEC/TI/CGodin/4.A2023/2.Session-2/2.MISE EN OEUVRE DE PROJET/6.Projet/G2404-114-E3/ServeurBibliobazar/obj/",
+      "outputPath": "/Users/stephaniejob/Desktop/Perso/ETS/0.3.FORMATION/PortfolioGitSA/Projet Final - Bibliobazar/ServeurBibliobazar/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/stephaniejob/.nuget/NuGet/NuGet.Config"
@@ -4119,7 +4119,6 @@
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.310/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4206,7 +4205,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
       }
     }
   },
